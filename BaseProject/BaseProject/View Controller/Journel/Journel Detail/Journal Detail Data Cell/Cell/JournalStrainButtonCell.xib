@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G1036" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="JournalStrainButtonCell" rowHeight="51" id="su9-6X-H3o" customClass="JournalStrainButtonCell" customModule="BaseProject" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="51"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="su9-6X-H3o" id="cFo-0H-a36">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="50.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Xm-2j-B3b">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="50.5"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ePx-eY-qWx" customClass="RoundButton" customModule="BaseProject" customModuleProvider="target">
+                                <rect key="frame" x="15" y="5" width="345" height="40.5"/>
+                                <color key="backgroundColor" red="0.9567694068" green="0.76681667570000001" blue="0.18527060749999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="MORE ABOUT THIS STRAIN &gt;">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="ePx-eY-qWx" secondAttribute="trailing" constant="15" id="EVA-0u-o2v"/>
+                            <constraint firstItem="ePx-eY-qWx" firstAttribute="leading" secondItem="8Xm-2j-B3b" secondAttribute="leading" constant="15" id="Gg2-sV-VU7"/>
+                            <constraint firstAttribute="height" constant="50.5" id="Gvi-Vo-6pY"/>
+                            <constraint firstAttribute="bottom" secondItem="ePx-eY-qWx" secondAttribute="bottom" constant="5" id="kZd-vp-jLc"/>
+                            <constraint firstItem="ePx-eY-qWx" firstAttribute="top" secondItem="8Xm-2j-B3b" secondAttribute="top" constant="5" id="nQ1-t9-HhF"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstItem="8Xm-2j-B3b" firstAttribute="top" secondItem="cFo-0H-a36" secondAttribute="top" id="GzZ-B2-vh2"/>
+                    <constraint firstAttribute="trailing" secondItem="8Xm-2j-B3b" secondAttribute="trailing" id="LiA-VQ-TZ5"/>
+                    <constraint firstItem="8Xm-2j-B3b" firstAttribute="leading" secondItem="cFo-0H-a36" secondAttribute="leading" id="gcz-h1-eb2"/>
+                    <constraint firstAttribute="bottom" secondItem="8Xm-2j-B3b" secondAttribute="bottom" id="l58-y9-sjm"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <point key="canvasLocation" x="23.5" y="137.5"/>
+        </tableViewCell>
+    </objects>
+</document>

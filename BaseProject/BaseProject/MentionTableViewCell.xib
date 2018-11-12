@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Lato-Regular.ttf">
+            <string>Lato-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="MentionTableViewCell" customModule="BaseProject" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AAk-nv-5DM">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="EVC-rF-Fzb" customClass="CircularImageView" customModule="BaseProject" customModuleProvider="target">
+                                <rect key="frame" x="8" y="4" width="36" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="36" id="B4w-oK-BI0"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="topi_ic" translatesAutoresizingMaskIntoConstraints="NO" id="hRa-g0-RNe">
+                                <rect key="frame" x="8" y="-1" width="16" height="16"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0rG-Jp-2IB">
+                                <rect key="frame" x="59" y="22" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="16"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.18431372549019609" green="0.18431372549019609" blue="0.18431372549019609" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="hRa-g0-RNe" firstAttribute="trailing" secondItem="EVC-rF-Fzb" secondAttribute="trailing" constant="-20" id="1aL-ni-y4J"/>
+                            <constraint firstItem="EVC-rF-Fzb" firstAttribute="leading" secondItem="AAk-nv-5DM" secondAttribute="leading" constant="8" id="9Wr-X7-b4Y"/>
+                            <constraint firstItem="0rG-Jp-2IB" firstAttribute="leading" secondItem="EVC-rF-Fzb" secondAttribute="trailing" constant="15" id="Jp2-Np-0tP"/>
+                            <constraint firstItem="hRa-g0-RNe" firstAttribute="bottom" secondItem="EVC-rF-Fzb" secondAttribute="bottom" constant="-25" id="OZw-9f-GNc"/>
+                            <constraint firstItem="EVC-rF-Fzb" firstAttribute="top" secondItem="AAk-nv-5DM" secondAttribute="top" constant="4" id="QEB-b1-qlG"/>
+                            <constraint firstItem="hRa-g0-RNe" firstAttribute="leading" secondItem="EVC-rF-Fzb" secondAttribute="leading" id="WeY-vS-ghI"/>
+                            <constraint firstItem="0rG-Jp-2IB" firstAttribute="centerY" secondItem="EVC-rF-Fzb" secondAttribute="centerY" id="ZOz-IA-5tU"/>
+                            <constraint firstItem="hRa-g0-RNe" firstAttribute="top" secondItem="EVC-rF-Fzb" secondAttribute="top" constant="-5" id="lyg-JY-9kO"/>
+                            <constraint firstAttribute="height" constant="44" id="nuX-kB-gBU"/>
+                            <constraint firstAttribute="bottom" secondItem="EVC-rF-Fzb" secondAttribute="bottom" constant="4" id="u0a-SV-ORo"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" red="0.18431372549019609" green="0.18431372549019609" blue="0.18431372549019609" alpha="1" colorSpace="calibratedRGB"/>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="AAk-nv-5DM" secondAttribute="bottom" constant="-0.5" id="UOz-Lm-jLO"/>
+                    <constraint firstItem="AAk-nv-5DM" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="seT-SE-aXr"/>
+                    <constraint firstItem="AAk-nv-5DM" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="xKk-Hu-8EA"/>
+                    <constraint firstAttribute="trailing" secondItem="AAk-nv-5DM" secondAttribute="trailing" id="zcD-ee-1O4"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="0.0047746119090000001" green="0.53408461809999996" blue="0.21606436370000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="nameLabel" destination="0rG-Jp-2IB" id="swZ-7S-mec"/>
+                <outlet property="profileImageView" destination="EVC-rF-Fzb" id="0IL-wv-qsV"/>
+                <outlet property="profileImageViewTop" destination="hRa-g0-RNe" id="UeJ-zM-Bes"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="topi_ic" width="60" height="56"/>
+    </resources>
+</document>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Lato-Bold.ttf">
+            <string>Lato-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ImageUploadStrainCell" rowHeight="150" id="Kce-yq-BKz" customClass="ImageUploadStrainCell" customModule="BaseProject" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="150"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Kce-yq-BKz" id="hVZ-TN-oZq">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="149.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9ME-SC-YU0">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="149.5"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="9bI-RL-NWM">
+                                <rect key="frame" x="-0.5" y="-1" width="375" height="150"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hOK-NO-XBV" customClass="RoundView" customModule="BaseProject" customModuleProvider="target">
+                                <rect key="frame" x="25" y="50" width="325" height="50"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Upload-Strain" translatesAutoresizingMaskIntoConstraints="NO" id="Gpw-d1-bMc">
+                                        <rect key="frame" x="77" y="7.5" width="35" height="35"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="35" id="7bm-Du-B6Y"/>
+                                            <constraint firstAttribute="height" constant="35" id="rsv-Wi-chL"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UPLOAD PHOTOS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1LG-1q-h6J">
+                                        <rect key="frame" x="122" y="16" width="127" height="18"/>
+                                        <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="15"/>
+                                        <color key="textColor" red="0.96425575019999998" green="0.76640504600000003" blue="0.31455361840000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JTQ-RN-WUR">
+                                        <rect key="frame" x="-0.5" y="0.0" width="325" height="50"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="1LG-1q-h6J" firstAttribute="leading" secondItem="Gpw-d1-bMc" secondAttribute="trailing" constant="10" id="7WS-D9-cIn"/>
+                                    <constraint firstItem="1LG-1q-h6J" firstAttribute="centerY" secondItem="hOK-NO-XBV" secondAttribute="centerY" id="A3N-Dg-5cE"/>
+                                    <constraint firstAttribute="height" constant="50" id="BOE-6H-kFl"/>
+                                    <constraint firstItem="Gpw-d1-bMc" firstAttribute="centerY" secondItem="1LG-1q-h6J" secondAttribute="centerY" id="aYy-j6-V6t"/>
+                                    <constraint firstItem="JTQ-RN-WUR" firstAttribute="centerY" secondItem="hOK-NO-XBV" secondAttribute="centerY" id="dsC-Rp-25U"/>
+                                    <constraint firstItem="1LG-1q-h6J" firstAttribute="centerX" secondItem="hOK-NO-XBV" secondAttribute="centerX" constant="23" id="iPp-N2-kHx"/>
+                                    <constraint firstItem="JTQ-RN-WUR" firstAttribute="centerX" secondItem="hOK-NO-XBV" secondAttribute="centerX" id="l6I-Qe-rVe"/>
+                                    <constraint firstItem="JTQ-RN-WUR" firstAttribute="height" secondItem="hOK-NO-XBV" secondAttribute="height" id="nSN-0G-JeI"/>
+                                    <constraint firstItem="JTQ-RN-WUR" firstAttribute="width" secondItem="hOK-NO-XBV" secondAttribute="width" id="sLT-cs-KAQ"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.96425575017929077" green="0.76640504598617554" blue="0.31455361843109131" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="9bI-RL-NWM" firstAttribute="centerX" secondItem="9ME-SC-YU0" secondAttribute="centerX" id="6fg-Nd-Joj"/>
+                            <constraint firstItem="hOK-NO-XBV" firstAttribute="leading" secondItem="9ME-SC-YU0" secondAttribute="leading" constant="25" id="D7F-bb-r1L"/>
+                            <constraint firstAttribute="height" constant="149.5" id="EvU-dy-eTU"/>
+                            <constraint firstItem="hOK-NO-XBV" firstAttribute="centerY" secondItem="9ME-SC-YU0" secondAttribute="centerY" id="KJ2-4G-9pF"/>
+                            <constraint firstItem="9bI-RL-NWM" firstAttribute="centerY" secondItem="9ME-SC-YU0" secondAttribute="centerY" id="YE9-VK-5Rh"/>
+                            <constraint firstItem="9bI-RL-NWM" firstAttribute="height" secondItem="9ME-SC-YU0" secondAttribute="height" id="agn-Is-C8p"/>
+                            <constraint firstItem="9bI-RL-NWM" firstAttribute="width" secondItem="9ME-SC-YU0" secondAttribute="width" id="mQZ-cw-hKa"/>
+                            <constraint firstAttribute="trailing" secondItem="hOK-NO-XBV" secondAttribute="trailing" constant="25" id="ot0-J3-x1Y"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="9ME-SC-YU0" secondAttribute="bottom" id="Ief-az-GZK"/>
+                    <constraint firstItem="9ME-SC-YU0" firstAttribute="top" secondItem="hVZ-TN-oZq" secondAttribute="top" id="csX-FL-h5j"/>
+                    <constraint firstAttribute="trailing" secondItem="9ME-SC-YU0" secondAttribute="trailing" id="j7e-No-rgT"/>
+                    <constraint firstItem="9ME-SC-YU0" firstAttribute="leading" secondItem="hVZ-TN-oZq" secondAttribute="leading" id="sRS-um-9t1"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="btnUpload" destination="JTQ-RN-WUR" id="S0h-9x-TYa"/>
+                <outlet property="imgviewMain" destination="9bI-RL-NWM" id="Ebj-o7-Mdg"/>
+            </connections>
+            <point key="canvasLocation" x="36.5" y="182"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Upload-Strain" width="119" height="106"/>
+    </resources>
+</document>

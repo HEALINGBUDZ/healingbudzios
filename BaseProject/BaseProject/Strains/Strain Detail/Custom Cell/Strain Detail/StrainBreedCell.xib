@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Lato-Bold.ttf">
+            <string>Lato-Bold</string>
+        </array>
+        <array key="Lato-Regular.ttf">
+            <string>Lato-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="StrainBreedCell" rowHeight="102" id="XkP-WM-sIv" customClass="StrainBreedCell" customModule="BaseProject" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="102"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="XkP-WM-sIv" id="TxX-rC-AGQ">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="101.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Edu-QX-XVQ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="101.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Parentage / Genetics:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MhD-Jp-A8N">
+                                <rect key="frame" x="15" y="15" width="345" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="M7B-BN-NYu"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="15"/>
+                                <color key="textColor" red="0.98431372549999996" green="0.6705882353" blue="0.01176470588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="percentage" translatesAutoresizingMaskIntoConstraints="NO" id="EIA-n2-yTf">
+                                <rect key="frame" x="15" y="46" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="VXC-cJ-rGS"/>
+                                    <constraint firstAttribute="width" constant="50" id="gG3-T9-Elu"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cross-Breed of:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GCu-Qt-UKJ">
+                                <rect key="frame" x="75" y="46" width="90" height="14"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="0.76470588235294112" green="0.77254901960784317" blue="0.76470588235294112" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Durban Poison" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6aX-OR-zf8">
+                                <rect key="frame" x="75" y="80.5" width="78" height="14.5"/>
+                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="12"/>
+                                <color key="textColor" red="0.98431372549999996" green="0.6705882353" blue="0.01176470588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="and" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6bM-Oa-Zpi">
+                                <rect key="frame" x="158" y="81" width="19.5" height="14"/>
+                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="12"/>
+                                <color key="textColor" red="0.76470588240000004" green="0.7725490196" blue="0.76470588240000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5DO-0l-28f">
+                                <rect key="frame" x="15" y="99.5" width="345" height="1"/>
+                                <color key="backgroundColor" red="0.2784313725" green="0.2784313725" blue="0.2784313725" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="N9s-IJ-ijU"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="OG Kush" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QhP-Qi-Gz2">
+                                <rect key="frame" x="182.5" y="81" width="48" height="14"/>
+                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="12"/>
+                                <color key="textColor" red="0.98431372549999996" green="0.6705882353" blue="0.01176470588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oHP-Es-d5a">
+                                <rect key="frame" x="75" y="81" width="78" height="14.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="14.5" id="N6l-Ua-Qoo"/>
+                                </constraints>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="27L-K9-0oc">
+                                <rect key="frame" x="182.5" y="81" width="48.5" height="14.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="14.5" id="yRf-tG-Vgb"/>
+                                </constraints>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="6bM-Oa-Zpi" firstAttribute="leading" secondItem="6aX-OR-zf8" secondAttribute="trailing" constant="5" id="19G-yu-jRg"/>
+                            <constraint firstItem="GCu-Qt-UKJ" firstAttribute="top" secondItem="MhD-Jp-A8N" secondAttribute="bottom" constant="10" id="9X7-5B-tez"/>
+                            <constraint firstItem="6aX-OR-zf8" firstAttribute="leading" secondItem="EIA-n2-yTf" secondAttribute="trailing" constant="10" id="9xt-K1-EIx"/>
+                            <constraint firstItem="GCu-Qt-UKJ" firstAttribute="leading" secondItem="EIA-n2-yTf" secondAttribute="trailing" constant="10" id="AIY-Qh-vlq"/>
+                            <constraint firstAttribute="height" constant="101.5" id="AkF-AJ-TR5"/>
+                            <constraint firstItem="6aX-OR-zf8" firstAttribute="top" secondItem="GCu-Qt-UKJ" secondAttribute="bottom" constant="20.5" id="EEF-BB-cEl"/>
+                            <constraint firstItem="oHP-Es-d5a" firstAttribute="top" secondItem="6aX-OR-zf8" secondAttribute="top" id="Ffp-z0-n55"/>
+                            <constraint firstItem="oHP-Es-d5a" firstAttribute="centerY" secondItem="6bM-Oa-Zpi" secondAttribute="centerY" id="OWP-iv-ex0"/>
+                            <constraint firstAttribute="trailing" secondItem="MhD-Jp-A8N" secondAttribute="trailing" constant="15" id="P4T-Lu-i7b"/>
+                            <constraint firstAttribute="trailing" secondItem="5DO-0l-28f" secondAttribute="trailing" constant="15" id="PXN-8g-wnc"/>
+                            <constraint firstItem="5DO-0l-28f" firstAttribute="leading" secondItem="Edu-QX-XVQ" secondAttribute="leading" constant="15" id="Qza-NV-xfQ"/>
+                            <constraint firstItem="27L-K9-0oc" firstAttribute="trailing" secondItem="QhP-Qi-Gz2" secondAttribute="trailing" id="XAA-L4-Yb7"/>
+                            <constraint firstItem="27L-K9-0oc" firstAttribute="leading" secondItem="QhP-Qi-Gz2" secondAttribute="leading" id="aYy-eg-pye"/>
+                            <constraint firstItem="27L-K9-0oc" firstAttribute="top" secondItem="QhP-Qi-Gz2" secondAttribute="top" id="aog-ry-BK3"/>
+                            <constraint firstItem="MhD-Jp-A8N" firstAttribute="top" secondItem="Edu-QX-XVQ" secondAttribute="top" constant="15" id="bcD-GH-ayO"/>
+                            <constraint firstItem="QhP-Qi-Gz2" firstAttribute="leading" secondItem="6bM-Oa-Zpi" secondAttribute="trailing" constant="5" id="cv2-1y-B6M"/>
+                            <constraint firstItem="MhD-Jp-A8N" firstAttribute="leading" secondItem="Edu-QX-XVQ" secondAttribute="leading" constant="15" id="e4o-CJ-Z5N"/>
+                            <constraint firstAttribute="bottom" secondItem="5DO-0l-28f" secondAttribute="bottom" constant="1" id="eXL-e6-RWP"/>
+                            <constraint firstItem="oHP-Es-d5a" firstAttribute="trailing" secondItem="6aX-OR-zf8" secondAttribute="trailing" id="esP-oN-ieW"/>
+                            <constraint firstItem="oHP-Es-d5a" firstAttribute="leading" secondItem="6aX-OR-zf8" secondAttribute="leading" id="je7-7y-uUi"/>
+                            <constraint firstItem="EIA-n2-yTf" firstAttribute="top" secondItem="MhD-Jp-A8N" secondAttribute="bottom" constant="10" id="mZI-ce-wWB"/>
+                            <constraint firstItem="QhP-Qi-Gz2" firstAttribute="centerY" secondItem="6bM-Oa-Zpi" secondAttribute="centerY" id="rqP-zX-2I9"/>
+                            <constraint firstItem="6bM-Oa-Zpi" firstAttribute="centerY" secondItem="6aX-OR-zf8" secondAttribute="centerY" id="yEh-SM-av0"/>
+                            <constraint firstItem="EIA-n2-yTf" firstAttribute="leading" secondItem="Edu-QX-XVQ" secondAttribute="leading" constant="15" id="ygY-Xd-mQh"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstItem="Edu-QX-XVQ" firstAttribute="top" secondItem="TxX-rC-AGQ" secondAttribute="top" id="IaW-et-xsk"/>
+                    <constraint firstAttribute="trailing" secondItem="Edu-QX-XVQ" secondAttribute="trailing" id="Jlf-wg-0Nh"/>
+                    <constraint firstAttribute="bottom" secondItem="Edu-QX-XVQ" secondAttribute="bottom" id="aIs-GL-oRO"/>
+                    <constraint firstItem="Edu-QX-XVQ" firstAttribute="leading" secondItem="TxX-rC-AGQ" secondAttribute="leading" id="pSU-qJ-tDL"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="buttonFirstName" destination="oHP-Es-d5a" id="gm2-HG-RKn"/>
+                <outlet property="buttonSecondName" destination="27L-K9-0oc" id="Vuw-P8-g8y"/>
+                <outlet property="lblFirstName" destination="6aX-OR-zf8" id="Nzf-hQ-aU0"/>
+                <outlet property="lblSecondName" destination="QhP-Qi-Gz2" id="JyL-hm-nqG"/>
+            </connections>
+            <point key="canvasLocation" x="121.5" y="51"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="percentage" width="75" height="80"/>
+    </resources>
+</document>

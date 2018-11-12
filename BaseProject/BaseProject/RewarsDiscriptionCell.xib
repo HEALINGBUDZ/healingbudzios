@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Lato-Bold.ttf">
+            <string>Lato-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="RewarsDiscriptionCell" rowHeight="129" id="KGk-i7-Jjw" customClass="RewarsDiscriptionCell" customModule="BaseProject" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="366" height="129"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="366" height="128.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0k7-GY-T80">
+                        <rect key="frame" x="0.0" y="0.0" width="366" height="129"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AQK-pQ-2aN">
+                                <rect key="frame" x="10" y="14" width="346" height="47"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="16" id="Qc4-ys-0CP"/>
+                                </constraints>
+                                <string key="text">We're all Budz here. The more you collaborate in the Healing Budz community and help other Budz, the more points you earn to redeem for cool stuff.</string>
+                                <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="13"/>
+                                <color key="textColor" red="0.76799142360687256" green="0.7647441029548645" blue="0.7645946741104126" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GET 400 FREE REWARDS POINTS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2dZ-bS-q8y">
+                                <rect key="frame" x="10" y="79" width="309.5" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="24" id="mPZ-Rf-hE0"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RGI-t1-Sl4">
+                                <rect key="frame" x="10" y="115" width="346" height="1"/>
+                                <color key="backgroundColor" red="0.29392474889755249" green="0.29425263404846191" blue="0.28983926773071289" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="bdZ-kd-IBt"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="AQK-pQ-2aN" secondAttribute="trailing" constant="10" id="76u-3W-U18"/>
+                            <constraint firstAttribute="bottom" secondItem="RGI-t1-Sl4" secondAttribute="bottom" constant="13" id="AQy-m6-N6P"/>
+                            <constraint firstItem="RGI-t1-Sl4" firstAttribute="top" secondItem="2dZ-bS-q8y" secondAttribute="bottom" constant="12" id="AVO-Wu-xe8"/>
+                            <constraint firstItem="AQK-pQ-2aN" firstAttribute="top" secondItem="0k7-GY-T80" secondAttribute="top" constant="14" id="KDC-lY-wmB"/>
+                            <constraint firstItem="AQK-pQ-2aN" firstAttribute="leading" secondItem="0k7-GY-T80" secondAttribute="leading" constant="10" id="VqE-A4-Mdv"/>
+                            <constraint firstItem="2dZ-bS-q8y" firstAttribute="top" secondItem="AQK-pQ-2aN" secondAttribute="bottom" constant="18" id="WoI-1X-iQk"/>
+                            <constraint firstItem="RGI-t1-Sl4" firstAttribute="leading" secondItem="AQK-pQ-2aN" secondAttribute="leading" id="hbS-jF-0DX"/>
+                            <constraint firstItem="RGI-t1-Sl4" firstAttribute="trailing" secondItem="AQK-pQ-2aN" secondAttribute="trailing" id="klq-T0-9LQ"/>
+                            <constraint firstItem="2dZ-bS-q8y" firstAttribute="leading" secondItem="AQK-pQ-2aN" secondAttribute="leading" id="rBh-WO-fMi"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="0k7-GY-T80" secondAttribute="bottom" constant="-0.5" id="3Nm-uq-136"/>
+                    <constraint firstItem="0k7-GY-T80" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="AJm-7Y-Xxy"/>
+                    <constraint firstAttribute="trailing" secondItem="0k7-GY-T80" secondAttribute="trailing" id="UiR-Rx-bTa"/>
+                    <constraint firstItem="0k7-GY-T80" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="kFr-9u-dJP"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="LBL_Rewards_point" destination="2dZ-bS-q8y" id="Osm-kS-WM8"/>
+            </connections>
+            <point key="canvasLocation" x="-82" y="94.5"/>
+        </tableViewCell>
+    </objects>
+</document>

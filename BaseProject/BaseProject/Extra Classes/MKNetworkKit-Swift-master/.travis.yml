@@ -1,0 +1,49 @@
+language: objective-c
+osx_image: xcode8.1
+
+env:
+  global:
+  - LANG=en_US.UTF-8
+  - LC_ALL=en_US.UTF-8
+  - IOS_FRAMEWORK_SCHEME="MKNetworkKit-iOS"
+  - IOS_APPEX_FRAMEWORK_SCHEME="MKNetworkKit-iOS-Appex"
+  - WATCHOS_FRAMEWORK_SCHEME="MKNetworkKit-watchOS"
+  - TVOS_FRAMEWORK_SCHEME="MKNetworkKit-tvOS"
+  - TVOS_APPEX_FRAMEWORK_SCHEME="MKNetworkKit-tvOS-Appex"
+  - OSX_FRAMEWORK_SCHEME="MKNetworkKit-OSX"
+  - DEMO_SCHEME="MKNetworkKitDemo"
+  - TESTS_SCHEME="MKNetworkKitTests"
+  - IOS_SDK=iphonesimulator10.1
+  - OSX_SDK=macosx10.12
+  - TVOS_SDK=appletvsimulator10.0
+  - WATCHOS_SDK=watchsimulator3.1
+  matrix:
+    - DESTINATION="OS=9.1,name=iPhone 5"           SCHEME="$IOS_FRAMEWORK_SCHEME" SDK="$IOS_SDK"         RUN_AS_TEST="NO"
+    - DESTINATION="OS=10.1,name=iPhone 6 Plus"      SCHEME="$IOS_FRAMEWORK_SCHEME" SDK="$IOS_SDK"         RUN_AS_TEST="NO"   
+    - DESTINATION="OS=9.1,name=iPhone 5"           SCHEME="$IOS_APPEX_FRAMEWORK_SCHEME" SDK="$IOS_SDK"   RUN_AS_TEST="NO"
+    - DESTINATION="OS=10.1,name=iPhone 6 Plus"      SCHEME="$IOS_APPEX_FRAMEWORK_SCHEME" SDK="$IOS_SDK"   RUN_AS_TEST="NO"   
+    - DESTINATION="arch=x86_64"                    SCHEME="$OSX_FRAMEWORK_SCHEME" SDK="$OSX_SDK"         RUN_AS_TEST="NO"
+    - DESTINATION="OS=10.0,name=Apple TV 1080p"     SCHEME="$TVOS_FRAMEWORK_SCHEME" SDK="$TVOS_SDK"       RUN_AS_TEST="NO"
+    - DESTINATION="OS=10.0,name=Apple TV 1080p"     SCHEME="$TVOS_APPEX_FRAMEWORK_SCHEME" SDK="$TVOS_SDK" RUN_AS_TEST="NO"
+    - DESTINATION="OS=3.1,name=Apple Watch - 38mm" SCHEME="$WATCHOS_FRAMEWORK_SCHEME" SDK="$WATCHOS_SDK" RUN_AS_TEST="NO"
+    - DESTINATION="OS=10.1,name=iPhone 6 Plus"      SCHEME="$DEMO_SCHEME" SDK="$IOS_SDK"                  RUN_AS_TEST="NO" 
+    - DESTINATION="OS=10.1,name=iPhone 6 Plus"      SCHEME="$TESTS_SCHEME" SDK="$IOS_SDK"                 RUN_AS_TEST="YES"  
+    
+script: 
+  - set -o pipefail
+  - xcodebuild -version
+  - if [ $RUN_AS_TEST == "YES" ]; then
+      xcodebuild -workspace MKNetworkKit.xcworkspace -scheme "$SCHEME" -sdk "$SDK" -destination "$DESTINATION" -configuration Debug ONLY_ACTIVE_ARCH=NO test | xcpretty -c;
+    else
+      xcodebuild -workspace MKNetworkKit.xcworkspace -scheme "$SCHEME" -sdk "$SDK" -destination "$DESTINATION" -configuration Debug ONLY_ACTIVE_ARCH=NO build | xcpretty -c;
+      xcodebuild -workspace MKNetworkKit.xcworkspace -scheme "$SCHEME" -sdk "$SDK" -destination "$DESTINATION" -configuration Release ONLY_ACTIVE_ARCH=NO build | xcpretty -c;
+    fi
+
+notifications:
+  email: false
+  webhooks:
+    urls:
+      - https://webhooks.gitter.im/e/246c16d1dfbbc2d10bae
+    on_success: change  # options: [always|never|change] default: always
+    on_failure: always  # options: [always|never|change] default: always
+    on_start: never     # options: [always|never|change] default: always

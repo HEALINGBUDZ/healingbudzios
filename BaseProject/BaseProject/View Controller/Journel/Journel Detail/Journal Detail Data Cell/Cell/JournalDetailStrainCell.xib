@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G1036" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Lato-Bold.ttf">
+            <string>Lato-Bold</string>
+        </array>
+        <array key="Lato-Regular.ttf">
+            <string>Lato-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="JournalDetailStrainCell" rowHeight="40" id="z4a-9A-Z37" customClass="JournalDetailStrainCell" customModule="BaseProject" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="40"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="z4a-9A-Z37" id="fQL-bx-nKq">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="39.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ze9-Ef-pTm">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="39.5"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tab_strain" translatesAutoresizingMaskIntoConstraints="NO" id="D72-5u-3ig">
+                                <rect key="frame" x="15" y="7.5" width="25" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="25" id="7Jp-ck-07x"/>
+                                    <constraint firstAttribute="height" constant="25" id="EmT-r4-R8v"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tagged Strain:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wq3-oa-WSs">
+                                <rect key="frame" x="48" y="9.5" width="74" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="OAx-Z9-jRb"/>
+                                    <constraint firstAttribute="width" constant="74" id="ULm-Ne-lTQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="12"/>
+                                <color key="textColor" red="0.97647058819999999" green="0.97647058819999999" blue="0.97647058819999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BLUE DREAM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Ye-90-9CE">
+                                <rect key="frame" x="130" y="9" width="95.5" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="DcW-df-4AX"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="15"/>
+                                <color key="textColor" red="0.95676940679550171" green="0.76681667566299438" blue="0.18527060747146606" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wq3-oa-WSs" firstAttribute="leading" secondItem="D72-5u-3ig" secondAttribute="trailing" constant="8" id="Jom-6m-u9R"/>
+                            <constraint firstItem="D72-5u-3ig" firstAttribute="leading" secondItem="ze9-Ef-pTm" secondAttribute="leading" constant="15" id="QRJ-Tw-SSF"/>
+                            <constraint firstItem="9Ye-90-9CE" firstAttribute="leading" secondItem="wq3-oa-WSs" secondAttribute="trailing" constant="8" id="RCw-8I-IQj"/>
+                            <constraint firstItem="D72-5u-3ig" firstAttribute="centerY" secondItem="ze9-Ef-pTm" secondAttribute="centerY" id="S3K-co-zcU"/>
+                            <constraint firstItem="D72-5u-3ig" firstAttribute="top" secondItem="ze9-Ef-pTm" secondAttribute="top" constant="7.5" id="UFx-cf-xCW"/>
+                            <constraint firstItem="wq3-oa-WSs" firstAttribute="centerY" secondItem="D72-5u-3ig" secondAttribute="centerY" id="htx-du-lXA"/>
+                            <constraint firstAttribute="bottom" secondItem="D72-5u-3ig" secondAttribute="bottom" constant="7" id="kAf-hm-OMA"/>
+                            <constraint firstItem="9Ye-90-9CE" firstAttribute="centerY" secondItem="wq3-oa-WSs" secondAttribute="centerY" id="pNy-Qh-dzY"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="ze9-Ef-pTm" secondAttribute="trailing" id="8xm-k2-46b"/>
+                    <constraint firstItem="ze9-Ef-pTm" firstAttribute="top" secondItem="fQL-bx-nKq" secondAttribute="top" id="Bgu-a5-hka"/>
+                    <constraint firstAttribute="bottom" secondItem="ze9-Ef-pTm" secondAttribute="bottom" id="Id9-cJ-ZhI"/>
+                    <constraint firstItem="ze9-Ef-pTm" firstAttribute="leading" secondItem="fQL-bx-nKq" secondAttribute="leading" id="rDJ-bE-XbY"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <point key="canvasLocation" x="206.5" y="89"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="tab_strain" width="28" height="28"/>
+    </resources>
+</document>

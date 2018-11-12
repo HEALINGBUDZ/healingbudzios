@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Lato-Light.ttf">
+            <string>Lato-Light</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="183" id="JJa-dL-EAg" customClass="StoreMsgCell" customModule="BaseProject" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="183"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="JJa-dL-EAg" id="7j0-VY-8GL">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="182.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vm2-gt-C9B">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="182.5"/>
+                        <subviews>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BigLogo" translatesAutoresizingMaskIntoConstraints="NO" id="1QV-gJ-Vg1">
+                                <rect key="frame" x="157" y="25" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="6d6-2m-xU1"/>
+                                    <constraint firstAttribute="height" constant="60" id="prp-fY-TyJ"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Coming soon!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="49d-d3-25A">
+                                <rect key="frame" x="143.5" y="124.5" width="89" height="18"/>
+                                <fontDescription key="fontDescription" name="Lato-Light" family="Lato" pointSize="15"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Get your HB swag on." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bwe-nn-aVd">
+                                <rect key="frame" x="92.5" y="44.5" width="190" height="24"/>
+                                <fontDescription key="fontDescription" name="Lato-Light" family="Lato" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ppi-eR-kX8">
+                                <rect key="frame" x="10" y="78.5" width="355" height="36"/>
+                                <string key="text">Redeem points for branded merchandise,
+accessories, product discounts and more.</string>
+                                <fontDescription key="fontDescription" name="Lato-Light" family="Lato" pointSize="15"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.14509803921568626" green="0.14509803921568626" blue="0.14117647058823529" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Ppi-eR-kX8" secondAttribute="trailing" constant="10" id="99i-ka-Xj6"/>
+                            <constraint firstItem="Ppi-eR-kX8" firstAttribute="leading" secondItem="vm2-gt-C9B" secondAttribute="leading" constant="10" id="A1p-Ye-EJp"/>
+                            <constraint firstAttribute="bottom" secondItem="49d-d3-25A" secondAttribute="bottom" constant="40" id="MoK-s4-pUU"/>
+                            <constraint firstItem="49d-d3-25A" firstAttribute="top" secondItem="Ppi-eR-kX8" secondAttribute="bottom" constant="10" id="Nlv-tY-EMs"/>
+                            <constraint firstItem="49d-d3-25A" firstAttribute="centerX" secondItem="bwe-nn-aVd" secondAttribute="centerX" id="O0v-sD-MRV"/>
+                            <constraint firstItem="bwe-nn-aVd" firstAttribute="top" secondItem="vm2-gt-C9B" secondAttribute="top" constant="44.5" id="QBg-T2-KuQ"/>
+                            <constraint firstItem="bwe-nn-aVd" firstAttribute="centerX" secondItem="vm2-gt-C9B" secondAttribute="centerX" id="RfM-Fg-yq1"/>
+                            <constraint firstItem="1QV-gJ-Vg1" firstAttribute="top" secondItem="vm2-gt-C9B" secondAttribute="top" constant="25" id="ZmX-kD-1dL"/>
+                            <constraint firstItem="1QV-gJ-Vg1" firstAttribute="centerX" secondItem="vm2-gt-C9B" secondAttribute="centerX" id="Ztg-uK-WcY"/>
+                            <constraint firstItem="Ppi-eR-kX8" firstAttribute="centerX" secondItem="bwe-nn-aVd" secondAttribute="centerX" id="c3Z-x9-h9U"/>
+                            <constraint firstItem="Ppi-eR-kX8" firstAttribute="top" secondItem="bwe-nn-aVd" secondAttribute="bottom" constant="10" id="eMa-zK-IQu"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="vm2-gt-C9B" firstAttribute="top" secondItem="7j0-VY-8GL" secondAttribute="top" id="U5N-X9-hjx"/>
+                    <constraint firstAttribute="bottom" secondItem="vm2-gt-C9B" secondAttribute="bottom" id="YSl-ip-RDN"/>
+                    <constraint firstAttribute="trailing" secondItem="vm2-gt-C9B" secondAttribute="trailing" id="bgk-i0-3IN"/>
+                    <constraint firstItem="vm2-gt-C9B" firstAttribute="leading" secondItem="7j0-VY-8GL" secondAttribute="leading" id="kwa-1c-k5n"/>
+                </constraints>
+            </tableViewCellContentView>
+            <point key="canvasLocation" x="-30" y="24"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="BigLogo" width="446" height="402"/>
+    </resources>
+</document>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Lato-Regular.ttf">
+            <string>Lato-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="BudzSelectTypeCell" rowHeight="50" id="1ds-kE-2tf" customClass="BudzSelectTypeCell" customModule="BaseProject" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="1ds-kE-2tf" id="81c-QF-a3A">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="49.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CTf-YY-l5h">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49.5"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DispensaryIcon" translatesAutoresizingMaskIntoConstraints="NO" id="bCg-7o-r5q" customClass="CircularImageView" customModule="BaseProject" customModuleProvider="target">
+                                <rect key="frame" x="15" y="7.5" width="35" height="35"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="NqX-hW-YZP"/>
+                                    <constraint firstAttribute="width" constant="35" id="UHA-mk-6Hc"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dispensary" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6xG-T4-ebO">
+                                <rect key="frame" x="60" y="15.5" width="78.5" height="19"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="19" id="42W-km-6bU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="16"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fOn-77-F2E">
+                                <rect key="frame" x="335" y="15" width="25" height="19"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="19" id="f91-iC-LN6"/>
+                                    <constraint firstAttribute="width" constant="25" id="rvZ-7p-oZT"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vZ3-u7-MKx">
+                                <rect key="frame" x="10" y="48" width="355" height="1"/>
+                                <color key="backgroundColor" red="0.70588235290000001" green="0.70588235290000001" blue="0.70588235290000001" alpha="0.14999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="x44-Gx-BzJ"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ndD-EK-gu7">
+                                <rect key="frame" x="328" y="0.0" width="47" height="49"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="47" id="BxN-qD-KWA"/>
+                                </constraints>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2l6-Zp-6AC">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="49.5"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="ndD-EK-gu7" secondAttribute="trailing" id="13E-Eg-bAY"/>
+                            <constraint firstAttribute="bottom" secondItem="2l6-Zp-6AC" secondAttribute="bottom" id="2Nz-LR-ZtK"/>
+                            <constraint firstAttribute="bottom" secondItem="vZ3-u7-MKx" secondAttribute="bottom" constant="1" id="2VU-z1-CdB"/>
+                            <constraint firstItem="6xG-T4-ebO" firstAttribute="leading" secondItem="bCg-7o-r5q" secondAttribute="trailing" constant="10" id="6B6-A9-qlm"/>
+                            <constraint firstItem="vZ3-u7-MKx" firstAttribute="leading" secondItem="CTf-YY-l5h" secondAttribute="leading" constant="10" id="7Fy-uZ-pww"/>
+                            <constraint firstItem="6xG-T4-ebO" firstAttribute="centerY" secondItem="CTf-YY-l5h" secondAttribute="centerY" id="DtY-OA-voB"/>
+                            <constraint firstAttribute="trailing" secondItem="2l6-Zp-6AC" secondAttribute="trailing" id="EcQ-JN-QQu"/>
+                            <constraint firstAttribute="trailing" secondItem="fOn-77-F2E" secondAttribute="trailing" constant="15" id="GQB-vO-IeS"/>
+                            <constraint firstItem="ndD-EK-gu7" firstAttribute="height" secondItem="CTf-YY-l5h" secondAttribute="height" id="Ihf-fY-KEt"/>
+                            <constraint firstItem="6xG-T4-ebO" firstAttribute="centerY" secondItem="bCg-7o-r5q" secondAttribute="centerY" id="JUo-f4-gg9"/>
+                            <constraint firstAttribute="height" constant="49.5" id="Mg9-nE-sy4"/>
+                            <constraint firstItem="bCg-7o-r5q" firstAttribute="leading" secondItem="CTf-YY-l5h" secondAttribute="leading" constant="15" id="Qx1-x5-iyN"/>
+                            <constraint firstItem="ndD-EK-gu7" firstAttribute="top" secondItem="CTf-YY-l5h" secondAttribute="top" id="S9H-b0-taq"/>
+                            <constraint firstItem="2l6-Zp-6AC" firstAttribute="top" secondItem="CTf-YY-l5h" secondAttribute="top" id="WqJ-AH-PHU"/>
+                            <constraint firstAttribute="bottom" secondItem="ndD-EK-gu7" secondAttribute="bottom" id="Y03-8U-nR6"/>
+                            <constraint firstAttribute="trailing" secondItem="vZ3-u7-MKx" secondAttribute="trailing" constant="10" id="gyn-8a-xQ7"/>
+                            <constraint firstItem="fOn-77-F2E" firstAttribute="centerY" secondItem="CTf-YY-l5h" secondAttribute="centerY" id="igr-Wj-x7T"/>
+                            <constraint firstItem="2l6-Zp-6AC" firstAttribute="leading" secondItem="CTf-YY-l5h" secondAttribute="leading" id="mPV-Vz-BdP"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="CTf-YY-l5h" secondAttribute="bottom" id="0ka-rH-ojI"/>
+                    <constraint firstAttribute="trailing" secondItem="CTf-YY-l5h" secondAttribute="trailing" id="61E-dy-TYC"/>
+                    <constraint firstItem="CTf-YY-l5h" firstAttribute="leading" secondItem="81c-QF-a3A" secondAttribute="leading" id="jiZ-Ol-jba"/>
+                    <constraint firstItem="CTf-YY-l5h" firstAttribute="top" secondItem="81c-QF-a3A" secondAttribute="top" id="tWe-TQ-SCj"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="ImgView_Check" destination="fOn-77-F2E" id="6XV-yg-4hC"/>
+                <outlet property="ImgView_mainImg" destination="bCg-7o-r5q" id="wbh-Q6-iMf"/>
+                <outlet property="Lbl_title" destination="6xG-T4-ebO" id="ug5-Ip-WlI"/>
+                <outlet property="btn_Check" destination="ndD-EK-gu7" id="Tci-s4-yU2"/>
+                <outlet property="expandList" destination="2l6-Zp-6AC" id="bbv-Aq-mL3"/>
+                <outlet property="imgViewHeight" destination="f91-iC-LN6" id="3lD-bh-UdY"/>
+                <outlet property="imgViewWidth" destination="rvZ-7p-oZT" id="DKd-86-naS"/>
+            </connections>
+            <point key="canvasLocation" x="37.5" y="-255"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="DispensaryIcon" width="100" height="100"/>
+    </resources>
+</document>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Lato-Semibold.ttf">
+            <string>Lato-Semibold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="KeywordChoosecell" rowHeight="35" id="lg4-O5-LPv" customClass="KeywordChoosecell" customModule="BaseProject" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="35"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="lg4-O5-LPv" id="pR2-fn-qZg">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="34.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="saU-pP-QZ7">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="34.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MiQ-BW-5PU">
+                                <rect key="frame" x="15" y="7" width="345" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="TTD-Qt-VI8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Lato-Semibold" family="Lato" pointSize="15"/>
+                                <color key="textColor" red="0.20390012860298157" green="0.20393526554107666" blue="0.20389246940612793" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KuJ-7K-wdG">
+                                <rect key="frame" x="-0.5" y="33.5" width="375" height="1"/>
+                                <color key="backgroundColor" red="0.78013604879379272" green="0.77653712034225464" blue="0.77633905410766602" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="Dmp-i3-nnh"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="KuJ-7K-wdG" secondAttribute="bottom" id="0zY-bW-I45"/>
+                            <constraint firstAttribute="trailing" secondItem="MiQ-BW-5PU" secondAttribute="trailing" constant="15" id="5Oj-RH-Oec"/>
+                            <constraint firstItem="MiQ-BW-5PU" firstAttribute="centerY" secondItem="saU-pP-QZ7" secondAttribute="centerY" id="gzl-vk-d1G"/>
+                            <constraint firstItem="MiQ-BW-5PU" firstAttribute="leading" secondItem="saU-pP-QZ7" secondAttribute="leading" constant="15" id="rfb-uX-trL"/>
+                            <constraint firstAttribute="height" constant="34.5" id="tSo-tc-c9Z"/>
+                            <constraint firstItem="KuJ-7K-wdG" firstAttribute="width" secondItem="saU-pP-QZ7" secondAttribute="width" id="zVC-vB-Y5r"/>
+                            <constraint firstItem="KuJ-7K-wdG" firstAttribute="centerX" secondItem="saU-pP-QZ7" secondAttribute="centerX" id="ziT-Ky-HXj"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="saU-pP-QZ7" secondAttribute="bottom" id="1Bv-cs-YMF"/>
+                    <constraint firstAttribute="trailing" secondItem="saU-pP-QZ7" secondAttribute="trailing" id="75Z-C0-XQe"/>
+                    <constraint firstItem="saU-pP-QZ7" firstAttribute="top" secondItem="pR2-fn-qZg" secondAttribute="top" id="CnO-dD-b3Q"/>
+                    <constraint firstItem="saU-pP-QZ7" firstAttribute="leading" secondItem="pR2-fn-qZg" secondAttribute="leading" id="c1Z-CJ-v7s"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="lblMain" destination="MiQ-BW-5PU" id="Twl-6L-aJQ"/>
+            </connections>
+            <point key="canvasLocation" x="24.5" y="164.5"/>
+        </tableViewCell>
+    </objects>
+</document>

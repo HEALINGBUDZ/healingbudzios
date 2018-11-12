@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Lato-Regular.ttf">
+            <string>Lato-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="BudzGroupChatCell" rowHeight="50" id="gJr-Pu-gDF" customClass="BudzGroupChatCell" customModule="BaseProject" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="gJr-Pu-gDF" id="IcD-i7-aRn">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="49.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Ab-H7-T5x">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49.5"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholderMenu" translatesAutoresizingMaskIntoConstraints="NO" id="eog-Zz-Vzm">
+                                <rect key="frame" x="18" y="11" width="28" height="28"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="28" id="dtg-hS-xBQ"/>
+                                    <constraint firstAttribute="width" constant="28" id="ovV-eN-MWh"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Mb9-4H-vVX">
+                                <rect key="frame" x="14" y="47.5" width="347" height="1"/>
+                                <color key="backgroundColor" red="0.4392156862745098" green="0.43529411764705883" blue="0.43529411764705883" alpha="0.25" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="wAm-jp-jtf"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="json123" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sa9-eU-HTM">
+                                <rect key="frame" x="66" y="16.5" width="50" height="17"/>
+                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="14"/>
+                                <color key="textColor" red="0.55686274509803924" green="0.55686274509803924" blue="0.55686274509803924" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f6E-M1-Xuu">
+                                <rect key="frame" x="305" y="0.0" width="56" height="49"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="block_group_icon" translatesAutoresizingMaskIntoConstraints="NO" id="4v7-4b-TIa">
+                                        <rect key="frame" x="18.5" y="14.5" width="19" height="19"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="19" id="h04-Rk-dpD"/>
+                                            <constraint firstAttribute="width" constant="19" id="hGV-ty-shh"/>
+                                        </constraints>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k21-Lw-z7l">
+                                        <rect key="frame" x="0.0" y="-0.5" width="56" height="49"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="k21-Lw-z7l" firstAttribute="centerY" secondItem="f6E-M1-Xuu" secondAttribute="centerY" id="DEK-Wv-mbv"/>
+                                    <constraint firstItem="4v7-4b-TIa" firstAttribute="centerX" secondItem="f6E-M1-Xuu" secondAttribute="centerX" id="ESn-VY-Adb"/>
+                                    <constraint firstItem="k21-Lw-z7l" firstAttribute="centerX" secondItem="f6E-M1-Xuu" secondAttribute="centerX" id="QRh-jG-432"/>
+                                    <constraint firstAttribute="width" constant="56" id="aKa-7Q-Pwa"/>
+                                    <constraint firstItem="k21-Lw-z7l" firstAttribute="height" secondItem="f6E-M1-Xuu" secondAttribute="height" id="djm-hw-mpH"/>
+                                    <constraint firstItem="k21-Lw-z7l" firstAttribute="width" secondItem="f6E-M1-Xuu" secondAttribute="width" id="eRw-FN-jMP"/>
+                                    <constraint firstItem="4v7-4b-TIa" firstAttribute="centerY" secondItem="f6E-M1-Xuu" secondAttribute="centerY" id="hDJ-BO-SOV"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Mb9-4H-vVX" firstAttribute="leading" secondItem="8Ab-H7-T5x" secondAttribute="leading" constant="14" id="7or-Np-J34"/>
+                            <constraint firstItem="eog-Zz-Vzm" firstAttribute="centerY" secondItem="8Ab-H7-T5x" secondAttribute="centerY" id="I1X-gT-u0P"/>
+                            <constraint firstAttribute="bottom" secondItem="Mb9-4H-vVX" secondAttribute="bottom" constant="1" id="K0f-ga-R5i"/>
+                            <constraint firstAttribute="trailing" secondItem="f6E-M1-Xuu" secondAttribute="trailing" constant="14" id="La8-Oc-48R"/>
+                            <constraint firstItem="Sa9-eU-HTM" firstAttribute="leading" secondItem="eog-Zz-Vzm" secondAttribute="trailing" constant="20" id="TgU-0X-djx"/>
+                            <constraint firstAttribute="height" constant="49.5" id="c4D-5X-hVe"/>
+                            <constraint firstItem="eog-Zz-Vzm" firstAttribute="leading" secondItem="8Ab-H7-T5x" secondAttribute="leading" constant="18" id="dRo-Iv-9NV"/>
+                            <constraint firstAttribute="bottom" secondItem="f6E-M1-Xuu" secondAttribute="bottom" constant="0.5" id="exy-jH-2JM"/>
+                            <constraint firstAttribute="trailing" secondItem="Mb9-4H-vVX" secondAttribute="trailing" constant="14" id="pF2-X6-FUB"/>
+                            <constraint firstItem="Sa9-eU-HTM" firstAttribute="centerY" secondItem="eog-Zz-Vzm" secondAttribute="centerY" id="qJp-LP-8es"/>
+                            <constraint firstItem="f6E-M1-Xuu" firstAttribute="top" secondItem="8Ab-H7-T5x" secondAttribute="top" id="qlu-VM-CRv"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstItem="8Ab-H7-T5x" firstAttribute="leading" secondItem="IcD-i7-aRn" secondAttribute="leading" id="229-n8-NHm"/>
+                    <constraint firstAttribute="trailing" secondItem="8Ab-H7-T5x" secondAttribute="trailing" id="8ud-6r-les"/>
+                    <constraint firstAttribute="bottom" secondItem="8Ab-H7-T5x" secondAttribute="bottom" id="aL9-sc-vhs"/>
+                    <constraint firstItem="8Ab-H7-T5x" firstAttribute="top" secondItem="IcD-i7-aRn" secondAttribute="top" id="l9I-oq-w7n"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="name" destination="Sa9-eU-HTM" id="JmJ-Bm-2oo"/>
+            </connections>
+            <point key="canvasLocation" x="99.5" y="79"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="block_group_icon" width="64" height="64"/>
+        <image name="placeholderMenu" width="284" height="284"/>
+    </resources>
+</document>

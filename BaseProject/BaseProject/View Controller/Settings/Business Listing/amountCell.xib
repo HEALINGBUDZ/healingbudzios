@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Lato-Bold.ttf">
+            <string>Lato-Bold</string>
+        </array>
+        <array key="Lato-Light.ttf">
+            <string>Lato-Light</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="amountCell" rowHeight="80" id="neP-7V-d0j" customClass="amountCell" customModule="BaseProject" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="neP-7V-d0j" id="3L3-vm-rnc">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="79.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hjr-Ko-iZL">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="79.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Amount" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S1N-9r-dt2">
+                                <rect key="frame" x="15" y="15" width="55.5" height="19.5"/>
+                                <fontDescription key="fontDescription" name="Lato-Light" family="Lato" pointSize="16"/>
+                                <color key="textColor" red="0.60392156862745094" green="0.60392156862745094" blue="0.60392156862745094" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="arw-By-5XX">
+                                <rect key="frame" x="15" y="42.5" width="352" height="43.5"/>
+                                <string key="text">Membership fees are billed at the beginning of each plan type you choose and may take a few days after the billing date to appear on your account.</string>
+                                <fontDescription key="fontDescription" name="Lato-Light" family="Lato" pointSize="12"/>
+                                <color key="textColor" red="0.60392156862745094" green="0.60392156862745094" blue="0.60392156862745094" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="drh-sb-YEt">
+                                <rect key="frame" x="360" y="25" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="13"/>
+                                <color key="textColor" red="0.76470588240000004" green="0.76470588240000004" blue="0.76470588240000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="giw-d5-7OS">
+                                <rect key="frame" x="15" y="77.5" width="345" height="1"/>
+                                <color key="backgroundColor" red="0.14117647059999999" green="0.14117647059999999" blue="0.14117647059999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="O03-xy-9BG"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="79.5" id="9rt-Xf-BiW"/>
+                            <constraint firstAttribute="trailing" secondItem="arw-By-5XX" secondAttribute="trailing" constant="8" id="EdE-YM-g4n"/>
+                            <constraint firstItem="arw-By-5XX" firstAttribute="top" secondItem="S1N-9r-dt2" secondAttribute="bottom" constant="8" id="Jgn-zA-J2Z"/>
+                            <constraint firstItem="giw-d5-7OS" firstAttribute="leading" secondItem="Hjr-Ko-iZL" secondAttribute="leading" constant="15" id="N6I-FX-4Tf"/>
+                            <constraint firstItem="drh-sb-YEt" firstAttribute="centerY" secondItem="S1N-9r-dt2" secondAttribute="centerY" id="RT9-bE-eaX"/>
+                            <constraint firstItem="S1N-9r-dt2" firstAttribute="top" secondItem="Hjr-Ko-iZL" secondAttribute="top" constant="15" id="Tnz-NH-kJf"/>
+                            <constraint firstAttribute="bottom" secondItem="giw-d5-7OS" secondAttribute="bottom" constant="1" id="ViR-fG-qQW"/>
+                            <constraint firstAttribute="trailing" secondItem="drh-sb-YEt" secondAttribute="trailing" constant="15" id="Yhj-3t-RlL"/>
+                            <constraint firstItem="arw-By-5XX" firstAttribute="leading" secondItem="Hjr-Ko-iZL" secondAttribute="leading" constant="15" id="Z96-ML-One"/>
+                            <constraint firstItem="S1N-9r-dt2" firstAttribute="leading" secondItem="Hjr-Ko-iZL" secondAttribute="leading" constant="15" id="cM3-Ls-oRC"/>
+                            <constraint firstAttribute="trailing" secondItem="giw-d5-7OS" secondAttribute="trailing" constant="15" id="jOy-Yr-iAh"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstItem="Hjr-Ko-iZL" firstAttribute="leading" secondItem="3L3-vm-rnc" secondAttribute="leading" id="NUZ-Z8-a8i"/>
+                    <constraint firstItem="Hjr-Ko-iZL" firstAttribute="top" secondItem="3L3-vm-rnc" secondAttribute="top" id="WBt-Yn-ZPF"/>
+                    <constraint firstAttribute="bottom" secondItem="Hjr-Ko-iZL" secondAttribute="bottom" id="eo3-nm-E1C"/>
+                    <constraint firstAttribute="trailing" secondItem="Hjr-Ko-iZL" secondAttribute="trailing" id="gii-p0-NpY"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="lblPlanDescription" destination="arw-By-5XX" id="CTQ-6G-Ao2"/>
+                <outlet property="lblPlanName" destination="S1N-9r-dt2" id="7bf-Sv-5CR"/>
+                <outlet property="lblPlanPrice" destination="drh-sb-YEt" id="0Zo-U7-A9X"/>
+            </connections>
+            <point key="canvasLocation" x="24.5" y="36"/>
+        </tableViewCell>
+    </objects>
+</document>

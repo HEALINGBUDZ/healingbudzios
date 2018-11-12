@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Lato-Regular.ttf">
+            <string>Lato-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MainUserTitleHeadingCell" id="DUn-6b-nvf" customClass="MainUserTitleHeadingCell" customModule="BaseProject" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="DUn-6b-nvf" id="JdO-dF-lSN">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cxo-t1-rZi">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="About Me" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1y2-oC-vUB">
+                                <rect key="frame" x="5" y="12.5" width="365" height="20"/>
+                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.46274509800000002" green="0.76470588240000004" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="1y2-oC-vUB" secondAttribute="trailing" constant="5" id="FHr-nL-B7H"/>
+                            <constraint firstItem="1y2-oC-vUB" firstAttribute="centerY" secondItem="cxo-t1-rZi" secondAttribute="centerY" id="MYg-Nm-V8N"/>
+                            <constraint firstItem="1y2-oC-vUB" firstAttribute="centerX" secondItem="cxo-t1-rZi" secondAttribute="centerX" id="XkR-nu-16s"/>
+                            <constraint firstItem="1y2-oC-vUB" firstAttribute="leading" secondItem="cxo-t1-rZi" secondAttribute="leading" constant="5" id="uKI-Fl-XPQ"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="cxo-t1-rZi" secondAttribute="bottom" id="6GB-T3-vh3"/>
+                    <constraint firstAttribute="trailing" secondItem="cxo-t1-rZi" secondAttribute="trailing" id="Ksf-R6-Vfb"/>
+                    <constraint firstItem="cxo-t1-rZi" firstAttribute="leading" secondItem="JdO-dF-lSN" secondAttribute="leading" id="PnK-mb-ltX"/>
+                    <constraint firstItem="cxo-t1-rZi" firstAttribute="top" secondItem="JdO-dF-lSN" secondAttribute="top" id="n6S-mw-nmG"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="lblMain" destination="1y2-oC-vUB" id="0tp-kf-CSO"/>
+            </connections>
+            <point key="canvasLocation" x="9.5" y="-188"/>
+        </tableViewCell>
+    </objects>
+</document>

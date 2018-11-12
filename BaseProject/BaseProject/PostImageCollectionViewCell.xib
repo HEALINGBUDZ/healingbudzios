@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PostImageCollectionViewCell" id="gTV-IL-0wX" customClass="PostImageCollectionViewCell" customModule="BaseProject" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="398" height="154"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="398" height="154"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="ane-Zx-Y0j" customClass="FLAnimatedImageView">
+                        <rect key="frame" x="0.0" y="0.0" width="398" height="154"/>
+                    </imageView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Video_play_icon_White" translatesAutoresizingMaskIntoConstraints="NO" id="ccp-hu-06M">
+                        <rect key="frame" x="179.5" y="57" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="ccp-hu-06M" secondAttribute="height" multiplier="1:1" id="bY0-WR-uM7"/>
+                            <constraint firstAttribute="width" constant="40" id="t08-jX-4S6"/>
+                        </constraints>
+                    </imageView>
+                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OHH-gf-e32" customClass="GradientTopBottomView" customModule="BaseProject" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="398" height="154"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zQ1-qw-VwZ">
+                                <rect key="frame" x="368" y="10" width="20" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="GEW-ts-6Tc"/>
+                                    <constraint firstAttribute="width" constant="20" id="WrE-fh-ehb"/>
+                                </constraints>
+                                <state key="normal" image="icon-cancel"/>
+                                <connections>
+                                    <action selector="deleteButtonTapped" destination="gTV-IL-0wX" eventType="touchUpInside" id="CKC-Ma-vjM"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="zQ1-qw-VwZ" secondAttribute="trailing" constant="10" id="TFa-up-u66"/>
+                            <constraint firstItem="zQ1-qw-VwZ" firstAttribute="top" secondItem="OHH-gf-e32" secondAttribute="top" constant="10" id="mdm-I9-JcR"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="leftGradientColor">
+                                <color key="value" white="0.0" alpha="0.096800085616438353" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="rightGradientColor">
+                                <color key="value" white="0.0" alpha="0.26522367294520549" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <color key="backgroundColor" red="0.1450980392" green="0.1450980392" blue="0.1450980392" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="OHH-gf-e32" firstAttribute="top" secondItem="ane-Zx-Y0j" secondAttribute="top" id="BQS-Ud-myK"/>
+                <constraint firstItem="ane-Zx-Y0j" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="JXC-Dy-nip"/>
+                <constraint firstItem="ccp-hu-06M" firstAttribute="centerY" secondItem="ZTg-uK-7eu" secondAttribute="centerY" id="Uxv-Jr-5zT"/>
+                <constraint firstAttribute="bottom" secondItem="ane-Zx-Y0j" secondAttribute="bottom" id="VVn-CQ-mwB"/>
+                <constraint firstItem="ane-Zx-Y0j" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="WZE-5X-Ph1"/>
+                <constraint firstItem="OHH-gf-e32" firstAttribute="bottom" secondItem="ane-Zx-Y0j" secondAttribute="bottom" id="Z1R-Ic-Wtc"/>
+                <constraint firstItem="ccp-hu-06M" firstAttribute="centerX" secondItem="ZTg-uK-7eu" secondAttribute="centerX" id="Z3k-cl-qqX"/>
+                <constraint firstItem="OHH-gf-e32" firstAttribute="leading" secondItem="ane-Zx-Y0j" secondAttribute="leading" id="Z4K-H8-Lg4"/>
+                <constraint firstAttribute="trailing" secondItem="ane-Zx-Y0j" secondAttribute="trailing" id="ece-NW-Udr"/>
+                <constraint firstItem="OHH-gf-e32" firstAttribute="height" secondItem="ane-Zx-Y0j" secondAttribute="height" id="wqe-4J-qPU"/>
+                <constraint firstItem="OHH-gf-e32" firstAttribute="trailing" secondItem="ane-Zx-Y0j" secondAttribute="trailing" id="zNr-ZT-7se"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="401" height="154"/>
+            <connections>
+                <outlet property="deleteButton" destination="zQ1-qw-VwZ" id="3TN-0O-FIj"/>
+                <outlet property="imageView" destination="ane-Zx-Y0j" id="c5M-lK-5en"/>
+                <outlet property="shadeView" destination="OHH-gf-e32" id="q1J-Qh-YsE"/>
+                <outlet property="videoIconImageView" destination="ccp-hu-06M" id="Td7-gQ-YSq"/>
+            </connections>
+            <point key="canvasLocation" x="-1.5" y="151"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="Video_play_icon_White" width="32" height="32"/>
+        <image name="icon-cancel" width="39" height="39"/>
+        <image name="placeholder" width="640" height="307"/>
+    </resources>
+</document>

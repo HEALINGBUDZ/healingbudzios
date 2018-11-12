@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Lato-Regular.ttf">
+            <string>Lato-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TextDetailCell" rowHeight="50" id="UI4-Xo-vOs" customClass="TextDetailCell" customModule="BaseProject" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="UI4-Xo-vOs" id="g77-gU-O58">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="49.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gPg-Zc-aI1">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bai-Cn-VBL" customClass="ActiveLabel" customModule="ActiveLabel">
+                                <rect key="frame" x="15" y="5" width="345" height="39.5"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="39.5" id="r2F-e7-Q5W"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="12"/>
+                                <color key="textColor" red="0.49019607843137253" green="0.49019607843137253" blue="0.49019607843137253" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="aP8-bH-a2c">
+                                <rect key="frame" x="0.0" y="47.5" width="375" height="1"/>
+                                <color key="backgroundColor" red="0.70588235290000001" green="0.70588235290000001" blue="0.70588235290000001" alpha="0.14999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="xEd-kj-2eA"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="bai-Cn-VBL" firstAttribute="top" secondItem="gPg-Zc-aI1" secondAttribute="top" constant="5" id="3PU-lQ-9WU"/>
+                            <constraint firstItem="aP8-bH-a2c" firstAttribute="centerX" secondItem="gPg-Zc-aI1" secondAttribute="centerX" id="6bB-V8-j6f"/>
+                            <constraint firstAttribute="bottom" secondItem="aP8-bH-a2c" secondAttribute="bottom" constant="1" id="AJN-mQ-fTh"/>
+                            <constraint firstItem="bai-Cn-VBL" firstAttribute="leading" secondItem="gPg-Zc-aI1" secondAttribute="leading" constant="15" id="Jqe-OQ-ua4"/>
+                            <constraint firstAttribute="bottom" secondItem="bai-Cn-VBL" secondAttribute="bottom" constant="5" id="PLH-9V-0EF"/>
+                            <constraint firstItem="aP8-bH-a2c" firstAttribute="width" secondItem="gPg-Zc-aI1" secondAttribute="width" id="ajV-LJ-0X0"/>
+                            <constraint firstAttribute="trailing" secondItem="bai-Cn-VBL" secondAttribute="trailing" constant="15" id="yeL-EF-iNb"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstItem="gPg-Zc-aI1" firstAttribute="top" secondItem="g77-gU-O58" secondAttribute="top" id="33W-yV-wJk"/>
+                    <constraint firstAttribute="trailing" secondItem="gPg-Zc-aI1" secondAttribute="trailing" id="YIu-J6-1ie"/>
+                    <constraint firstAttribute="bottom" secondItem="gPg-Zc-aI1" secondAttribute="bottom" id="gfa-3O-9N4"/>
+                    <constraint firstItem="gPg-Zc-aI1" firstAttribute="leading" secondItem="g77-gU-O58" secondAttribute="leading" id="ptW-cB-JJ7"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="lblDetailText" destination="bai-Cn-VBL" id="VBa-r3-mOm"/>
+            </connections>
+            <point key="canvasLocation" x="12.5" y="47"/>
+        </tableViewCell>
+    </objects>
+</document>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Lato-Regular.ttf">
+            <string>Lato-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="StrainTextSearchCell" rowHeight="73" id="lBZ-ML-yFx" customClass="StrainTextSearchCell" customModule="BaseProject" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="73"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="lBZ-ML-yFx" id="KJw-Xx-wQr">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="72.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Y5B-Db-CL1">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="70.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZUW-tA-iYR">
+                                <rect key="frame" x="15" y="5" width="345" height="23"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="23" id="1Qb-qk-KdL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h59-8a-WzT" customClass="RoundView" customModule="BaseProject" customModuleProvider="target">
+                                <rect key="frame" x="15" y="33" width="345" height="35"/>
+                                <subviews>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Begin typing search term" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="bKi-uK-zEd" customClass="AAPickerView" customModule="AAPickerView">
+                                        <rect key="frame" x="5" y="2" width="335" height="31"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="13"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="bKi-uK-zEd" firstAttribute="top" secondItem="h59-8a-WzT" secondAttribute="top" constant="2" id="0w7-Pd-f8l"/>
+                                    <constraint firstAttribute="bottom" secondItem="bKi-uK-zEd" secondAttribute="bottom" constant="2" id="6QR-1a-NsK"/>
+                                    <constraint firstItem="bKi-uK-zEd" firstAttribute="leading" secondItem="h59-8a-WzT" secondAttribute="leading" constant="5" id="EB4-Ei-6Tg"/>
+                                    <constraint firstAttribute="trailing" secondItem="bKi-uK-zEd" secondAttribute="trailing" constant="5" id="GYP-cc-ZTg"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="h59-8a-WzT" firstAttribute="top" secondItem="ZUW-tA-iYR" secondAttribute="bottom" constant="5" id="2Rg-wK-4jf"/>
+                            <constraint firstItem="ZUW-tA-iYR" firstAttribute="top" secondItem="Y5B-Db-CL1" secondAttribute="top" constant="5" id="Bzb-TS-r9A"/>
+                            <constraint firstAttribute="height" constant="70.5" id="IHz-Mb-VIf"/>
+                            <constraint firstItem="h59-8a-WzT" firstAttribute="centerX" secondItem="ZUW-tA-iYR" secondAttribute="centerX" id="IVq-CB-CPu"/>
+                            <constraint firstItem="ZUW-tA-iYR" firstAttribute="leading" secondItem="Y5B-Db-CL1" secondAttribute="leading" constant="15" id="KtR-yO-EJn"/>
+                            <constraint firstAttribute="trailing" secondItem="ZUW-tA-iYR" secondAttribute="trailing" constant="15" id="OVi-S7-Cp9"/>
+                            <constraint firstAttribute="bottom" secondItem="h59-8a-WzT" secondAttribute="bottom" constant="2.5" id="RKf-E1-ETE"/>
+                            <constraint firstItem="h59-8a-WzT" firstAttribute="width" secondItem="ZUW-tA-iYR" secondAttribute="width" id="bBg-Dj-lgJ"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstItem="Y5B-Db-CL1" firstAttribute="top" secondItem="KJw-Xx-wQr" secondAttribute="top" id="EwK-jM-RKh"/>
+                    <constraint firstAttribute="trailing" secondItem="Y5B-Db-CL1" secondAttribute="trailing" id="RhH-do-INy"/>
+                    <constraint firstItem="Y5B-Db-CL1" firstAttribute="leading" secondItem="KJw-Xx-wQr" secondAttribute="leading" id="SWV-UC-kvK"/>
+                    <constraint firstAttribute="bottom" secondItem="Y5B-Db-CL1" secondAttribute="bottom" constant="2" id="sSH-GQ-F8u"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="lbl_Heading" destination="ZUW-tA-iYR" id="5o9-K5-WgJ"/>
+                <outlet property="txtFieldMain" destination="bKi-uK-zEd" id="5z6-br-gdE"/>
+            </connections>
+            <point key="canvasLocation" x="27.5" y="12.5"/>
+        </tableViewCell>
+    </objects>
+</document>

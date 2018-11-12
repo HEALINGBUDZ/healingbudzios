@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Lato-Bold.ttf">
+            <string>Lato-Bold</string>
+        </array>
+        <array key="Lato-Regular.ttf">
+            <string>Lato-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="168" id="KGk-i7-Jjw" customClass="HeaderDetailCell" customModule="BaseProject" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="364" height="168"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="364" height="167.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OE7-ER-qCc">
+                        <rect key="frame" x="0.0" y="0.0" width="364" height="167.5"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="reward_icon" translatesAutoresizingMaskIntoConstraints="NO" id="5Um-XW-Lhq">
+                                <rect key="frame" x="142" y="15" width="80" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="Dvd-Gj-bFy"/>
+                                    <constraint firstAttribute="height" constant="80" id="g1K-ug-lFl"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Current Reward Points" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2TB-Yb-iY4">
+                                <rect key="frame" x="97" y="103" width="170" height="17"/>
+                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="14"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2,314" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P8n-vm-NWe">
+                                <rect key="frame" x="146.5" y="123" width="72" height="34"/>
+                                <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="28"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="P8n-vm-NWe" firstAttribute="centerX" secondItem="2TB-Yb-iY4" secondAttribute="centerX" id="28e-CU-jfL"/>
+                            <constraint firstItem="5Um-XW-Lhq" firstAttribute="centerX" secondItem="OE7-ER-qCc" secondAttribute="centerX" id="IaJ-Cb-ytk"/>
+                            <constraint firstItem="2TB-Yb-iY4" firstAttribute="centerX" secondItem="5Um-XW-Lhq" secondAttribute="centerX" id="IvM-Bn-yZV"/>
+                            <constraint firstAttribute="bottom" secondItem="P8n-vm-NWe" secondAttribute="bottom" constant="10.5" id="MWk-6J-5Jc"/>
+                            <constraint firstItem="5Um-XW-Lhq" firstAttribute="top" secondItem="OE7-ER-qCc" secondAttribute="top" constant="15" id="Nbm-ez-oGk"/>
+                            <constraint firstItem="P8n-vm-NWe" firstAttribute="top" secondItem="2TB-Yb-iY4" secondAttribute="bottom" constant="3" id="Y5h-tZ-wHC"/>
+                            <constraint firstItem="2TB-Yb-iY4" firstAttribute="top" secondItem="5Um-XW-Lhq" secondAttribute="bottom" constant="8" id="fMK-AC-dFM"/>
+                            <constraint firstAttribute="height" constant="167.5" id="lq6-K6-U41"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="OE7-ER-qCc" secondAttribute="bottom" id="WlL-Zf-MFh"/>
+                    <constraint firstItem="OE7-ER-qCc" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="aAJ-i4-jyA"/>
+                    <constraint firstAttribute="trailing" secondItem="OE7-ER-qCc" secondAttribute="trailing" id="d2Z-bY-wMg"/>
+                    <constraint firstItem="OE7-ER-qCc" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="faS-gZ-SqR"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="points" destination="P8n-vm-NWe" id="gmt-vg-n7a"/>
+            </connections>
+            <point key="canvasLocation" x="56" y="116"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="reward_icon" width="120" height="162"/>
+    </resources>
+</document>

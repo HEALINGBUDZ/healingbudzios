@@ -1,0 +1,185 @@
+PODS:
+  - AACarousel (1.1.0)
+  - AAPickerView (0.1.1)
+  - ActiveLabel (0.7.1)
+  - ADEmailAndPassword (1.0.15)
+  - Alamofire (4.3.0)
+  - AlamofireImage (3.2.0):
+    - Alamofire (~> 4.1)
+  - Bolts (1.9.0):
+    - Bolts/AppLinks (= 1.9.0)
+    - Bolts/Tasks (= 1.9.0)
+  - Bolts/AppLinks (1.9.0):
+    - Bolts/Tasks
+  - Bolts/Tasks (1.9.0)
+  - Cosmos (12.0.1)
+  - Crashlytics (3.10.0):
+    - Fabric (~> 1.7.3)
+  - DottedLineView (1.0.0)
+  - Fabric (1.7.3)
+  - FacebookCore (0.3.0):
+    - Bolts (~> 1.8)
+    - FBSDKCoreKit (~> 4.27)
+  - FacebookLogin (0.3.0):
+    - Bolts (~> 1.8)
+    - FacebookCore (~> 0.3)
+    - FBSDKCoreKit (~> 4.27)
+    - FBSDKLoginKit (~> 4.27)
+  - FacebookShare (0.3.0):
+    - Bolts (~> 1.8)
+    - FacebookCore (~> 0.3)
+    - FBSDKCoreKit (~> 4.27)
+    - FBSDKShareKit (~> 4.27)
+  - FBSDKCoreKit (4.30.0):
+    - Bolts (~> 1.7)
+  - FBSDKLoginKit (4.30.0):
+    - FBSDKCoreKit
+  - FBSDKShareKit (4.30.0):
+    - FBSDKCoreKit (~> 4.30.0)
+  - GCNetworkReachability (1.3.2)
+  - GoogleSignIn (4.1.2):
+    - GoogleToolboxForMac/NSDictionary+URLArguments (~> 2.1)
+    - GoogleToolboxForMac/NSString+URLArguments (~> 2.1)
+    - GTMOAuth2 (~> 1.0)
+    - GTMSessionFetcher/Core (~> 1.1)
+  - GoogleToolboxForMac/DebugUtils (2.1.3):
+    - GoogleToolboxForMac/Defines (= 2.1.3)
+  - GoogleToolboxForMac/Defines (2.1.3)
+  - GoogleToolboxForMac/NSDictionary+URLArguments (2.1.3):
+    - GoogleToolboxForMac/DebugUtils (= 2.1.3)
+    - GoogleToolboxForMac/Defines (= 2.1.3)
+    - GoogleToolboxForMac/NSString+URLArguments (= 2.1.3)
+  - GoogleToolboxForMac/NSString+URLArguments (2.1.3)
+  - GrowingTextView (0.5.5)
+  - GTMOAuth2 (1.1.6):
+    - GTMSessionFetcher (~> 1.1)
+  - GTMSessionFetcher (1.1.13):
+    - GTMSessionFetcher/Full (= 1.1.13)
+  - GTMSessionFetcher/Core (1.1.13)
+  - GTMSessionFetcher/Full (1.1.13):
+    - GTMSessionFetcher/Core (= 1.1.13)
+  - IQKeyboardManager (5.0.7)
+  - Kingfisher (4.6.2)
+  - KUIPopOver (1.0.3)
+  - libwebp (0.6.0):
+    - libwebp/core (= 0.6.0)
+    - libwebp/dec (= 0.6.0)
+    - libwebp/demux (= 0.6.0)
+    - libwebp/dsp (= 0.6.0)
+    - libwebp/enc (= 0.6.0)
+    - libwebp/mux (= 0.6.0)
+    - libwebp/utils (= 0.6.0)
+    - libwebp/webp (= 0.6.0)
+  - libwebp/core (0.6.0):
+    - libwebp/webp
+  - libwebp/dec (0.6.0):
+    - libwebp/core
+  - libwebp/demux (0.6.0):
+    - libwebp/core
+  - libwebp/dsp (0.6.0):
+    - libwebp/core
+  - libwebp/enc (0.6.0):
+    - libwebp/core
+  - libwebp/mux (0.6.0):
+    - libwebp/core
+  - libwebp/utils (0.6.0):
+    - libwebp/core
+  - libwebp/webp (0.6.0)
+  - MBProgressHUD (1.0.0)
+  - moa (8.0.4)
+  - ObjectMapper (3.1.0)
+  - OneSignal (2.6.2)
+  - Popover (1.2.0)
+  - SDWebImage/Core (4.3.3)
+  - SDWebImage/WebP (4.3.3):
+    - libwebp (~> 0.5)
+    - SDWebImage/Core
+  - Socket.IO-Client-Swift (11.1.3):
+    - StarscreamSocketIO (~> 8.0.5)
+  - StarscreamSocketIO (8.0.7)
+  - Stripe (12.1.0)
+  - SwiftSVG (2.1.3)
+  - SwiftyJSON (3.1.4)
+  - ZFTokenField (0.0.1)
+  - UICircularProgressRing (1.8.4)
+
+DEPENDENCIES:
+  - AACarousel
+  - AAPickerView (< 0.1.2)
+  - ActiveLabel (~> 0.7.1)
+  - ADEmailAndPassword (= 1.0.15)
+  - Alamofire (= 4.3.0)
+  - AlamofireImage
+  - Cosmos (= 12.0.1)
+  - Crashlytics
+  - DottedLineView (= 1.0.0)
+  - Fabric
+  - FacebookCore
+  - FacebookLogin
+  - FacebookShare
+  - GCNetworkReachability (~> 1.3.2)
+  - GoogleSignIn
+  - GrowingTextView (~> 0.5.5)
+  - IQKeyboardManager
+  - Kingfisher
+  - KUIPopOver (~> 1.0.0)
+  - MBProgressHUD (~> 1.0.0)
+  - moa (~> 8.0)
+  - ObjectMapper
+  - OneSignal (< 3.0, >= 2.6.2)
+  - Popover
+  - SDWebImage/WebP
+  - Socket.IO-Client-Swift (= 11.1.3)
+  - Stripe
+  - SwiftSVG (~> 2.0)
+  - SwiftyJSON (= 3.1.4)
+  - ZFTokenField
+  - UICircularProgressRing
+
+SPEC CHECKSUMS:
+  AACarousel: 6131fa3650201a3ce10b6581621f3cade221b079
+  AAPickerView: c788b8685e66d782670477e72a901f7061cf86cd
+  ActiveLabel: 68625f22775f51c31bb691ca8de20f1e5a3bc825
+  ADEmailAndPassword: 8030215991923ddd82767742c01ab58325cfeb0a
+  Alamofire: 856a113053a7bc9cbe5d6367a555d773fc5cfef7
+  AlamofireImage: 157ed682cc81d3b9db4fb90c1f12180ac552d93b
+  Bolts: ac6567323eac61e203f6a9763667d0f711be34c8
+  Cosmos: 4a9f57998a08788a1062c7b8eefbc62d2b590f39
+  Crashlytics: a989ef242b66605577a425733797f810bd2725eb
+  DottedLineView: 750c5aee6eae69f9bc9acd3bc6ee9938e35856bb
+  Fabric: bb495bb9a7a7677c6d03a1f8b83d95bc49b47e41
+  FacebookCore: 3ffa190a3f1f96cec0e44d3fc221bc322c595ffa
+  FacebookLogin: 0af839ea858faef99550d16596b87b4a8e8906e6
+  FacebookShare: 0469964297ebd75f052be2c5083389a4208e82b7
+  FBSDKCoreKit: 7c4bba2877781a131ab5d54c0a78c405d4307b62
+  FBSDKLoginKit: fe7a7e82373dc5daad92e1623219e86224ab1fb1
+  FBSDKShareKit: a9427574b51bde4f437262c3f118c4ccfddeef6c
+  GCNetworkReachability: 2a7dd53d362220326b3e38df68c91b3ef84418d1
+  GoogleSignIn: d9ef55b10f0aa401a5de2747f59b725e4b9732ac
+  GoogleToolboxForMac: 2501e2ad72a52eb3dfe7bd9aee7dad11b858bd20
+  GrowingTextView: 8ea0aa547c567521ab066452c12784a460ff6e8d
+  GTMOAuth2: c77fe325e4acd453837e72d91e3b5f13116857b2
+  GTMSessionFetcher: 5bb1eae636127de695590f50e7d248483eb891e6
+  IQKeyboardManager: 0bfa4607d39924116b5c0c8b55b5d789288b5cba
+  Kingfisher: 55b9c395bf8d3949676ad3861111923990ab68cf
+  KUIPopOver: 48fcf4631a12cc5bf2d3a1d2aae009771f479526
+  libwebp: 1d5a07c2eb97f9c31bd5f154bb82efc0ea67c6a2
+  MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
+  moa: 954e2ad962886626d02c3486dd3a7bb5f0052d14
+  ObjectMapper: 20505058f54e5c3ca69e1d6de9897d152a5369a6
+  OneSignal: 95127bce89b9e495079e7205e3d47c88590b5750
+  Popover: 28c1ac8e937ab2b3965bd2da7dd18324357abc41
+  SDWebImage: de4d90b5bff3571eae7bd16202b1f43135409fa5
+  Socket.IO-Client-Swift: b8e59ddc16bc3609ca2f49a4b50253f095d535c8
+  StarscreamSocketIO: 00b54e4208481ca5cef089545353aaf126bae16d
+  Stripe: de8bffa8e6813f678d526c52f416fe224141fa09
+  SwiftSVG: be367ab53452c7d0fa5a2091605166d9f8852a89
+  SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
+  ZFTokenField: 3e3ed288e32e085bb8f9c38b4eeb3806711b475a
+
+
+  UICircularProgressRing: 653b31f7252b2959e8234f5b9ea5f925da755954
+
+PODFILE CHECKSUM: b6cee83267ec0ad62df14b78463e167677ab4f27
+
+COCOAPODS: 1.4.0

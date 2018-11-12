@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="premiumCell" rowHeight="68" id="Agz-vd-xbi" customClass="premiumCell" customModule="BaseProject" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Agz-vd-xbi" id="QoA-vX-7T9">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="49.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eJP-J1-r5P">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49.5"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="75f-6g-G4Q">
+                                <rect key="frame" x="15" y="47" width="345" height="1"/>
+                                <color key="backgroundColor" red="0.14117647059999999" green="0.14117647059999999" blue="0.14117647059999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="8Ag-9N-RXh"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Premium" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vfd-K7-QhQ">
+                                <rect key="frame" x="15" y="14" width="57" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.64313725490196072" green="0.64313725490196072" blue="0.64313725490196072" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aCK-qc-9GK" customClass="RoundButton" customModule="BaseProject" customModuleProvider="target">
+                                <rect key="frame" x="175" y="9" width="185" height="30"/>
+                                <color key="backgroundColor" red="0.76470588235294112" green="0.76470588235294112" blue="0.76470588235294112" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="185" id="gNO-0c-9wP"/>
+                                </constraints>
+                                <state key="normal" title="CANCEL MEMBERSHIP">
+                                    <color key="titleColor" red="0.30980392156862746" green="0.30980392156862746" blue="0.30980392156862746" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="aCK-qc-9GK" firstAttribute="centerY" secondItem="vfd-K7-QhQ" secondAttribute="centerY" id="4Mi-YG-YkN"/>
+                            <constraint firstAttribute="height" constant="49.5" id="XVu-uK-seY"/>
+                            <constraint firstItem="75f-6g-G4Q" firstAttribute="leading" secondItem="eJP-J1-r5P" secondAttribute="leading" constant="15" id="bkJ-Jw-cCZ"/>
+                            <constraint firstAttribute="bottom" secondItem="vfd-K7-QhQ" secondAttribute="bottom" constant="14.5" id="erC-Ml-Dsw"/>
+                            <constraint firstItem="vfd-K7-QhQ" firstAttribute="leading" secondItem="eJP-J1-r5P" secondAttribute="leading" constant="15" id="lnQ-cs-Aet"/>
+                            <constraint firstItem="vfd-K7-QhQ" firstAttribute="top" secondItem="eJP-J1-r5P" secondAttribute="top" constant="14" id="s0X-yU-ehn"/>
+                            <constraint firstAttribute="bottom" secondItem="75f-6g-G4Q" secondAttribute="bottom" constant="1" id="uGf-PR-8mr"/>
+                            <constraint firstAttribute="trailing" secondItem="aCK-qc-9GK" secondAttribute="trailing" constant="15" id="xHT-xt-9PO"/>
+                            <constraint firstAttribute="trailing" secondItem="75f-6g-G4Q" secondAttribute="trailing" constant="15" id="ylh-i0-j68"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="eJP-J1-r5P" secondAttribute="trailing" id="P4f-Ji-6d0"/>
+                    <constraint firstItem="eJP-J1-r5P" firstAttribute="leading" secondItem="QoA-vX-7T9" secondAttribute="leading" id="XJY-4a-y4v"/>
+                    <constraint firstItem="eJP-J1-r5P" firstAttribute="top" secondItem="QoA-vX-7T9" secondAttribute="top" id="d0J-p7-fYN"/>
+                    <constraint firstAttribute="bottom" secondItem="eJP-J1-r5P" secondAttribute="bottom" id="eod-19-gjd"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <point key="canvasLocation" x="29.5" y="13"/>
+        </tableViewCell>
+    </objects>
+</document>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Lato-Regular.ttf">
+            <string>Lato-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="notificationsMainHeadingCell" rowHeight="44" id="5Of-Sw-NRl" customClass="notificationsMainHeadingCell" customModule="BaseProject" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="5Of-Sw-NRl" id="Dbt-rY-0w9">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pEs-a9-060">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="General" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8GY-Te-OGM">
+                                <rect key="frame" x="15" y="11" width="62" height="22"/>
+                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="18"/>
+                                <color key="textColor" red="0.48627450980392156" green="0.75686274509803919" blue="0.26666666666666666" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="43.5" id="9Iz-oL-dR6"/>
+                            <constraint firstItem="8GY-Te-OGM" firstAttribute="leading" secondItem="pEs-a9-060" secondAttribute="leading" constant="15" id="FSQ-Ff-HF7"/>
+                            <constraint firstItem="8GY-Te-OGM" firstAttribute="centerY" secondItem="pEs-a9-060" secondAttribute="centerY" id="Q1o-52-7iw"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="pEs-a9-060" secondAttribute="trailing" id="2Db-Ty-tzE"/>
+                    <constraint firstAttribute="bottom" secondItem="pEs-a9-060" secondAttribute="bottom" id="3sq-Th-yL3"/>
+                    <constraint firstItem="pEs-a9-060" firstAttribute="leading" secondItem="Dbt-rY-0w9" secondAttribute="leading" id="9ya-Nc-axQ"/>
+                    <constraint firstItem="pEs-a9-060" firstAttribute="top" secondItem="Dbt-rY-0w9" secondAttribute="top" id="er5-uK-AoR"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="title" destination="8GY-Te-OGM" id="yvv-iw-opG"/>
+            </connections>
+            <point key="canvasLocation" x="16.5" y="-65"/>
+        </tableViewCell>
+    </objects>
+</document>

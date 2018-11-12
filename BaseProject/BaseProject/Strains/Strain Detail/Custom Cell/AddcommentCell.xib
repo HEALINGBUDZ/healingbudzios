@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Lato-Bold.ttf">
+            <string>Lato-Bold</string>
+        </array>
+        <array key="Lato-Regular.ttf">
+            <string>Lato-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="AddcommentCell" rowHeight="71" id="hPZ-c0-U62" customClass="AddcommentCell" customModule="BaseProject" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="71"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="hPZ-c0-U62" id="d9H-mq-QRY">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="70.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ky9-VT-JRT">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="70.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="200 Reviews" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cdv-3X-8tR">
+                                <rect key="frame" x="15" y="23" width="101" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="HDU-mA-oEQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="18"/>
+                                <color key="textColor" red="0.95686274509803915" green="0.76862745098039209" blue="0.18431372549019609" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sbq-2e-gvu">
+                                <rect key="frame" x="15" y="22.5" width="101" height="25"/>
+                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="17"/>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MG9-N3-3rD" customClass="RoundView" customModule="BaseProject" customModuleProvider="target">
+                                <rect key="frame" x="210" y="15" width="150" height="40.5"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="comment_black" translatesAutoresizingMaskIntoConstraints="NO" id="q0M-4m-FuX">
+                                        <rect key="frame" x="10" y="9.5" width="20" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="Fkp-dm-g4f"/>
+                                            <constraint firstAttribute="width" constant="20" id="sH3-u1-kNe"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add Review" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n8z-ZN-k9W">
+                                        <rect key="frame" x="35" y="11.5" width="105" height="17"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="17" id="Wy9-8j-dv5"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="14"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oo4-iJ-4ZF">
+                                        <rect key="frame" x="0.0" y="0.0" width="150" height="40.5"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.95686274509803915" green="0.76862745098039209" blue="0.18431372549019609" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="n8z-ZN-k9W" firstAttribute="centerY" secondItem="q0M-4m-FuX" secondAttribute="centerY" id="5GQ-s2-Do4"/>
+                                    <constraint firstItem="Oo4-iJ-4ZF" firstAttribute="centerX" secondItem="MG9-N3-3rD" secondAttribute="centerX" id="759-nC-7L1"/>
+                                    <constraint firstAttribute="width" constant="150" id="HNs-Xp-19P"/>
+                                    <constraint firstAttribute="trailing" secondItem="n8z-ZN-k9W" secondAttribute="trailing" constant="10" id="IQz-uB-mN7"/>
+                                    <constraint firstItem="Oo4-iJ-4ZF" firstAttribute="height" secondItem="MG9-N3-3rD" secondAttribute="height" id="O5n-kz-lEv"/>
+                                    <constraint firstItem="n8z-ZN-k9W" firstAttribute="leading" secondItem="q0M-4m-FuX" secondAttribute="trailing" constant="5" id="X1V-Gl-1NP"/>
+                                    <constraint firstItem="Oo4-iJ-4ZF" firstAttribute="width" secondItem="MG9-N3-3rD" secondAttribute="width" id="fdZ-D4-FuL"/>
+                                    <constraint firstItem="q0M-4m-FuX" firstAttribute="centerY" secondItem="MG9-N3-3rD" secondAttribute="centerY" id="kMO-BC-aOm"/>
+                                    <constraint firstItem="Oo4-iJ-4ZF" firstAttribute="centerY" secondItem="MG9-N3-3rD" secondAttribute="centerY" id="nvC-OE-rBe"/>
+                                    <constraint firstItem="q0M-4m-FuX" firstAttribute="leading" secondItem="MG9-N3-3rD" secondAttribute="leading" constant="10" id="oec-ng-vzN"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Sbq-2e-gvu" firstAttribute="centerX" secondItem="cdv-3X-8tR" secondAttribute="centerX" id="2Vb-xX-v9h"/>
+                            <constraint firstItem="MG9-N3-3rD" firstAttribute="top" secondItem="ky9-VT-JRT" secondAttribute="top" constant="15" id="3ZU-sQ-BUw"/>
+                            <constraint firstItem="cdv-3X-8tR" firstAttribute="centerY" secondItem="MG9-N3-3rD" secondAttribute="centerY" id="4pK-Xt-Or3"/>
+                            <constraint firstAttribute="bottom" secondItem="MG9-N3-3rD" secondAttribute="bottom" constant="15" id="Lxo-Ve-E6D"/>
+                            <constraint firstItem="Sbq-2e-gvu" firstAttribute="height" secondItem="cdv-3X-8tR" secondAttribute="height" id="Xed-Jq-2pS"/>
+                            <constraint firstAttribute="trailing" secondItem="MG9-N3-3rD" secondAttribute="trailing" constant="15" id="pkp-KM-Odl"/>
+                            <constraint firstItem="Sbq-2e-gvu" firstAttribute="width" secondItem="cdv-3X-8tR" secondAttribute="width" id="sWR-lg-e7w"/>
+                            <constraint firstItem="cdv-3X-8tR" firstAttribute="leading" secondItem="ky9-VT-JRT" secondAttribute="leading" constant="15" id="w5H-rN-o07"/>
+                            <constraint firstItem="Sbq-2e-gvu" firstAttribute="centerY" secondItem="cdv-3X-8tR" secondAttribute="centerY" id="wtJ-xu-zDG"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstItem="ky9-VT-JRT" firstAttribute="leading" secondItem="d9H-mq-QRY" secondAttribute="leading" id="0Fc-rZ-gLT"/>
+                    <constraint firstItem="ky9-VT-JRT" firstAttribute="top" secondItem="d9H-mq-QRY" secondAttribute="top" id="OO4-Vx-iJP"/>
+                    <constraint firstAttribute="bottom" secondItem="ky9-VT-JRT" secondAttribute="bottom" id="THc-yl-fd9"/>
+                    <constraint firstAttribute="trailing" secondItem="ky9-VT-JRT" secondAttribute="trailing" id="b3w-un-swW"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="btn_AddComment" destination="Oo4-iJ-4ZF" id="ATe-KH-TkT"/>
+                <outlet property="btn_ShowComment" destination="Sbq-2e-gvu" id="fAp-mB-8tJ"/>
+                <outlet property="lblReviewCount" destination="cdv-3X-8tR" id="UPI-BZ-7FR"/>
+            </connections>
+            <point key="canvasLocation" x="-24.5" y="151.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="comment_black" width="58" height="49"/>
+    </resources>
+</document>

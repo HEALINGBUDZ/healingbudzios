@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Lato-Bold.ttf">
+            <string>Lato-Bold</string>
+        </array>
+        <array key="Lato-Regular.ttf">
+            <string>Lato-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="UploadBudzCell" id="28h-7Q-eRp" customClass="UploadBudzCell" customModule="BaseProject" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="28h-7Q-eRp" id="8lG-Wy-m5d">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="49.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2OR-LX-zVy">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49.5"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="haY-HH-HZ1" customClass="RoundButton" customModule="BaseProject" customModuleProvider="target">
+                                <rect key="frame" x="25" y="7.5" width="100" height="35"/>
+                                <color key="backgroundColor" red="0.58733278512954712" green="0.17158916592597961" blue="0.51552814245223999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="IfD-db-3tF"/>
+                                    <constraint firstAttribute="width" constant="100" id="byw-vM-8JD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="15"/>
+                                <state key="normal" title="UPLOAD">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AN IMAGE OR VIDEO" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ku4-er-fwH">
+                                <rect key="frame" x="133" y="5" width="237" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="hB2-zq-K7Z"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="15"/>
+                                <color key="textColor" red="0.79599660634994507" green="0.79606032371520996" blue="0.80031067132949829" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(20 sec max.)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FiX-qE-5Jo">
+                                <rect key="frame" x="133" y="24" width="237" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="AKp-4w-Exv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="10"/>
+                                <color key="textColor" red="0.79599660630000002" green="0.79606032370000002" blue="0.8003106713" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="RZV-lE-Awy">
+                                <rect key="frame" x="0.0" y="47.5" width="375" height="1"/>
+                                <color key="backgroundColor" red="0.70588235290000001" green="0.70588235290000001" blue="0.70588235290000001" alpha="0.14999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="Zch-ae-Al5"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="RZV-lE-Awy" firstAttribute="leading" secondItem="2OR-LX-zVy" secondAttribute="leading" id="Djd-1c-Rbt"/>
+                            <constraint firstItem="ku4-er-fwH" firstAttribute="leading" secondItem="haY-HH-HZ1" secondAttribute="trailing" constant="8" id="Imy-1Q-Vgw"/>
+                            <constraint firstItem="FiX-qE-5Jo" firstAttribute="top" secondItem="ku4-er-fwH" secondAttribute="bottom" constant="-2" id="Plt-7J-lJP"/>
+                            <constraint firstItem="haY-HH-HZ1" firstAttribute="centerY" secondItem="2OR-LX-zVy" secondAttribute="centerY" id="ZIF-xt-xuF"/>
+                            <constraint firstItem="haY-HH-HZ1" firstAttribute="leading" secondItem="2OR-LX-zVy" secondAttribute="leading" constant="25" id="ZR4-9Q-lbL"/>
+                            <constraint firstItem="FiX-qE-5Jo" firstAttribute="width" secondItem="ku4-er-fwH" secondAttribute="width" id="dV4-jQ-Tql"/>
+                            <constraint firstAttribute="bottom" secondItem="RZV-lE-Awy" secondAttribute="bottom" constant="1" id="iKc-wB-WlL"/>
+                            <constraint firstAttribute="trailing" secondItem="RZV-lE-Awy" secondAttribute="trailing" id="iW3-ui-3Vn"/>
+                            <constraint firstAttribute="height" constant="49.5" id="l3n-rn-WaF"/>
+                            <constraint firstItem="FiX-qE-5Jo" firstAttribute="centerX" secondItem="ku4-er-fwH" secondAttribute="centerX" id="rmj-bz-uhU"/>
+                            <constraint firstItem="ku4-er-fwH" firstAttribute="top" secondItem="2OR-LX-zVy" secondAttribute="top" constant="5" id="sTP-iK-zmU"/>
+                            <constraint firstAttribute="trailing" secondItem="ku4-er-fwH" secondAttribute="trailing" constant="5" id="ytg-m8-Ng5"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="2OR-LX-zVy" secondAttribute="trailing" id="1DJ-SM-4gu"/>
+                    <constraint firstItem="2OR-LX-zVy" firstAttribute="top" secondItem="8lG-Wy-m5d" secondAttribute="top" id="c8f-8A-1hq"/>
+                    <constraint firstAttribute="bottom" secondItem="2OR-LX-zVy" secondAttribute="bottom" id="eyh-wR-eOR"/>
+                    <constraint firstItem="2OR-LX-zVy" firstAttribute="leading" secondItem="8lG-Wy-m5d" secondAttribute="leading" id="uuR-GF-DJq"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="btnUpload" destination="haY-HH-HZ1" id="B0X-Sm-pgQ"/>
+                <outlet property="label1" destination="ku4-er-fwH" id="c3V-eC-0Ra"/>
+                <outlet property="label2" destination="FiX-qE-5Jo" id="JY9-Yc-q5g"/>
+            </connections>
+            <point key="canvasLocation" x="-64.5" y="44"/>
+        </tableViewCell>
+    </objects>
+</document>

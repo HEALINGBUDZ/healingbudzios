@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G1036" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Lato-Bold.ttf">
+            <string>Lato-Bold</string>
+        </array>
+        <array key="Lato-Regular.ttf">
+            <string>Lato-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MoreStainCell" customModule="BaseProject" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MoreStainCell" rowHeight="178" id="h3U-Sa-kv6" customClass="MoreStainCell" customModule="BaseProject" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="178"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="h3U-Sa-kv6" id="IDm-Bh-jUN">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="177.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="80j-LN-eku">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="177.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="More About This Strain" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Ux-gV-HjW">
+                                <rect key="frame" x="15" y="10" width="345" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="0d4-Ap-x6f"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="15"/>
+                                <color key="textColor" red="0.97647058819999999" green="0.97647058819999999" blue="0.97647058819999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TUH-sr-l4M">
+                                <rect key="frame" x="15" y="36" width="345" height="136.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="BYf-XI-8wy"/>
+                                </constraints>
+                                <mutableString key="text">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</mutableString>
+                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="12"/>
+                                <color key="textColor" red="0.97647058819999999" green="0.97647058819999999" blue="0.97647058819999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="TUH-sr-l4M" firstAttribute="centerX" secondItem="1Ux-gV-HjW" secondAttribute="centerX" id="B5S-we-XVV"/>
+                            <constraint firstItem="TUH-sr-l4M" firstAttribute="width" secondItem="1Ux-gV-HjW" secondAttribute="width" id="KxM-nh-cLW"/>
+                            <constraint firstAttribute="trailing" secondItem="1Ux-gV-HjW" secondAttribute="trailing" constant="15" id="TQe-qo-dNW"/>
+                            <constraint firstAttribute="bottom" secondItem="TUH-sr-l4M" secondAttribute="bottom" constant="5" id="Trq-Ig-i0M"/>
+                            <constraint firstItem="1Ux-gV-HjW" firstAttribute="top" secondItem="80j-LN-eku" secondAttribute="top" constant="10" id="oV7-lo-eo5"/>
+                            <constraint firstItem="TUH-sr-l4M" firstAttribute="top" secondItem="1Ux-gV-HjW" secondAttribute="bottom" constant="5" id="y2R-Ih-UqV"/>
+                            <constraint firstItem="1Ux-gV-HjW" firstAttribute="leading" secondItem="80j-LN-eku" secondAttribute="leading" constant="15" id="zqL-Fm-CUK"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="80j-LN-eku" secondAttribute="bottom" id="XEt-nQ-n6u"/>
+                    <constraint firstAttribute="trailing" secondItem="80j-LN-eku" secondAttribute="trailing" id="Zp5-2V-898"/>
+                    <constraint firstItem="80j-LN-eku" firstAttribute="top" secondItem="IDm-Bh-jUN" secondAttribute="top" id="joG-n6-XwN"/>
+                    <constraint firstItem="80j-LN-eku" firstAttribute="leading" secondItem="IDm-Bh-jUN" secondAttribute="leading" id="z2C-ER-SnV"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <point key="canvasLocation" x="89.5" y="179"/>
+        </tableViewCell>
+    </objects>
+</document>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="AvatorCollectionViewCell" reuseIdentifier="AvatorCollectionViewCell" id="e2Y-vW-fnd" customClass="AvatorCollectionViewCell" customModule="BaseProject" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="52" height="52"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                <rect key="frame" x="0.0" y="0.0" width="52" height="52"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ttC-mA-CwR">
+                        <rect key="frame" x="0.0" y="0.0" width="52" height="52"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="user_placeholder_Budz" translatesAutoresizingMaskIntoConstraints="NO" id="1xa-ki-SMt" customClass="CircularImageView" customModule="BaseProject" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="52" height="52"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="1xa-ki-SMt" firstAttribute="top" secondItem="ttC-mA-CwR" secondAttribute="top" id="7wh-gp-Qoz"/>
+                            <constraint firstItem="1xa-ki-SMt" firstAttribute="leading" secondItem="ttC-mA-CwR" secondAttribute="leading" id="IEV-hY-ODl"/>
+                            <constraint firstAttribute="trailing" secondItem="1xa-ki-SMt" secondAttribute="trailing" id="Ol7-ct-nmE"/>
+                            <constraint firstItem="1xa-ki-SMt" firstAttribute="centerY" secondItem="ttC-mA-CwR" secondAttribute="centerY" id="chf-G3-GQ9"/>
+                            <constraint firstItem="1xa-ki-SMt" firstAttribute="centerX" secondItem="ttC-mA-CwR" secondAttribute="centerX" id="tah-dF-kqo"/>
+                            <constraint firstAttribute="bottom" secondItem="1xa-ki-SMt" secondAttribute="bottom" id="z8N-Wq-Hvr"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="ttC-mA-CwR" secondAttribute="trailing" id="3uQ-1g-DIC"/>
+                <constraint firstItem="ttC-mA-CwR" firstAttribute="top" secondItem="e2Y-vW-fnd" secondAttribute="top" id="XCF-Pu-pTZ"/>
+                <constraint firstAttribute="bottom" secondItem="ttC-mA-CwR" secondAttribute="bottom" id="ZyE-9y-QfL"/>
+                <constraint firstItem="ttC-mA-CwR" firstAttribute="leading" secondItem="e2Y-vW-fnd" secondAttribute="leading" id="iWK-9S-iXP"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="n3P-mp-cnT"/>
+            <size key="customSize" width="132" height="125"/>
+            <connections>
+                <outlet property="avator_img" destination="1xa-ki-SMt" id="kNd-z5-tr9"/>
+            </connections>
+            <point key="canvasLocation" x="94" y="221"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="user_placeholder_Budz" width="108" height="108"/>
+    </resources>
+</document>

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Lato-Regular.ttf">
+            <string>Lato-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="50" id="KGk-i7-Jjw" customClass="AddNewProductServices" customModule="BaseProject" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="462" height="50"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="462" height="49.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UXx-Mq-daI">
+                        <rect key="frame" x="20" y="7" width="201" height="36"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="add_special_btn" translatesAutoresizingMaskIntoConstraints="NO" id="2Ju-7A-Wrb">
+                                <rect key="frame" x="40.5" y="8" width="20" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="20" id="ZSi-kE-Zug"/>
+                                    <constraint firstAttribute="height" constant="20" id="eLo-wJ-Ey9"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add Product" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GlT-3Z-xDc">
+                                <rect key="frame" x="68.5" y="8" width="88" height="19"/>
+                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="16"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U6e-2D-0UF">
+                                <rect key="frame" x="0.0" y="0.0" width="201" height="36"/>
+                                <connections>
+                                    <action selector="onClickAddProduct:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="laj-AZ-R8H"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.58823529409999997" green="0.17254901959999999" blue="0.51372549020000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="2Ju-7A-Wrb" firstAttribute="centerY" secondItem="GlT-3Z-xDc" secondAttribute="centerY" id="384-Np-J9a"/>
+                            <constraint firstItem="U6e-2D-0UF" firstAttribute="centerY" secondItem="UXx-Mq-daI" secondAttribute="centerY" id="3Ub-Bv-joe"/>
+                            <constraint firstItem="U6e-2D-0UF" firstAttribute="width" secondItem="UXx-Mq-daI" secondAttribute="width" id="3nX-gR-Jyg"/>
+                            <constraint firstItem="GlT-3Z-xDc" firstAttribute="leading" secondItem="2Ju-7A-Wrb" secondAttribute="trailing" constant="8" id="L41-xj-Nec"/>
+                            <constraint firstItem="U6e-2D-0UF" firstAttribute="height" secondItem="UXx-Mq-daI" secondAttribute="height" id="ZOg-7w-4e2"/>
+                            <constraint firstAttribute="height" constant="36" id="bcN-WD-BuA"/>
+                            <constraint firstItem="U6e-2D-0UF" firstAttribute="centerX" secondItem="UXx-Mq-daI" secondAttribute="centerX" id="fd7-xx-Yvb"/>
+                            <constraint firstItem="GlT-3Z-xDc" firstAttribute="centerY" secondItem="UXx-Mq-daI" secondAttribute="centerY" id="g35-XE-cLv"/>
+                            <constraint firstItem="GlT-3Z-xDc" firstAttribute="centerX" secondItem="UXx-Mq-daI" secondAttribute="centerX" constant="12" id="iD2-u5-fXc"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ORR-Dx-Ge3">
+                        <rect key="frame" x="241" y="6" width="201" height="36"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hand_shake" translatesAutoresizingMaskIntoConstraints="NO" id="zRZ-K6-Zmx">
+                                <rect key="frame" x="31" y="8" width="26" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="26" id="FZQ-YX-QDx"/>
+                                    <constraint firstAttribute="height" constant="20" id="sMP-3O-fFC"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add Services " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5ZW-jn-5Os">
+                                <rect key="frame" x="65" y="8" width="95" height="19"/>
+                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="16"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jhp-1I-BvQ">
+                                <rect key="frame" x="0.0" y="0.0" width="201" height="36"/>
+                                <connections>
+                                    <action selector="onClickAddServices:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="yx1-EI-9ph"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.48627450980392156" green="0.76078431372549016" blue="0.26666666666666666" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="Jhp-1I-BvQ" firstAttribute="centerY" secondItem="ORR-Dx-Ge3" secondAttribute="centerY" id="74j-0u-xdR"/>
+                            <constraint firstItem="Jhp-1I-BvQ" firstAttribute="centerX" secondItem="ORR-Dx-Ge3" secondAttribute="centerX" id="8Mo-7A-Chc"/>
+                            <constraint firstAttribute="height" constant="36" id="Az3-9v-leP"/>
+                            <constraint firstItem="zRZ-K6-Zmx" firstAttribute="centerY" secondItem="5ZW-jn-5Os" secondAttribute="centerY" id="E2t-AV-Kt6"/>
+                            <constraint firstItem="5ZW-jn-5Os" firstAttribute="leading" secondItem="zRZ-K6-Zmx" secondAttribute="trailing" constant="8" id="PFj-NJ-EQT"/>
+                            <constraint firstItem="Jhp-1I-BvQ" firstAttribute="height" secondItem="ORR-Dx-Ge3" secondAttribute="height" id="UMC-X6-qGK"/>
+                            <constraint firstItem="5ZW-jn-5Os" firstAttribute="centerX" secondItem="ORR-Dx-Ge3" secondAttribute="centerX" constant="12" id="Y68-U1-ytz"/>
+                            <constraint firstItem="Jhp-1I-BvQ" firstAttribute="width" secondItem="ORR-Dx-Ge3" secondAttribute="width" id="Zff-PS-MhA"/>
+                            <constraint firstItem="5ZW-jn-5Os" firstAttribute="centerY" secondItem="ORR-Dx-Ge3" secondAttribute="centerY" id="jDb-ux-y7f"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="UXx-Mq-daI" firstAttribute="width" secondItem="ORR-Dx-Ge3" secondAttribute="width" id="7Q7-P4-Gwc"/>
+                    <constraint firstItem="ORR-Dx-Ge3" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="CJm-QK-2Pc"/>
+                    <constraint firstItem="ORR-Dx-Ge3" firstAttribute="leading" secondItem="UXx-Mq-daI" secondAttribute="trailing" constant="20" id="LI3-NF-qZM"/>
+                    <constraint firstItem="UXx-Mq-daI" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Paz-a8-4eT"/>
+                    <constraint firstItem="UXx-Mq-daI" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="7" id="VuL-u4-kGG"/>
+                    <constraint firstItem="UXx-Mq-daI" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="jKA-nW-Ygf"/>
+                    <constraint firstAttribute="trailing" secondItem="ORR-Dx-Ge3" secondAttribute="trailing" constant="20" id="ozj-mu-kkV"/>
+                    <constraint firstAttribute="bottom" secondItem="UXx-Mq-daI" secondAttribute="bottom" constant="6.5" id="xnB-I4-np5"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <point key="canvasLocation" x="23" y="-8"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="add_special_btn" width="51" height="51"/>
+        <image name="hand_shake" width="327" height="206"/>
+    </resources>
+</document>

@@ -1,0 +1,281 @@
+PODS:
+  - AAPickerView (0.1.1)
+  - ActionCell (2.0.9)
+  - ActiveLabel (0.7.1)
+  - ADEmailAndPassword (1.0.15)
+  - Alamofire (4.3.0)
+  - AlamofireImage (3.2.0):
+    - Alamofire (~> 4.1)
+  - Bolts (1.9.0):
+    - Bolts/AppLinks (= 1.9.0)
+    - Bolts/Tasks (= 1.9.0)
+  - Bolts/AppLinks (1.9.0):
+    - Bolts/Tasks
+  - Bolts/Tasks (1.9.0)
+  - Cosmos (12.0.1)
+  - Crashlytics (3.10.7):
+    - Fabric (~> 1.7.11)
+  - DottedLineView (1.0.0)
+  - Fabric (1.7.11)
+  - FacebookCore (0.3.2):
+    - Bolts (~> 1.8)
+    - FBSDKCoreKit (~> 4.35)
+  - FacebookLogin (0.3.2):
+    - Bolts (~> 1.8)
+    - FacebookCore (~> 0.3.2)
+    - FBSDKCoreKit (~> 4.35)
+    - FBSDKLoginKit (~> 4.35)
+  - FacebookShare (0.3.2):
+    - Bolts (~> 1.8)
+    - FacebookCore (~> 0.3.2)
+    - FBSDKCoreKit (~> 4.35)
+    - FBSDKShareKit (~> 4.35)
+  - FBSDKCoreKit (4.35.0):
+    - Bolts (~> 1.7)
+  - FBSDKLoginKit (4.35.0):
+    - FBSDKCoreKit
+  - FBSDKShareKit (4.35.0):
+    - FBSDKCoreKit (~> 4.35.0)
+  - FLAnimatedImage (1.0.12)
+  - FreshchatSDK (1.5.2)
+  - GCNetworkReachability (1.3.2)
+  - Google-Mobile-Ads-SDK (7.35.2)
+  - GoogleMaps (2.7.0):
+    - GoogleMaps/Maps (= 2.7.0)
+  - GoogleMaps/Base (2.7.0)
+  - GoogleMaps/Maps (2.7.0):
+    - GoogleMaps/Base
+  - GooglePlacePicker (2.7.0):
+    - GoogleMaps (= 2.7.0)
+    - GooglePlaces (= 2.7.0)
+  - GooglePlaces (2.7.0):
+    - GoogleMaps/Base (= 2.7.0)
+  - GoogleSignIn (4.2.0):
+    - "GoogleToolboxForMac/NSDictionary+URLArguments (~> 2.1)"
+    - "GoogleToolboxForMac/NSString+URLArguments (~> 2.1)"
+    - GTMOAuth2 (~> 1.0)
+    - GTMSessionFetcher/Core (~> 1.1)
+  - GoogleToolboxForMac/DebugUtils (2.1.4):
+    - GoogleToolboxForMac/Defines (= 2.1.4)
+  - GoogleToolboxForMac/Defines (2.1.4)
+  - "GoogleToolboxForMac/NSDictionary+URLArguments (2.1.4)":
+    - GoogleToolboxForMac/DebugUtils (= 2.1.4)
+    - GoogleToolboxForMac/Defines (= 2.1.4)
+    - "GoogleToolboxForMac/NSString+URLArguments (= 2.1.4)"
+  - "GoogleToolboxForMac/NSString+URLArguments (2.1.4)"
+  - GrowingTextView (0.5.6)
+  - GTMOAuth2 (1.1.6):
+    - GTMSessionFetcher (~> 1.1)
+  - GTMSessionFetcher (1.2.0):
+    - GTMSessionFetcher/Full (= 1.2.0)
+  - GTMSessionFetcher/Core (1.2.0)
+  - GTMSessionFetcher/Full (1.2.0):
+    - GTMSessionFetcher/Core (= 1.2.0)
+  - ImageScrollView (1.5)
+  - INSPhotoGallery (1.2.6)
+  - IQKeyboardManager (6.1.1)
+  - KMPlaceholderTextView (1.3.0)
+  - KUIPopOver (1.0.4)
+  - libwebp (0.6.1):
+    - libwebp/core (= 0.6.1)
+    - libwebp/dec (= 0.6.1)
+    - libwebp/demux (= 0.6.1)
+    - libwebp/dsp (= 0.6.1)
+    - libwebp/enc (= 0.6.1)
+    - libwebp/mux (= 0.6.1)
+    - libwebp/utils (= 0.6.1)
+    - libwebp/webp (= 0.6.1)
+  - libwebp/core (0.6.1):
+    - libwebp/webp
+  - libwebp/dec (0.6.1):
+    - libwebp/core
+  - libwebp/demux (0.6.1):
+    - libwebp/core
+  - libwebp/dsp (0.6.1):
+    - libwebp/core
+  - libwebp/enc (0.6.1):
+    - libwebp/core
+  - libwebp/mux (0.6.1):
+    - libwebp/core
+  - libwebp/utils (0.6.1):
+    - libwebp/core
+  - libwebp/webp (0.6.1)
+  - MBProgressHUD (1.0.0)
+  - MJAutoComplete (1.1.1)
+  - moa (8.0.4)
+  - ObjectMapper (3.3.0)
+  - OneSignal (2.8.7)
+  - Popover (1.2.0)
+  - SDWebImage/Core (4.4.2)
+  - SDWebImage/WebP (4.4.2):
+    - libwebp (~> 0.5)
+    - SDWebImage/Core
+  - Socket.IO-Client-Swift (11.1.3):
+    - StarscreamSocketIO (~> 8.0.5)
+  - StarscreamSocketIO (8.0.7)
+  - Stripe (13.2.0)
+  - SwiftLinkPreview (2.3.0)
+  - SwiftSVG (2.1.5)
+  - SwiftyJSON (3.1.4)
+  - SYBlinkAnimationKit (0.3.2)
+  - UICircularProgressRing (3.3.2)
+  - YouTubePlayer (0.4.0)
+  - ZFTokenField (0.0.1)
+
+DEPENDENCIES:
+  - AAPickerView (< 0.1.2)
+  - ActionCell
+  - ActiveLabel (~> 0.7.1)
+  - ADEmailAndPassword (= 1.0.15)
+  - Alamofire (= 4.3.0)
+  - AlamofireImage
+  - Cosmos (= 12.0.1)
+  - Crashlytics
+  - DottedLineView (= 1.0.0)
+  - Fabric
+  - FacebookCore
+  - FacebookLogin
+  - FacebookShare
+  - FLAnimatedImage (~> 1.0)
+  - FreshchatSDK
+  - GCNetworkReachability (~> 1.3.2)
+  - Google-Mobile-Ads-SDK (~> 7.35.2)
+  - GoogleMaps
+  - GooglePlacePicker
+  - GooglePlaces
+  - GoogleSignIn
+  - GrowingTextView (~> 0.5.5)
+  - ImageScrollView
+  - INSPhotoGallery
+  - IQKeyboardManager
+  - KMPlaceholderTextView (~> 1.3.0)
+  - KUIPopOver (~> 1.0.0)
+  - MBProgressHUD (~> 1.0.0)
+  - MJAutoComplete
+  - moa (~> 8.0)
+  - ObjectMapper
+  - OneSignal (< 3.0, >= 2.6.2)
+  - Popover
+  - SDWebImage/WebP
+  - Socket.IO-Client-Swift (= 11.1.3)
+  - Stripe
+  - SwiftLinkPreview
+  - SwiftSVG (~> 2.0)
+  - SwiftyJSON (= 3.1.4)
+  - SYBlinkAnimationKit
+  - UICircularProgressRing
+  - YouTubePlayer
+  - ZFTokenField
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - AAPickerView
+    - ActionCell
+    - ActiveLabel
+    - ADEmailAndPassword
+    - Alamofire
+    - AlamofireImage
+    - Bolts
+    - Cosmos
+    - Crashlytics
+    - DottedLineView
+    - Fabric
+    - FacebookCore
+    - FacebookLogin
+    - FacebookShare
+    - FBSDKCoreKit
+    - FBSDKLoginKit
+    - FBSDKShareKit
+    - FLAnimatedImage
+    - FreshchatSDK
+    - GCNetworkReachability
+    - Google-Mobile-Ads-SDK
+    - GoogleMaps
+    - GooglePlacePicker
+    - GooglePlaces
+    - GoogleSignIn
+    - GoogleToolboxForMac
+    - GrowingTextView
+    - GTMOAuth2
+    - GTMSessionFetcher
+    - ImageScrollView
+    - INSPhotoGallery
+    - IQKeyboardManager
+    - KMPlaceholderTextView
+    - KUIPopOver
+    - libwebp
+    - MBProgressHUD
+    - MJAutoComplete
+    - moa
+    - ObjectMapper
+    - OneSignal
+    - Popover
+    - SDWebImage
+    - Socket.IO-Client-Swift
+    - StarscreamSocketIO
+    - Stripe
+    - SwiftLinkPreview
+    - SwiftSVG
+    - SwiftyJSON
+    - SYBlinkAnimationKit
+    - UICircularProgressRing
+    - YouTubePlayer
+    - ZFTokenField
+
+SPEC CHECKSUMS:
+  AAPickerView: c788b8685e66d782670477e72a901f7061cf86cd
+  ActionCell: 302a045ac5b1a0b6a2d8d08d93e1e166ac44f1ae
+  ActiveLabel: 68625f22775f51c31bb691ca8de20f1e5a3bc825
+  ADEmailAndPassword: 8030215991923ddd82767742c01ab58325cfeb0a
+  Alamofire: 856a113053a7bc9cbe5d6367a555d773fc5cfef7
+  AlamofireImage: 157ed682cc81d3b9db4fb90c1f12180ac552d93b
+  Bolts: ac6567323eac61e203f6a9763667d0f711be34c8
+  Cosmos: 4a9f57998a08788a1062c7b8eefbc62d2b590f39
+  Crashlytics: ccaac42660eb9351b9960c0d66106b0bcf99f4fa
+  DottedLineView: 750c5aee6eae69f9bc9acd3bc6ee9938e35856bb
+  Fabric: f233c9492b3bbc1f04e3882986740f7988a58edb
+  FacebookCore: fe93222bb70346730ef33b061d493e9e7a7cb1f5
+  FacebookLogin: a4e225974791c82836765a294582b4778baffc07
+  FacebookShare: 5319f2655d53d20c595745a68dae8476027b8bae
+  FBSDKCoreKit: 1a5b2e3ceb5ca827a53c54aa5f4a3480efff80d2
+  FBSDKLoginKit: 00a3d65d1226852f9d76dcddff01981e5e6d9c38
+  FBSDKShareKit: 2ddbd7e6432023fff957af62e23a3671b84319f7
+  FLAnimatedImage: 4a0b56255d9b05f18b6dd7ee06871be5d3b89e31
+  FreshchatSDK: 07df27883f3bb0f0fedb357b7083d3f461f96bb5
+  GCNetworkReachability: 2a7dd53d362220326b3e38df68c91b3ef84418d1
+  Google-Mobile-Ads-SDK: 8f07cc8eac6649fe648cabc97d67c8d20173624a
+  GoogleMaps: f79af95cb24d869457b1f961c93d3ce8b2f3b848
+  GooglePlacePicker: 59ea44db173c58486ad6123993e81feefcbce9c3
+  GooglePlaces: 3d06e6c99654545b4738ce49648745779c25f2ef
+  GoogleSignIn: 591e46382014e591269f862ba6e7bc0fbd793532
+  GoogleToolboxForMac: 91c824d21e85b31c2aae9bb011c5027c9b4e738f
+  GrowingTextView: 8958f4fb7419de58dd622021b2d0696487e00e70
+  GTMOAuth2: c77fe325e4acd453837e72d91e3b5f13116857b2
+  GTMSessionFetcher: 0c4baf0a73acd0041bf9f71ea018deedab5ea84e
+  ImageScrollView: 22b3ad3f215a227403eee376fd226559516390b4
+  INSPhotoGallery: 67d23a06cb1d8b11a732fa4d74ad1bc0a0198beb
+  IQKeyboardManager: 79c57795f5c2408d259d37b9da2ed07efcbb5225
+  KMPlaceholderTextView: 2bbcd19a273648a80a61e1e48f9743a24d8930e3
+  KUIPopOver: 1002fb1ab2460ac4db2bafe4f01f0c28fca806d2
+  libwebp: 0f01098c6c17175391af621b2f14150f3ca16e16
+  MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
+  MJAutoComplete: dd8e997dcf32fd4ca58e6a9f8497f171099b3a20
+  moa: 954e2ad962886626d02c3486dd3a7bb5f0052d14
+  ObjectMapper: b612bf8c8e99c4dc0bb6013a51f7c27966ed5da9
+  OneSignal: a48968a4096ac9146af91f31870204dcd731c939
+  Popover: 28c1ac8e937ab2b3965bd2da7dd18324357abc41
+  SDWebImage: 624d6e296c69b244bcede364c72ae0430ac14681
+  Socket.IO-Client-Swift: b8e59ddc16bc3609ca2f49a4b50253f095d535c8
+  StarscreamSocketIO: 00b54e4208481ca5cef089545353aaf126bae16d
+  Stripe: 2c69e216061d54d9c538204bb4f58bd597ddfc5b
+  SwiftLinkPreview: 6c9c37215a1310f2bb9ad74fdbe310b3e81556ac
+  SwiftSVG: 9d78f41396a921c210ce9898ada05c85d412acb8
+  SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
+  SYBlinkAnimationKit: aa6cfc22da5002076fa1cf358b0e1733234537fe
+  UICircularProgressRing: f5efb3e1fd8387bfd59f71738501d68f58b7e84e
+  YouTubePlayer: 028451f6772f372d4759866db99824c676ac1473
+  ZFTokenField: 3e3ed288e32e085bb8f9c38b4eeb3806711b475a
+
+PODFILE CHECKSUM: c5c55d975bc6e9b199221a26ffc61d1b7f5304d3
+
+COCOAPODS: 1.5.3

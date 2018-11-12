@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Lato-Light.ttf">
+            <string>Lato-Light</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splachJPG" translatesAutoresizingMaskIntoConstraints="NO" id="3nj-5R-3al">
+                                <rect key="frame" x="0.0" y="-40" width="375" height="747"/>
+                                <color key="backgroundColor" red="0.1450980392" green="0.1450980392" blue="0.1450980392" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BigLogo.png" translatesAutoresizingMaskIntoConstraints="NO" id="d5s-Iq-4TJ">
+                                <rect key="frame" x="114.5" y="258.5" width="150" height="120"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="NMX-Bz-Q3T"/>
+                                    <constraint firstAttribute="height" constant="120" id="eMi-D8-Rqh"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Community for Natural Healing" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nai-6o-k7m">
+                                <rect key="frame" x="81" y="385" width="214.5" height="17"/>
+                                <fontDescription key="fontDescription" name="Lato-Light" family="Lato" pointSize="14"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="3nj-5R-3al" firstAttribute="top" secondItem="Bcu-3y-fUS" secondAttribute="top" constant="-60" id="5Lf-6G-bMl"/>
+                            <constraint firstItem="3nj-5R-3al" firstAttribute="leading" secondItem="Bcu-3y-fUS" secondAttribute="leading" id="60f-Vi-pfS"/>
+                            <constraint firstItem="Nai-6o-k7m" firstAttribute="centerX" secondItem="d5s-Iq-4TJ" secondAttribute="centerX" constant="-2" id="Byt-VJ-s4J"/>
+                            <constraint firstItem="Bcu-3y-fUS" firstAttribute="trailing" secondItem="3nj-5R-3al" secondAttribute="trailing" id="I57-49-B7U"/>
+                            <constraint firstItem="3nj-5R-3al" firstAttribute="width" secondItem="Ze5-6b-2t3" secondAttribute="width" id="LCg-BA-9D1"/>
+                            <constraint firstItem="3nj-5R-3al" firstAttribute="centerX" secondItem="Bcu-3y-fUS" secondAttribute="centerX" id="Mnk-GM-LvF"/>
+                            <constraint firstItem="Nai-6o-k7m" firstAttribute="top" secondItem="d5s-Iq-4TJ" secondAttribute="bottom" constant="7" id="O5d-oy-FNE"/>
+                            <constraint firstItem="d5s-Iq-4TJ" firstAttribute="centerY" secondItem="Bcu-3y-fUS" secondAttribute="centerY" constant="-25" id="kpc-sI-fEK"/>
+                            <constraint firstItem="d5s-Iq-4TJ" firstAttribute="centerX" secondItem="Bcu-3y-fUS" secondAttribute="centerX" constant="2" id="sZ1-JP-RhF"/>
+                            <constraint firstItem="Bcu-3y-fUS" firstAttribute="bottom" secondItem="3nj-5R-3al" secondAttribute="bottom" constant="-40" id="vPe-ZO-xFE"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Bcu-3y-fUS"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="53" y="375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="BigLogo.png" width="893" height="805"/>
+        <image name="splachJPG" width="726" height="1290"/>
+    </resources>
+</document>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G1036" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Lato-Bold.ttf">
+            <string>Lato-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="JoinGroupCell" rowHeight="55" id="fuT-P8-ZkF" customClass="JoinGroupCell" customModule="BaseProject" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="55"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="fuT-P8-ZkF" id="HZn-mW-q4j">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="54.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vEj-18-Ql0">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="54.5"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pY7-sn-pFj" customClass="RoundButton" customModule="BaseProject" customModuleProvider="target">
+                                <rect key="frame" x="15" y="16" width="345" height="33.5"/>
+                                <color key="backgroundColor" red="0.96966487169265747" green="0.57178640365600586" blue="0.12424085289239883" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="33.5" id="Ueb-vu-ukz"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="20"/>
+                                <state key="normal" title="JOIN GROUP"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="pY7-sn-pFj" secondAttribute="bottom" constant="5" id="03l-Qw-gv6"/>
+                            <constraint firstItem="pY7-sn-pFj" firstAttribute="top" secondItem="vEj-18-Ql0" secondAttribute="top" constant="16" id="4qd-ck-dBD"/>
+                            <constraint firstAttribute="trailing" secondItem="pY7-sn-pFj" secondAttribute="trailing" constant="15" id="Iav-wZ-6Ic"/>
+                            <constraint firstItem="pY7-sn-pFj" firstAttribute="leading" secondItem="vEj-18-Ql0" secondAttribute="leading" constant="15" id="hc1-AT-Ufo"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="vEj-18-Ql0" secondAttribute="trailing" id="Zd8-PM-SMa"/>
+                    <constraint firstItem="vEj-18-Ql0" firstAttribute="top" secondItem="HZn-mW-q4j" secondAttribute="top" id="iII-Qe-7HX"/>
+                    <constraint firstItem="vEj-18-Ql0" firstAttribute="leading" secondItem="HZn-mW-q4j" secondAttribute="leading" id="k11-aC-7Vs"/>
+                    <constraint firstAttribute="bottom" secondItem="vEj-18-Ql0" secondAttribute="bottom" id="tob-uN-xeT"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <point key="canvasLocation" x="135.5" y="80.5"/>
+        </tableViewCell>
+    </objects>
+</document>

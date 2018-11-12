@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="zNJ-rM-L3m" customClass="MoreMenuView" customModule="BaseProject" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="183" height="160"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="HpW-RY-eCE">
+                    <rect key="frame" x="0.0" y="0.0" width="183" height="160"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="160" id="ubF-Qa-qUR"/>
+                    </constraints>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oYN-9R-JYg">
+                    <rect key="frame" x="0.0" y="5" width="183" height="152"/>
+                    <subviews>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="none" rowHeight="30" estimatedRowHeight="-1" sectionHeaderHeight="1" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="YG4-5i-lDo">
+                            <rect key="frame" x="0.0" y="0.0" width="183" height="151"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <outlet property="dataSource" destination="zNJ-rM-L3m" id="mZz-TA-uCM"/>
+                                <outlet property="delegate" destination="zNJ-rM-L3m" id="S0t-uw-bcR"/>
+                            </connections>
+                        </tableView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="YG4-5i-lDo" firstAttribute="top" secondItem="oYN-9R-JYg" secondAttribute="top" id="A60-9k-NUE"/>
+                        <constraint firstAttribute="bottom" secondItem="YG4-5i-lDo" secondAttribute="bottom" constant="1" id="HaS-uF-l15"/>
+                        <constraint firstAttribute="trailing" secondItem="YG4-5i-lDo" secondAttribute="trailing" id="Nb6-vT-Oq8"/>
+                        <constraint firstItem="YG4-5i-lDo" firstAttribute="leading" secondItem="oYN-9R-JYg" secondAttribute="leading" id="hSE-zo-9VO"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="HpW-RY-eCE" firstAttribute="bottom" secondItem="LM2-qf-kXi" secondAttribute="bottom" id="Bd5-jg-KIW"/>
+                <constraint firstItem="LM2-qf-kXi" firstAttribute="trailing" secondItem="oYN-9R-JYg" secondAttribute="trailing" id="RWd-R9-EZY"/>
+                <constraint firstItem="HpW-RY-eCE" firstAttribute="leading" secondItem="zNJ-rM-L3m" secondAttribute="leading" id="YZB-NZ-cMb"/>
+                <constraint firstItem="oYN-9R-JYg" firstAttribute="top" secondItem="LM2-qf-kXi" secondAttribute="top" constant="5" id="YhH-A4-d8G"/>
+                <constraint firstItem="oYN-9R-JYg" firstAttribute="leading" secondItem="LM2-qf-kXi" secondAttribute="leading" id="h9T-wI-EjE"/>
+                <constraint firstItem="HpW-RY-eCE" firstAttribute="top" secondItem="LM2-qf-kXi" secondAttribute="top" id="k6D-Kk-d2G"/>
+                <constraint firstAttribute="trailing" secondItem="HpW-RY-eCE" secondAttribute="trailing" id="rGd-e4-A17"/>
+                <constraint firstItem="LM2-qf-kXi" firstAttribute="bottom" secondItem="oYN-9R-JYg" secondAttribute="bottom" constant="3" id="uWC-SS-7Rg"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="LM2-qf-kXi"/>
+            <connections>
+                <outlet property="bubbleImageView" destination="HpW-RY-eCE" id="hfx-qP-rvu"/>
+                <outlet property="img_hight" destination="ubF-Qa-qUR" id="crm-sw-4tZ"/>
+                <outlet property="tableView" destination="YG4-5i-lDo" id="SkL-KT-P1l"/>
+            </connections>
+            <point key="canvasLocation" x="-70.5" y="29"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Lato-Bold.ttf">
+            <string>Lato-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SubmitcommentStrainCell" rowHeight="55" id="J3W-FM-8bV" customClass="SubmitcommentStrainCell" customModule="BaseProject" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="55"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="J3W-FM-8bV" id="Abl-mv-deB">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="54.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ViN-Qy-XpI">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="54.5"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="syK-n1-YAj" customClass="RoundButton" customModule="BaseProject" customModuleProvider="target">
+                                <rect key="frame" x="25" y="10" width="325" height="34.5"/>
+                                <color key="backgroundColor" red="0.95686274510000002" green="0.76862745099999996" blue="0.1843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="15"/>
+                                <state key="normal" title="SUBMIT COMMENT">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="syK-n1-YAj" secondAttribute="trailing" constant="25" id="IVH-f4-CWY"/>
+                            <constraint firstItem="syK-n1-YAj" firstAttribute="leading" secondItem="ViN-Qy-XpI" secondAttribute="leading" constant="25" id="NQq-FM-xuN"/>
+                            <constraint firstItem="syK-n1-YAj" firstAttribute="top" secondItem="ViN-Qy-XpI" secondAttribute="top" constant="10" id="OeA-jg-hWm"/>
+                            <constraint firstAttribute="bottom" secondItem="syK-n1-YAj" secondAttribute="bottom" constant="10" id="prq-sY-tjZ"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstItem="ViN-Qy-XpI" firstAttribute="leading" secondItem="Abl-mv-deB" secondAttribute="leading" id="b7D-AL-gyx"/>
+                    <constraint firstItem="ViN-Qy-XpI" firstAttribute="top" secondItem="Abl-mv-deB" secondAttribute="top" id="jFJ-GP-4Pw"/>
+                    <constraint firstAttribute="trailing" secondItem="ViN-Qy-XpI" secondAttribute="trailing" id="pAw-bp-zTg"/>
+                    <constraint firstAttribute="bottom" secondItem="ViN-Qy-XpI" secondAttribute="bottom" id="pw8-GW-0Sa"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="btnSubmit" destination="syK-n1-YAj" id="7tb-z3-Tni"/>
+            </connections>
+            <point key="canvasLocation" x="39.5" y="110.5"/>
+        </tableViewCell>
+    </objects>
+</document>

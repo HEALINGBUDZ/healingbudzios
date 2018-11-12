@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Lato-Regular.ttf">
+            <string>Lato-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="AddStrainNotesCell" rowHeight="163" id="eMn-dC-i8U" customClass="AddStrainNotesCell" customModule="BaseProject" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="163"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="eMn-dC-i8U" id="6tC-xr-Udm">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="162.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jJN-wz-NgU">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="162.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Notes:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fMH-AN-aWZ">
+                                <rect key="frame" x="15" y="5" width="43.5" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="43.5" id="XVQ-Up-eEv"/>
+                                    <constraint firstAttribute="height" constant="21" id="pPs-bh-sFd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="15"/>
+                                <color key="textColor" red="0.76855933669999998" green="0.7686710954" blue="0.76853495839999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CTy-Pn-lHD" customClass="RoundView" customModule="BaseProject" customModuleProvider="target">
+                                <rect key="frame" x="83.5" y="5" width="266.5" height="143"/>
+                                <subviews>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Jtj-uC-pQI">
+                                        <rect key="frame" x="0.0" y="0.0" width="266.5" height="143"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="75" id="sbv-8n-VUB"/>
+                                        </constraints>
+                                        <color key="textColor" red="0.37251365180000001" green="0.37257164720000002" blue="0.37250098590000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="12"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.83914172649999996" green="0.83926308159999996" blue="0.83911520240000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="Jtj-uC-pQI" secondAttribute="bottom" id="IY8-Oy-bFp"/>
+                                    <constraint firstItem="Jtj-uC-pQI" firstAttribute="top" secondItem="CTy-Pn-lHD" secondAttribute="top" id="UcP-Ov-VjH"/>
+                                    <constraint firstItem="Jtj-uC-pQI" firstAttribute="leading" secondItem="CTy-Pn-lHD" secondAttribute="leading" id="c3E-bC-E1f"/>
+                                    <constraint firstAttribute="trailing" secondItem="Jtj-uC-pQI" secondAttribute="trailing" id="hAV-aB-ddq"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="CTy-Pn-lHD" firstAttribute="leading" secondItem="fMH-AN-aWZ" secondAttribute="trailing" constant="25" id="5wK-qp-rym"/>
+                            <constraint firstAttribute="trailing" secondItem="CTy-Pn-lHD" secondAttribute="trailing" constant="25" id="Uio-HH-lXI"/>
+                            <constraint firstItem="fMH-AN-aWZ" firstAttribute="top" secondItem="jJN-wz-NgU" secondAttribute="top" constant="5" id="f4Q-di-KQ9"/>
+                            <constraint firstItem="CTy-Pn-lHD" firstAttribute="top" secondItem="fMH-AN-aWZ" secondAttribute="top" id="fqH-Sy-tYt"/>
+                            <constraint firstAttribute="bottom" secondItem="CTy-Pn-lHD" secondAttribute="bottom" constant="15" id="hE8-no-QC9"/>
+                            <constraint firstItem="fMH-AN-aWZ" firstAttribute="leading" secondItem="jJN-wz-NgU" secondAttribute="leading" constant="15" id="noB-z6-O3B"/>
+                        </constraints>
+                    </view>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xFN-qu-unv">
+                        <rect key="frame" x="25" y="160.5" width="325" height="1"/>
+                        <color key="backgroundColor" red="0.2784313725" green="0.2784313725" blue="0.2784313725" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="NoJ-Y4-AK9"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstItem="xFN-qu-unv" firstAttribute="leading" secondItem="6tC-xr-Udm" secondAttribute="leading" constant="25" id="IaW-c1-j4p"/>
+                    <constraint firstAttribute="bottom" secondItem="jJN-wz-NgU" secondAttribute="bottom" id="JyF-7z-DOb"/>
+                    <constraint firstItem="jJN-wz-NgU" firstAttribute="top" secondItem="6tC-xr-Udm" secondAttribute="top" id="RKi-Lz-3CX"/>
+                    <constraint firstItem="jJN-wz-NgU" firstAttribute="leading" secondItem="6tC-xr-Udm" secondAttribute="leading" id="fbt-dk-ksq"/>
+                    <constraint firstAttribute="trailing" secondItem="xFN-qu-unv" secondAttribute="trailing" constant="25" id="i0n-dy-Sot"/>
+                    <constraint firstAttribute="bottom" secondItem="xFN-qu-unv" secondAttribute="bottom" constant="1" id="wZq-gK-Jt4"/>
+                    <constraint firstAttribute="trailing" secondItem="jJN-wz-NgU" secondAttribute="trailing" id="zRr-yf-ZDL"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="txtViewNotes" destination="Jtj-uC-pQI" id="cdV-4A-Smc"/>
+            </connections>
+            <point key="canvasLocation" x="57.5" y="149.5"/>
+        </tableViewCell>
+    </objects>
+</document>

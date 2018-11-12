@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Lato-Bold.ttf">
+            <string>Lato-Bold</string>
+        </array>
+        <array key="Lato-Regular.ttf">
+            <string>Lato-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PendingRewardsCell" rowHeight="115" id="KGk-i7-Jjw" customClass="PendingRewardsCell" customModule="BaseProject" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="463" height="115"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="463" height="114.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mLo-OT-Cs8">
+                        <rect key="frame" x="10" y="0.0" width="443" height="99.5"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RZ7-Ea-0MK">
+                                <rect key="frame" x="2" y="2" width="341" height="95.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+50" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F0d-94-Ipf">
+                                        <rect key="frame" x="18" y="17.5" width="66.5" height="46"/>
+                                        <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="38"/>
+                                        <color key="textColor" red="0.51134330029999997" green="0.73429322239999995" blue="0.17114251850000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Invite a friend." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fBn-D8-4za">
+                                        <rect key="frame" x="18" y="63.5" width="109" height="20"/>
+                                        <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.144918412" green="0.145224452" blue="0.14083436129999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="fBn-D8-4za" firstAttribute="top" secondItem="F0d-94-Ipf" secondAttribute="bottom" id="FgX-sa-02R"/>
+                                    <constraint firstItem="F0d-94-Ipf" firstAttribute="leading" secondItem="RZ7-Ea-0MK" secondAttribute="leading" constant="18" id="VMr-t1-i2x"/>
+                                    <constraint firstItem="F0d-94-Ipf" firstAttribute="centerY" secondItem="RZ7-Ea-0MK" secondAttribute="centerY" constant="-8" id="bJg-pm-rTA"/>
+                                    <constraint firstItem="fBn-D8-4za" firstAttribute="leading" secondItem="F0d-94-Ipf" secondAttribute="leading" id="fR6-Ay-3as"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yqu-T1-7dI">
+                                <rect key="frame" x="343" y="0.0" width="100" height="99.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GO" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kgU-Cx-NZ2">
+                                        <rect key="frame" x="0.0" y="37" width="100" height="26.5"/>
+                                        <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="22"/>
+                                        <color key="textColor" red="0.95656448599999999" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="kgU-Cx-NZ2" firstAttribute="centerX" secondItem="Yqu-T1-7dI" secondAttribute="centerX" id="LUw-le-VH4"/>
+                                    <constraint firstItem="kgU-Cx-NZ2" firstAttribute="leading" secondItem="Yqu-T1-7dI" secondAttribute="leading" id="bAI-br-S7F"/>
+                                    <constraint firstItem="kgU-Cx-NZ2" firstAttribute="centerY" secondItem="Yqu-T1-7dI" secondAttribute="centerY" id="cjt-0h-GwZ"/>
+                                    <constraint firstAttribute="trailing" secondItem="kgU-Cx-NZ2" secondAttribute="trailing" id="pkh-XC-BuJ"/>
+                                    <constraint firstAttribute="width" constant="100" id="wQr-sG-IJL"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.36132258176803589" green="0.36473315954208374" blue="0.36467760801315308" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="RZ7-Ea-0MK" firstAttribute="top" secondItem="mLo-OT-Cs8" secondAttribute="top" constant="2" id="AmL-zb-E0z"/>
+                            <constraint firstAttribute="bottom" secondItem="Yqu-T1-7dI" secondAttribute="bottom" id="MvI-C0-eT1"/>
+                            <constraint firstAttribute="height" constant="99.5" id="ONb-nP-74z"/>
+                            <constraint firstItem="RZ7-Ea-0MK" firstAttribute="leading" secondItem="mLo-OT-Cs8" secondAttribute="leading" constant="2" id="QmI-b4-6gk"/>
+                            <constraint firstItem="Yqu-T1-7dI" firstAttribute="top" secondItem="mLo-OT-Cs8" secondAttribute="top" id="WVH-Yw-ujZ"/>
+                            <constraint firstAttribute="trailing" secondItem="Yqu-T1-7dI" secondAttribute="trailing" id="Z4f-ir-KAS"/>
+                            <constraint firstAttribute="bottom" secondItem="RZ7-Ea-0MK" secondAttribute="bottom" constant="2" id="ghr-KD-vzU"/>
+                            <constraint firstItem="Yqu-T1-7dI" firstAttribute="leading" secondItem="RZ7-Ea-0MK" secondAttribute="trailing" id="nbF-1X-pRy"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstItem="mLo-OT-Cs8" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="9xu-3W-qtK"/>
+                    <constraint firstAttribute="bottom" secondItem="mLo-OT-Cs8" secondAttribute="bottom" constant="15" id="F0i-3I-f0F"/>
+                    <constraint firstItem="mLo-OT-Cs8" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="NS2-k2-r7s"/>
+                    <constraint firstAttribute="trailing" secondItem="mLo-OT-Cs8" secondAttribute="trailing" constant="10" id="OUf-e9-IC8"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="LBL_discription" destination="fBn-D8-4za" id="vLK-Ca-fWf"/>
+                <outlet property="lbl_points" destination="F0d-94-Ipf" id="3cK-1a-GMS"/>
+            </connections>
+            <point key="canvasLocation" x="97.5" y="87.5"/>
+        </tableViewCell>
+    </objects>
+</document>

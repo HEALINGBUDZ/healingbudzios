@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Lato-Regular.ttf">
+            <string>Lato-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="privacyCell" rowHeight="124" id="ULb-op-5OR" customClass="privacyCell" customModule="BaseProject" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="124"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ULb-op-5OR" id="IXb-yM-Spp">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="123.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0IV-LA-MOl">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="124"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Privacy Policy" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9fV-qK-oOi">
+                                <rect key="frame" x="61" y="15" width="103" height="20"/>
+                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="17"/>
+                                <color key="textColor" red="0.58039215690000001" green="0.58431372550000005" blue="0.58823529409999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Terms &amp; Conditions" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="luN-Dj-lAU">
+                                <rect key="frame" x="179" y="10" width="146.5" height="30"/>
+                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="17"/>
+                                <color key="textColor" red="0.58039215690000001" green="0.58431372550000005" blue="0.58823529409999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Version 1.0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ufc-xG-8AO">
+                                <rect key="frame" x="153" y="65" width="69.5" height="17"/>
+                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="14"/>
+                                <color key="textColor" red="0.58039215690000001" green="0.58431372550000005" blue="0.58823529409999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Copyright Healing Budz, Inc. 2018" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uXo-ZK-7ft">
+                                <rect key="frame" x="15" y="84" width="345" height="21"/>
+                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="17"/>
+                                <color key="textColor" red="0.58039215690000001" green="0.58431372550000005" blue="0.58823529409999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vd6-3F-OC6">
+                                <rect key="frame" x="63" y="15" width="101" height="30"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P8S-Sk-Fz0">
+                                <rect key="frame" x="179" y="10" width="147" height="30"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Ufc-xG-8AO" firstAttribute="centerX" secondItem="0IV-LA-MOl" secondAttribute="centerX" id="2cy-zB-LcE"/>
+                            <constraint firstItem="P8S-Sk-Fz0" firstAttribute="trailing" secondItem="luN-Dj-lAU" secondAttribute="trailing" id="6c1-TS-66N"/>
+                            <constraint firstItem="uXo-ZK-7ft" firstAttribute="leading" secondItem="0IV-LA-MOl" secondAttribute="leading" constant="15" id="9tj-I1-NDL"/>
+                            <constraint firstItem="Ufc-xG-8AO" firstAttribute="top" secondItem="luN-Dj-lAU" secondAttribute="bottom" constant="25" id="AkF-cX-LhF"/>
+                            <constraint firstItem="P8S-Sk-Fz0" firstAttribute="leading" secondItem="luN-Dj-lAU" secondAttribute="leading" id="BK8-KQ-Ip5"/>
+                            <constraint firstAttribute="trailing" secondItem="uXo-ZK-7ft" secondAttribute="trailing" constant="15" id="ECr-TY-FKV"/>
+                            <constraint firstItem="P8S-Sk-Fz0" firstAttribute="bottom" secondItem="luN-Dj-lAU" secondAttribute="bottom" id="JYU-xj-DpI"/>
+                            <constraint firstItem="9fV-qK-oOi" firstAttribute="centerX" secondItem="0IV-LA-MOl" secondAttribute="centerX" multiplier="0.6" id="Mds-mX-cE1"/>
+                            <constraint firstItem="luN-Dj-lAU" firstAttribute="top" secondItem="0IV-LA-MOl" secondAttribute="top" constant="10" id="N1y-Iy-6ay"/>
+                            <constraint firstItem="P8S-Sk-Fz0" firstAttribute="top" secondItem="luN-Dj-lAU" secondAttribute="top" id="Nl9-EJ-m7n"/>
+                            <constraint firstItem="Vd6-3F-OC6" firstAttribute="centerX" secondItem="0IV-LA-MOl" secondAttribute="centerX" constant="-74" id="PxS-H7-0Ai"/>
+                            <constraint firstItem="luN-Dj-lAU" firstAttribute="leading" secondItem="Vd6-3F-OC6" secondAttribute="trailing" constant="15" id="Tw4-kH-Bkb"/>
+                            <constraint firstItem="luN-Dj-lAU" firstAttribute="leading" secondItem="9fV-qK-oOi" secondAttribute="trailing" constant="15" id="bmB-KX-tZk"/>
+                            <constraint firstItem="9fV-qK-oOi" firstAttribute="top" secondItem="0IV-LA-MOl" secondAttribute="top" constant="15" id="gpD-IO-Gov"/>
+                            <constraint firstAttribute="height" constant="124" id="hfx-Ge-1qo"/>
+                            <constraint firstItem="uXo-ZK-7ft" firstAttribute="top" secondItem="Ufc-xG-8AO" secondAttribute="bottom" constant="2" id="iHS-DA-ZGu"/>
+                            <constraint firstItem="Vd6-3F-OC6" firstAttribute="top" secondItem="0IV-LA-MOl" secondAttribute="top" constant="15" id="ws0-0F-kMm"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="0IV-LA-MOl" secondAttribute="trailing" id="8NR-ih-tTt"/>
+                    <constraint firstItem="0IV-LA-MOl" firstAttribute="top" secondItem="IXb-yM-Spp" secondAttribute="top" id="WqL-41-sIa"/>
+                    <constraint firstAttribute="bottom" secondItem="0IV-LA-MOl" secondAttribute="bottom" id="bzj-GR-jFP"/>
+                    <constraint firstItem="0IV-LA-MOl" firstAttribute="leading" secondItem="IXb-yM-Spp" secondAttribute="leading" id="ypg-u5-IjI"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="btn_policy" destination="Vd6-3F-OC6" id="soR-wd-aci"/>
+                <outlet property="btn_term" destination="P8S-Sk-Fz0" id="9HQ-gv-LOp"/>
+                <outlet property="lb_copy_right_text" destination="uXo-ZK-7ft" id="IS9-y4-aRf"/>
+                <outlet property="version" destination="Ufc-xG-8AO" id="wtM-mM-UTH"/>
+            </connections>
+            <point key="canvasLocation" x="31.5" y="1"/>
+        </tableViewCell>
+    </objects>
+</document>

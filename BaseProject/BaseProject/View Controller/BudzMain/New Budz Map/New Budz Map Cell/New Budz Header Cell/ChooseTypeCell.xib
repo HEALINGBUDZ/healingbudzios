@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Lato-Bold.ttf">
+            <string>Lato-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ChooseTypeCell" id="nyc-dd-5vg" customClass="ChooseTypeCell" customModule="BaseProject" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="nyc-dd-5vg" id="L4F-Zg-q9e">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ahy-9M-Rja">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Y3a-fE-LOE">
+                                <rect key="frame" x="10" y="41.5" width="355" height="1"/>
+                                <color key="backgroundColor" red="0.70588235290000001" green="0.70588235290000001" blue="0.70588235290000001" alpha="0.14999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="VMa-Hg-CP0"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose Listing Type" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dVI-Sb-YY4">
+                                <rect key="frame" x="15" y="11" width="355" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="k5h-o7-yuE"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="16"/>
+                                <color key="textColor" red="0.58733278509999998" green="0.17158916590000001" blue="0.51552814250000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Y3a-fE-LOE" firstAttribute="leading" secondItem="ahy-9M-Rja" secondAttribute="leading" constant="10" id="9PI-ns-Bsb"/>
+                            <constraint firstAttribute="height" constant="43.5" id="DxM-BO-fwt"/>
+                            <constraint firstAttribute="trailing" secondItem="dVI-Sb-YY4" secondAttribute="trailing" constant="5" id="Hqx-Gn-bFj"/>
+                            <constraint firstItem="dVI-Sb-YY4" firstAttribute="centerY" secondItem="ahy-9M-Rja" secondAttribute="centerY" id="Pcn-GY-Z7v"/>
+                            <constraint firstItem="dVI-Sb-YY4" firstAttribute="leading" secondItem="ahy-9M-Rja" secondAttribute="leading" constant="15" id="WHt-gc-FOh"/>
+                            <constraint firstAttribute="trailing" secondItem="Y3a-fE-LOE" secondAttribute="trailing" constant="10" id="lCe-8u-mZe"/>
+                            <constraint firstAttribute="bottom" secondItem="Y3a-fE-LOE" secondAttribute="bottom" constant="1" id="sG3-qE-p8X"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstItem="ahy-9M-Rja" firstAttribute="leading" secondItem="L4F-Zg-q9e" secondAttribute="leading" id="7va-xb-gYb"/>
+                    <constraint firstAttribute="trailing" secondItem="ahy-9M-Rja" secondAttribute="trailing" id="E0y-Jh-fM0"/>
+                    <constraint firstItem="ahy-9M-Rja" firstAttribute="top" secondItem="L4F-Zg-q9e" secondAttribute="top" id="ENn-Qt-tZd"/>
+                    <constraint firstAttribute="bottom" secondItem="ahy-9M-Rja" secondAttribute="bottom" id="HJu-4i-U3y"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <point key="canvasLocation" x="-15.5" y="105"/>
+        </tableViewCell>
+    </objects>
+</document>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PostCellMenuViewController" customModule="BaseProject" customModuleProvider="target">
+            <connections>
+                <outlet property="tableView" destination="pRW-da-gV9" id="gkB-Eh-Ipu"/>
+                <outlet property="view" destination="CEk-Pq-36i" id="l4K-pB-i7t"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="CEk-Pq-36i">
+            <rect key="frame" x="0.0" y="0.0" width="200" height="160"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="pRW-da-gV9">
+                    <rect key="frame" x="0.0" y="0.0" width="200" height="160"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="zK4-yW-ynQ"/>
+                        <outlet property="delegate" destination="-1" id="Fn3-27-HNF"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="s0w-Ls-VnX" firstAttribute="bottom" secondItem="pRW-da-gV9" secondAttribute="bottom" id="8pc-3X-Ils"/>
+                <constraint firstItem="pRW-da-gV9" firstAttribute="leading" secondItem="s0w-Ls-VnX" secondAttribute="leading" id="ARc-7T-Gg0"/>
+                <constraint firstAttribute="trailing" secondItem="pRW-da-gV9" secondAttribute="trailing" id="L5H-7h-hKc"/>
+                <constraint firstItem="pRW-da-gV9" firstAttribute="top" secondItem="s0w-Ls-VnX" secondAttribute="top" id="gEP-N4-1Vp"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="s0w-Ls-VnX"/>
+            <point key="canvasLocation" x="-19" y="69"/>
+        </view>
+    </objects>
+</document>

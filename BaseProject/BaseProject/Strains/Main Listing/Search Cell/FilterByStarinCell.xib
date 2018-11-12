@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Lato-Bold.ttf">
+            <string>Lato-Bold</string>
+        </array>
+        <array key="Lato-Regular.ttf">
+            <string>Lato-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="FilterByStarinCell" rowHeight="55" id="iBB-vn-5Ow" customClass="FilterByStarinCell" customModule="BaseProject" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="55"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="iBB-vn-5Ow" id="7qm-Ft-pDH">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="54.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tt5-fu-yMr">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="54.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Filter by:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h5U-SO-bIr">
+                                <rect key="frame" x="15" y="5" width="345" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="JjF-mw-WkD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter a search term for one or all." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gYp-JI-E8Z">
+                                <rect key="frame" x="15" y="26" width="345" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="OZd-5s-QjN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="h5U-SO-bIr" firstAttribute="leading" secondItem="tt5-fu-yMr" secondAttribute="leading" constant="15" id="Aw4-90-MP4"/>
+                            <constraint firstItem="gYp-JI-E8Z" firstAttribute="centerX" secondItem="h5U-SO-bIr" secondAttribute="centerX" id="E1G-Lk-ZNH"/>
+                            <constraint firstItem="gYp-JI-E8Z" firstAttribute="width" secondItem="h5U-SO-bIr" secondAttribute="width" id="K1y-G7-iJw"/>
+                            <constraint firstItem="h5U-SO-bIr" firstAttribute="top" secondItem="tt5-fu-yMr" secondAttribute="top" constant="5" id="Syd-PV-QZJ"/>
+                            <constraint firstAttribute="trailing" secondItem="h5U-SO-bIr" secondAttribute="trailing" constant="15" id="Y2Q-aJ-ugF"/>
+                            <constraint firstItem="gYp-JI-E8Z" firstAttribute="top" secondItem="h5U-SO-bIr" secondAttribute="bottom" id="bds-GK-6o7"/>
+                            <constraint firstAttribute="height" constant="54.5" id="g5x-eR-XFa"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstItem="tt5-fu-yMr" firstAttribute="leading" secondItem="7qm-Ft-pDH" secondAttribute="leading" id="AAa-vQ-qaF"/>
+                    <constraint firstAttribute="trailing" secondItem="tt5-fu-yMr" secondAttribute="trailing" id="HkU-jc-dPg"/>
+                    <constraint firstAttribute="bottom" secondItem="tt5-fu-yMr" secondAttribute="bottom" id="g2S-Yd-WUB"/>
+                    <constraint firstItem="tt5-fu-yMr" firstAttribute="top" secondItem="7qm-Ft-pDH" secondAttribute="top" id="jSz-YW-IYa"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <point key="canvasLocation" x="146.5" y="95.5"/>
+        </tableViewCell>
+    </objects>
+</document>

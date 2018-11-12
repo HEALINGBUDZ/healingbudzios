@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Lato-Regular.ttf">
+            <string>Lato-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="HeaderMenuCell" rowHeight="72" id="0AM-kc-X3I" customClass="HeaderMenuCell" customModule="BaseProject" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="72"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="0AM-kc-X3I" id="Xfe-e5-d6h">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="71.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uJe-ee-8qn">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="72"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholderMenu" translatesAutoresizingMaskIntoConstraints="NO" id="i4q-Uw-KPI" customClass="CircularImageView" customModule="BaseProject" customModuleProvider="target">
+                                <rect key="frame" x="15" y="11" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="HmN-Zt-r4b"/>
+                                    <constraint firstAttribute="height" constant="50" id="noS-pg-ACh"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="topi_ic" translatesAutoresizingMaskIntoConstraints="NO" id="d16-T6-mWC">
+                                <rect key="frame" x="15" y="6" width="30" height="30"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CtA-lq-Kp6">
+                                <rect key="frame" x="72" y="10" width="258" height="52.5"/>
+                                <string key="text">asdfasdfasdfsdfasdf dsfasdfa sdfsadf dsfasdfasdf asdfsadfasfas afdsfas asdfasdfasdfsdfasdf dsfasdfa sdfsadf dsfasdfasdf asdfsadfasfas afdsfas</string>
+                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="15"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P46-JS-Hl1">
+                                <rect key="frame" x="5" y="0.0" width="314.5" height="72"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GK4-1X-vXM">
+                                <rect key="frame" x="335" y="23.5" width="25" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="25" id="7rr-ot-e0M"/>
+                                    <constraint firstAttribute="height" constant="25" id="teQ-vv-8UM"/>
+                                </constraints>
+                                <state key="normal" image="setting"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B33-6b-fly">
+                                <rect key="frame" x="324.5" y="0.0" width="46" height="72"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="46" id="wQe-r5-cZU"/>
+                                </constraints>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.12156862745098039" green="0.12156862745098039" blue="0.12156862745098039" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="B33-6b-fly" firstAttribute="centerX" secondItem="GK4-1X-vXM" secondAttribute="centerX" id="4tb-WZ-V8t"/>
+                            <constraint firstItem="i4q-Uw-KPI" firstAttribute="centerY" secondItem="uJe-ee-8qn" secondAttribute="centerY" id="9Rh-xy-Usg"/>
+                            <constraint firstAttribute="trailing" secondItem="GK4-1X-vXM" secondAttribute="trailing" constant="15" id="GOe-WG-w4L"/>
+                            <constraint firstItem="B33-6b-fly" firstAttribute="centerY" secondItem="GK4-1X-vXM" secondAttribute="centerY" id="S3a-4s-NBu"/>
+                            <constraint firstItem="i4q-Uw-KPI" firstAttribute="top" secondItem="uJe-ee-8qn" secondAttribute="top" constant="11" id="bQE-yV-m71"/>
+                            <constraint firstItem="GK4-1X-vXM" firstAttribute="leading" secondItem="CtA-lq-Kp6" secondAttribute="trailing" constant="5" id="c3P-1p-hjM"/>
+                            <constraint firstAttribute="bottom" secondItem="i4q-Uw-KPI" secondAttribute="bottom" constant="11" id="crE-VL-xUv"/>
+                            <constraint firstItem="CtA-lq-Kp6" firstAttribute="centerY" secondItem="i4q-Uw-KPI" secondAttribute="centerY" id="dB4-om-2We"/>
+                            <constraint firstItem="B33-6b-fly" firstAttribute="leading" secondItem="P46-JS-Hl1" secondAttribute="trailing" constant="5" id="eJ3-db-yLe"/>
+                            <constraint firstItem="GK4-1X-vXM" firstAttribute="centerY" secondItem="i4q-Uw-KPI" secondAttribute="centerY" id="eSO-gB-zmg"/>
+                            <constraint firstItem="P46-JS-Hl1" firstAttribute="centerY" secondItem="uJe-ee-8qn" secondAttribute="centerY" id="eoB-3G-H9c"/>
+                            <constraint firstItem="d16-T6-mWC" firstAttribute="bottom" secondItem="i4q-Uw-KPI" secondAttribute="bottom" constant="-25" id="iLk-Ki-Eyq"/>
+                            <constraint firstItem="CtA-lq-Kp6" firstAttribute="leading" secondItem="i4q-Uw-KPI" secondAttribute="trailing" constant="7" id="jUM-8a-EFc"/>
+                            <constraint firstItem="i4q-Uw-KPI" firstAttribute="leading" secondItem="uJe-ee-8qn" secondAttribute="leading" constant="15" id="kPm-Xh-ADI"/>
+                            <constraint firstAttribute="height" constant="72" id="kRJ-Nw-IJM"/>
+                            <constraint firstItem="d16-T6-mWC" firstAttribute="leading" secondItem="i4q-Uw-KPI" secondAttribute="leading" id="maZ-OQ-8U4"/>
+                            <constraint firstItem="P46-JS-Hl1" firstAttribute="height" secondItem="uJe-ee-8qn" secondAttribute="height" id="oeQ-z2-RL4"/>
+                            <constraint firstItem="P46-JS-Hl1" firstAttribute="leading" secondItem="uJe-ee-8qn" secondAttribute="leading" constant="5" id="qXq-9B-Cc6"/>
+                            <constraint firstItem="d16-T6-mWC" firstAttribute="top" secondItem="i4q-Uw-KPI" secondAttribute="top" constant="-5" id="s5R-xq-lra"/>
+                            <constraint firstItem="B33-6b-fly" firstAttribute="height" secondItem="uJe-ee-8qn" secondAttribute="height" id="ud1-Is-gSz"/>
+                            <constraint firstItem="d16-T6-mWC" firstAttribute="trailing" secondItem="i4q-Uw-KPI" secondAttribute="trailing" constant="-20" id="wDS-BM-6XC"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="uJe-ee-8qn" firstAttribute="top" secondItem="Xfe-e5-d6h" secondAttribute="top" id="1tA-gX-MCF"/>
+                    <constraint firstAttribute="bottom" secondItem="uJe-ee-8qn" secondAttribute="bottom" id="2M1-j4-jtr"/>
+                    <constraint firstAttribute="trailing" secondItem="uJe-ee-8qn" secondAttribute="trailing" id="e0l-0S-iws"/>
+                    <constraint firstItem="uJe-ee-8qn" firstAttribute="leading" secondItem="Xfe-e5-d6h" secondAttribute="leading" id="sgH-R7-hFY"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="btn_Gear" destination="B33-6b-fly" id="HVD-gZ-Rab"/>
+                <outlet property="btn_UserProfile" destination="P46-JS-Hl1" id="QEd-NM-CUQ"/>
+                <outlet property="imgView_User" destination="i4q-Uw-KPI" id="iNV-KT-69g"/>
+                <outlet property="imgView_UserTop" destination="d16-T6-mWC" id="QsJ-LF-RMI"/>
+                <outlet property="lbl_Name" destination="CtA-lq-Kp6" id="eTS-Wt-SAT"/>
+            </connections>
+            <point key="canvasLocation" x="39.5" y="70"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="placeholderMenu" width="284" height="284"/>
+        <image name="setting" width="47" height="46"/>
+        <image name="topi_ic" width="60" height="56"/>
+    </resources>
+</document>

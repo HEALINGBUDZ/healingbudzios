@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Lato-Regular.ttf">
+            <string>Lato-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="helpLabelCell" rowHeight="109" id="cJ4-Iu-aS2" customClass="helpLabelCell" customModule="BaseProject" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="109"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="cJ4-Iu-aS2" id="o1N-cA-uOE">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="108.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SqD-uj-Lc7">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="108.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hi Bud, Need Support?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fAa-rn-7uX">
+                                <rect key="frame" x="15" y="15" width="345" height="20"/>
+                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="17"/>
+                                <color key="textColor" red="0.58039215686274503" green="0.58431372549019611" blue="0.58823529411764708" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="We are always here to help.Plz supply as much info as you can and someone will email you back in a jiffy." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rqW-Gg-Iz3">
+                                <rect key="frame" x="15" y="50" width="345" height="34"/>
+                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="14"/>
+                                <color key="textColor" red="0.58039215686274503" green="0.58431372549019611" blue="0.58823529411764708" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="fAa-rn-7uX" firstAttribute="leading" secondItem="SqD-uj-Lc7" secondAttribute="leading" constant="15" id="5is-El-0bq"/>
+                            <constraint firstAttribute="height" constant="108.5" id="BIH-Io-oco"/>
+                            <constraint firstItem="rqW-Gg-Iz3" firstAttribute="top" secondItem="fAa-rn-7uX" secondAttribute="bottom" constant="15" id="Hye-eb-M30"/>
+                            <constraint firstAttribute="trailing" secondItem="rqW-Gg-Iz3" secondAttribute="trailing" constant="15" id="HzB-YE-aXS"/>
+                            <constraint firstItem="fAa-rn-7uX" firstAttribute="top" secondItem="SqD-uj-Lc7" secondAttribute="top" constant="15" id="XqM-Ro-94E"/>
+                            <constraint firstItem="rqW-Gg-Iz3" firstAttribute="leading" secondItem="SqD-uj-Lc7" secondAttribute="leading" constant="15" id="ZAx-M7-QT7"/>
+                            <constraint firstAttribute="trailing" secondItem="fAa-rn-7uX" secondAttribute="trailing" constant="15" id="gnT-ly-heQ"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstItem="SqD-uj-Lc7" firstAttribute="leading" secondItem="o1N-cA-uOE" secondAttribute="leading" id="J2Y-DK-Dqg"/>
+                    <constraint firstItem="SqD-uj-Lc7" firstAttribute="top" secondItem="o1N-cA-uOE" secondAttribute="top" id="TG2-8z-VYn"/>
+                    <constraint firstAttribute="bottom" secondItem="SqD-uj-Lc7" secondAttribute="bottom" id="ZOe-WD-UHD"/>
+                    <constraint firstAttribute="trailing" secondItem="SqD-uj-Lc7" secondAttribute="trailing" id="y8U-pn-qQ9"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <point key="canvasLocation" x="9.5" y="-117.5"/>
+        </tableViewCell>
+    </objects>
+</document>

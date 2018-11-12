@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Lato-Regular.ttf">
+            <string>Lato-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="StrainDescriptionCell" rowHeight="176" id="NnX-lb-Bug" customClass="StrainDescriptionCell" customModule="BaseProject" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="176"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="NnX-lb-Bug" id="QHt-NS-ZJu">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="175.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iHT-Qj-e2i">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="175.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Short Description:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zmK-Op-HiB">
+                                <rect key="frame" x="15" y="15" width="345" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="rda-KH-5Zi"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                <color key="textColor" red="0.95686274509803915" green="0.76862745098039209" blue="0.18431372549019609" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V48-aS-wKD" customClass="ActiveLabel" customModule="ActiveLabel">
+                                <rect key="frame" x="15" y="46" width="345" height="103.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="15" id="sIR-Qz-qxM"/>
+                                </constraints>
+                                <string key="text">Now we should detect touches on this link. The idea is to catch all taps within UILabel and figure out whether the location of the tap was close enough to the link. To catch touches we can add tap gesture recognizer to the label. Make sure to enable userInteraction for the label, it's turned off by default:</string>
+                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="12"/>
+                                <color key="textColor" red="0.80784313725490198" green="0.80000000000000004" blue="0.80784313725490198" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hJD-Kt-9Kh">
+                                <rect key="frame" x="15" y="173.5" width="345" height="1"/>
+                                <color key="backgroundColor" red="0.24313725490196078" green="0.24313725490196078" blue="0.24313725490196078" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="XzT-aH-unt"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mAh-8i-1zt">
+                                <rect key="frame" x="15" y="147.5" width="119" height="18"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="18" id="uMI-c7-er6"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="12"/>
+                                <state key="normal" title="[ See full strain details]">
+                                    <color key="titleColor" red="0.95686274510000002" green="0.72549019609999998" blue="0.1529411765" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="V48-aS-wKD" firstAttribute="centerX" secondItem="zmK-Op-HiB" secondAttribute="centerX" id="HVj-mu-GOv"/>
+                            <constraint firstAttribute="trailing" secondItem="zmK-Op-HiB" secondAttribute="trailing" constant="15" id="Imr-Ze-M6T"/>
+                            <constraint firstAttribute="bottom" secondItem="hJD-Kt-9Kh" secondAttribute="bottom" constant="1" id="JrS-cz-S52"/>
+                            <constraint firstItem="zmK-Op-HiB" firstAttribute="leading" secondItem="iHT-Qj-e2i" secondAttribute="leading" constant="15" id="K5x-a2-FNP"/>
+                            <constraint firstItem="mAh-8i-1zt" firstAttribute="leading" secondItem="V48-aS-wKD" secondAttribute="leading" id="Sl9-aU-bdz"/>
+                            <constraint firstItem="hJD-Kt-9Kh" firstAttribute="leading" secondItem="iHT-Qj-e2i" secondAttribute="leading" constant="15" id="ZRQ-7m-ljd"/>
+                            <constraint firstAttribute="bottom" secondItem="mAh-8i-1zt" secondAttribute="bottom" constant="10" id="ZT9-vi-Vzu"/>
+                            <constraint firstItem="zmK-Op-HiB" firstAttribute="top" secondItem="iHT-Qj-e2i" secondAttribute="top" constant="15" id="bo7-hj-cHd"/>
+                            <constraint firstItem="mAh-8i-1zt" firstAttribute="top" secondItem="V48-aS-wKD" secondAttribute="bottom" constant="-2" id="h3J-ge-lUr"/>
+                            <constraint firstItem="V48-aS-wKD" firstAttribute="top" secondItem="zmK-Op-HiB" secondAttribute="bottom" constant="10" id="izc-fF-8jB"/>
+                            <constraint firstAttribute="trailing" secondItem="hJD-Kt-9Kh" secondAttribute="trailing" constant="15" id="nZ6-Oi-5WN"/>
+                            <constraint firstItem="V48-aS-wKD" firstAttribute="width" secondItem="zmK-Op-HiB" secondAttribute="width" id="zw2-0u-dtf"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="iHT-Qj-e2i" secondAttribute="bottom" id="Sbo-Cv-Q0z"/>
+                    <constraint firstAttribute="trailing" secondItem="iHT-Qj-e2i" secondAttribute="trailing" id="Ud8-Ym-qKA"/>
+                    <constraint firstItem="iHT-Qj-e2i" firstAttribute="top" secondItem="QHt-NS-ZJu" secondAttribute="top" id="caK-f4-A0s"/>
+                    <constraint firstItem="iHT-Qj-e2i" firstAttribute="leading" secondItem="QHt-NS-ZJu" secondAttribute="leading" id="g3X-5p-GXa"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="btn_full_discription" destination="mAh-8i-1zt" id="5Cy-jk-gfT"/>
+                <outlet property="constraint_height" destination="uMI-c7-er6" id="scH-0u-ZIW"/>
+                <outlet property="lblDescription" destination="V48-aS-wKD" id="Kba-Qg-9sK"/>
+                <outlet property="lbl_title" destination="zmK-Op-HiB" id="ccD-6a-yJs"/>
+                <outlet property="line" destination="hJD-Kt-9Kh" id="u7p-3e-WVy"/>
+            </connections>
+            <point key="canvasLocation" x="71.5" y="65"/>
+        </tableViewCell>
+    </objects>
+</document>

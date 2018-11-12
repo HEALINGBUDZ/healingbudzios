@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Lato-Regular.ttf">
+            <string>Lato-Regular</string>
+        </array>
+        <array key="Lato-Semibold.ttf">
+            <string>Lato-Semibold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SpecialBudzCell" rowHeight="147" id="FUW-ZY-Sqh" customClass="SpecialBudzCell" customModule="BaseProject" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="147"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="FUW-ZY-Sqh" id="9TS-he-mND">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="146.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qPg-GO-4Bi">
+                        <rect key="frame" x="-0.5" y="0.0" width="375" height="146.5"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Yw-gz-mFO" customClass="DashedBorderView" customModule="BaseProject" customModuleProvider="target">
+                                <rect key="frame" x="10" y="30" width="355" height="111.5"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Share_Gray" translatesAutoresizingMaskIntoConstraints="NO" id="Nqq-tw-ZMZ">
+                                        <rect key="frame" x="15" y="15" width="20" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="mPs-qJ-2pQ"/>
+                                            <constraint firstAttribute="width" constant="20" id="nAq-qF-CRt"/>
+                                        </constraints>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BP5-cq-83E">
+                                        <rect key="frame" x="15" y="15" width="20" height="20"/>
+                                    </button>
+                                    <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="delete" translatesAutoresizingMaskIntoConstraints="NO" id="TxR-3Z-dzE">
+                                        <rect key="frame" x="320" y="15" width="20" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="P5P-IX-hzS"/>
+                                            <constraint firstAttribute="width" constant="20" id="jK6-Lb-KJa"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Edit-QA-Icons" translatesAutoresizingMaskIntoConstraints="NO" id="Izp-2J-E3S">
+                                        <rect key="frame" x="279.5" y="15.5" width="20" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="6Vb-Gh-4kj"/>
+                                            <constraint firstAttribute="width" constant="20" id="Crc-us-WqV"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Summer Special" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wp6-B9-zxQ" customClass="ActiveLabel" customModule="ActiveLabel">
+                                        <rect key="frame" x="50" y="15" width="255" height="24"/>
+                                        <fontDescription key="fontDescription" name="Lato-Semibold" family="Lato" pointSize="20"/>
+                                        <color key="textColor" red="0.92540913820266724" green="0.92554211616516113" blue="0.92537993192672729" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="50% OFF on most 1G &amp; 2G bud " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rrz-Cn-Bjp" customClass="ActiveLabel" customModule="ActiveLabel">
+                                        <rect key="frame" x="50" y="47" width="255" height="16.5"/>
+                                        <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="14"/>
+                                        <color key="textColor" red="0.92540913820000004" green="0.92554211620000004" blue="0.92537993190000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Expires May 25, 2017" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lYt-0o-4te">
+                                        <rect key="frame" x="253" y="90.5" width="87" height="11"/>
+                                        <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="9"/>
+                                        <color key="textColor" red="0.92549019607843142" green="0.92549019607843142" blue="0.92549019607843142" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bH6-8f-Nko">
+                                        <rect key="frame" x="272" y="8" width="35" height="35"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="35" id="AZs-YC-518"/>
+                                            <constraint firstAttribute="width" constant="35" id="Aki-LC-PVQ"/>
+                                        </constraints>
+                                    </button>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bbo-Qr-Txf">
+                                        <rect key="frame" x="312" y="8" width="35" height="35"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="35" id="JbW-oX-aTV"/>
+                                            <constraint firstAttribute="width" constant="35" id="m4R-Hz-Y3w"/>
+                                        </constraints>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Expire Soon!" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R4M-Tk-rjN">
+                                        <rect key="frame" x="193.5" y="90.5" width="51.5" height="11"/>
+                                        <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="9"/>
+                                        <color key="textColor" red="0.92549019610000005" green="0.92549019610000005" blue="0.92549019610000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="bH6-8f-Nko" firstAttribute="centerY" secondItem="Bbo-Qr-Txf" secondAttribute="centerY" id="1Rr-zh-KU8"/>
+                                    <constraint firstItem="BP5-cq-83E" firstAttribute="width" secondItem="Nqq-tw-ZMZ" secondAttribute="width" id="2AB-rX-1xz"/>
+                                    <constraint firstItem="rrz-Cn-Bjp" firstAttribute="centerX" secondItem="wp6-B9-zxQ" secondAttribute="centerX" id="3ZJ-cm-f2z"/>
+                                    <constraint firstItem="Nqq-tw-ZMZ" firstAttribute="leading" secondItem="2Yw-gz-mFO" secondAttribute="leading" constant="15" id="3m4-56-Rgx"/>
+                                    <constraint firstItem="wp6-B9-zxQ" firstAttribute="top" secondItem="2Yw-gz-mFO" secondAttribute="top" constant="15" id="6d6-4N-06m"/>
+                                    <constraint firstItem="Bbo-Qr-Txf" firstAttribute="leading" secondItem="bH6-8f-Nko" secondAttribute="trailing" constant="5" id="7Xd-Lb-KQa"/>
+                                    <constraint firstAttribute="height" constant="111.5" id="8Mf-bi-z6Q"/>
+                                    <constraint firstItem="R4M-Tk-rjN" firstAttribute="top" secondItem="lYt-0o-4te" secondAttribute="top" id="9hX-P7-UHn"/>
+                                    <constraint firstAttribute="trailing" secondItem="TxR-3Z-dzE" secondAttribute="trailing" constant="15" id="DQ7-pq-gJe"/>
+                                    <constraint firstItem="Bbo-Qr-Txf" firstAttribute="centerX" secondItem="TxR-3Z-dzE" secondAttribute="centerX" id="Gdt-B7-bs3"/>
+                                    <constraint firstAttribute="bottom" secondItem="lYt-0o-4te" secondAttribute="bottom" constant="10" id="Gsp-dl-kPc"/>
+                                    <constraint firstItem="Bbo-Qr-Txf" firstAttribute="centerY" secondItem="TxR-3Z-dzE" secondAttribute="centerY" id="IqZ-4I-oQA"/>
+                                    <constraint firstItem="Izp-2J-E3S" firstAttribute="centerX" secondItem="bH6-8f-Nko" secondAttribute="centerX" id="OTx-b3-ks1"/>
+                                    <constraint firstItem="lYt-0o-4te" firstAttribute="leading" secondItem="R4M-Tk-rjN" secondAttribute="trailing" constant="8" id="U8p-YC-MIq"/>
+                                    <constraint firstItem="TxR-3Z-dzE" firstAttribute="leading" secondItem="wp6-B9-zxQ" secondAttribute="trailing" constant="15" id="UJO-CD-6fD"/>
+                                    <constraint firstItem="wp6-B9-zxQ" firstAttribute="leading" secondItem="Nqq-tw-ZMZ" secondAttribute="trailing" constant="15" id="ckw-8n-nGN"/>
+                                    <constraint firstItem="BP5-cq-83E" firstAttribute="centerX" secondItem="Nqq-tw-ZMZ" secondAttribute="centerX" id="ekM-jW-vq9"/>
+                                    <constraint firstItem="rrz-Cn-Bjp" firstAttribute="width" secondItem="wp6-B9-zxQ" secondAttribute="width" id="ixA-dt-QeZ"/>
+                                    <constraint firstAttribute="trailing" secondItem="lYt-0o-4te" secondAttribute="trailing" constant="15" id="lDo-H3-xJz"/>
+                                    <constraint firstItem="TxR-3Z-dzE" firstAttribute="top" secondItem="2Yw-gz-mFO" secondAttribute="top" constant="15" id="o5v-Eu-XXi"/>
+                                    <constraint firstItem="BP5-cq-83E" firstAttribute="height" secondItem="Nqq-tw-ZMZ" secondAttribute="height" id="qvt-PH-8e2"/>
+                                    <constraint firstItem="R4M-Tk-rjN" firstAttribute="bottom" secondItem="lYt-0o-4te" secondAttribute="bottom" id="rfw-SQ-iv3"/>
+                                    <constraint firstItem="Nqq-tw-ZMZ" firstAttribute="top" secondItem="2Yw-gz-mFO" secondAttribute="top" constant="15" id="s6z-Vd-XrJ"/>
+                                    <constraint firstItem="Izp-2J-E3S" firstAttribute="centerY" secondItem="bH6-8f-Nko" secondAttribute="centerY" id="vHl-Of-mLJ"/>
+                                    <constraint firstItem="R4M-Tk-rjN" firstAttribute="centerY" secondItem="lYt-0o-4te" secondAttribute="centerY" id="xat-qE-blz"/>
+                                    <constraint firstItem="rrz-Cn-Bjp" firstAttribute="top" secondItem="wp6-B9-zxQ" secondAttribute="bottom" constant="8" id="zPI-7z-wqb"/>
+                                    <constraint firstItem="BP5-cq-83E" firstAttribute="centerY" secondItem="Nqq-tw-ZMZ" secondAttribute="centerY" id="zel-2p-3Rz"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Special Offers" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iHF-e4-0uo">
+                                <rect key="frame" x="20" y="5" width="75.5" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="hpw-zV-YIb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="12"/>
+                                <color key="textColor" red="0.58823529409999997" green="0.1215686275" blue="0.52156862749999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="iHF-e4-0uo" firstAttribute="top" secondItem="qPg-GO-4Bi" secondAttribute="top" constant="5" id="Bu0-MM-OHp"/>
+                            <constraint firstItem="2Yw-gz-mFO" firstAttribute="leading" secondItem="qPg-GO-4Bi" secondAttribute="leading" constant="10" id="Tq4-t9-Vgo"/>
+                            <constraint firstItem="iHF-e4-0uo" firstAttribute="leading" secondItem="qPg-GO-4Bi" secondAttribute="leading" constant="20" id="VDA-Wh-XiT"/>
+                            <constraint firstAttribute="bottom" secondItem="2Yw-gz-mFO" secondAttribute="bottom" constant="5" id="X89-6b-hlx"/>
+                            <constraint firstItem="2Yw-gz-mFO" firstAttribute="top" secondItem="iHF-e4-0uo" secondAttribute="bottom" constant="5" id="Z70-6m-zEw"/>
+                            <constraint firstAttribute="trailing" secondItem="2Yw-gz-mFO" secondAttribute="trailing" constant="10" id="rxP-uS-iag"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstItem="qPg-GO-4Bi" firstAttribute="top" secondItem="9TS-he-mND" secondAttribute="top" id="Wif-CR-Veo"/>
+                    <constraint firstItem="qPg-GO-4Bi" firstAttribute="centerX" secondItem="9TS-he-mND" secondAttribute="centerX" id="iqh-2a-pl8"/>
+                    <constraint firstAttribute="bottom" secondItem="qPg-GO-4Bi" secondAttribute="bottom" id="pdb-rJ-zkM"/>
+                    <constraint firstItem="qPg-GO-4Bi" firstAttribute="width" secondItem="9TS-he-mND" secondAttribute="width" id="uAA-k1-feL"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="btn_Save" destination="Bbo-Qr-Txf" id="2o7-cz-AOT"/>
+                <outlet property="btn_Share" destination="BP5-cq-83E" id="JKO-Ch-7u5"/>
+                <outlet property="btn_edit_sp" destination="bH6-8f-Nko" id="McG-tq-h5x"/>
+                <outlet property="imgView_Save" destination="TxR-3Z-dzE" id="x1U-NK-PHD"/>
+                <outlet property="img_edit_sp" destination="Izp-2J-E3S" id="H0y-RN-uR6"/>
+                <outlet property="lblDescription" destination="rrz-Cn-Bjp" id="NP1-RU-Xfe"/>
+                <outlet property="lblExpire" destination="R4M-Tk-rjN" id="oNV-uW-lv5"/>
+                <outlet property="lblName" destination="wp6-B9-zxQ" id="Owg-ms-OUf"/>
+                <outlet property="lblSpecialOffer" destination="iHF-e4-0uo" id="IXX-En-lef"/>
+                <outlet property="lblTime" destination="lYt-0o-4te" id="88Y-ef-4Xm"/>
+                <outlet property="specialOfferHeight" destination="hpw-zV-YIb" id="IpU-ST-7Bj"/>
+                <outlet property="viewMainBg" destination="2Yw-gz-mFO" id="Jfo-W3-DBh"/>
+            </connections>
+            <point key="canvasLocation" x="-18.5" y="155.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Edit-QA-Icons" width="69" height="69"/>
+        <image name="Share_Gray" width="83" height="83"/>
+        <image name="delete" width="51" height="70"/>
+    </resources>
+</document>

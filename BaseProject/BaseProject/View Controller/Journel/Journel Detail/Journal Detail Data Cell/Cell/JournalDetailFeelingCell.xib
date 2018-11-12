@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G1036" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Lato-Bold.ttf">
+            <string>Lato-Bold</string>
+        </array>
+        <array key="Lato-Regular.ttf">
+            <string>Lato-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="JournalDetailFeelingCell" id="ruH-UJ-qnR" customClass="JournalDetailFeelingCell" customModule="BaseProject" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ruH-UJ-qnR" id="VeJ-qs-7Eo">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5mT-xS-Aiw">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How I'm feeling:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JgP-Sg-Ulj">
+                                <rect key="frame" x="15" y="11.5" width="85.5" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="7Aa-q9-HGl"/>
+                                    <constraint firstAttribute="width" constant="85.5" id="f0a-YR-0ye"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="12"/>
+                                <color key="textColor" red="0.97647058819999999" green="0.97647058819999999" blue="0.97647058819999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Happy" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ARx-iK-IGu">
+                                <rect key="frame" x="105.5" y="12" width="44" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="HcG-JK-A7d"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="15"/>
+                                <color key="textColor" red="0.97647058819999999" green="0.97647058819999999" blue="0.97647058819999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="emoji_Happy" translatesAutoresizingMaskIntoConstraints="NO" id="CWH-bL-52G">
+                                <rect key="frame" x="335" y="9.5" width="25" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="25" id="RR7-vm-kSl"/>
+                                    <constraint firstAttribute="height" constant="25" id="iHt-1P-fZI"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2sn-LC-f2v">
+                                <rect key="frame" x="15" y="41.5" width="345" height="1"/>
+                                <color key="backgroundColor" red="0.40784313729999999" green="0.40781933069999998" blue="0.40781933069999998" alpha="0.25" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="it8-F4-lwb"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="2sn-LC-f2v" firstAttribute="leading" secondItem="5mT-xS-Aiw" secondAttribute="leading" constant="15" id="4hq-0R-JW3"/>
+                            <constraint firstItem="JgP-Sg-Ulj" firstAttribute="leading" secondItem="5mT-xS-Aiw" secondAttribute="leading" constant="15" id="D3y-qL-1ci"/>
+                            <constraint firstItem="ARx-iK-IGu" firstAttribute="leading" secondItem="JgP-Sg-Ulj" secondAttribute="trailing" constant="5" id="Xat-u3-F30"/>
+                            <constraint firstAttribute="height" constant="43.5" id="cWh-YV-dJg"/>
+                            <constraint firstItem="JgP-Sg-Ulj" firstAttribute="centerY" secondItem="5mT-xS-Aiw" secondAttribute="centerY" id="hov-og-ySW"/>
+                            <constraint firstAttribute="trailing" secondItem="CWH-bL-52G" secondAttribute="trailing" constant="15" id="iOK-li-PQC"/>
+                            <constraint firstItem="CWH-bL-52G" firstAttribute="centerY" secondItem="5mT-xS-Aiw" secondAttribute="centerY" id="oos-IJ-1wd"/>
+                            <constraint firstAttribute="bottom" secondItem="2sn-LC-f2v" secondAttribute="bottom" constant="1" id="sv8-5K-fQS"/>
+                            <constraint firstItem="ARx-iK-IGu" firstAttribute="centerY" secondItem="JgP-Sg-Ulj" secondAttribute="centerY" id="vqu-cY-URT"/>
+                            <constraint firstAttribute="trailing" secondItem="2sn-LC-f2v" secondAttribute="trailing" constant="15" id="zMO-H8-WTn"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstItem="5mT-xS-Aiw" firstAttribute="top" secondItem="VeJ-qs-7Eo" secondAttribute="top" id="8GI-lo-lYu"/>
+                    <constraint firstAttribute="trailing" secondItem="5mT-xS-Aiw" secondAttribute="trailing" id="HPN-Xj-8KX"/>
+                    <constraint firstAttribute="bottom" secondItem="5mT-xS-Aiw" secondAttribute="bottom" id="qZX-Ci-gpc"/>
+                    <constraint firstItem="5mT-xS-Aiw" firstAttribute="leading" secondItem="VeJ-qs-7Eo" secondAttribute="leading" id="uwK-bI-VqM"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <point key="canvasLocation" x="16" y="261"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="emoji_Happy" width="200" height="200"/>
+    </resources>
+</document>

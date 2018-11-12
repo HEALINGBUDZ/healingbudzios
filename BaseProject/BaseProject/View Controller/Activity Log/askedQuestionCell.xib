@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Lato-Light.ttf">
+            <string>Lato-Light</string>
+        </array>
+        <array key="Lato-Regular.ttf">
+            <string>Lato-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="askedQuestionCell" rowHeight="80" id="zC6-f7-9Lm" customClass="askedQuestionCell" customModule="BaseProject" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="zC6-f7-9Lm" id="nWn-fx-rbr">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="79.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="G20-WO-ANt">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="QAQuestion" translatesAutoresizingMaskIntoConstraints="NO" id="uSd-yL-RP2">
+                                <rect key="frame" x="15" y="29" width="22" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="22" id="NZE-1q-mtl"/>
+                                    <constraint firstAttribute="width" constant="22" id="eKv-sf-3Ek"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="You asked a question." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RQM-Hw-2iv">
+                                <rect key="frame" x="45" y="29" width="102.5" height="13"/>
+                                <fontDescription key="fontDescription" name="Lato-Light" family="Lato" pointSize="11"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="1.14.7,4:55 PM" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Mr-V4-y1D">
+                                <rect key="frame" x="285" y="29.5" width="75" height="13"/>
+                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="11"/>
+                                <color key="textColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Should I warm cannabis oil before applying?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Tqc-xm-wHy">
+                                <rect key="frame" x="45" y="46.5" width="315" height="14"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="14" id="yAD-P0-K7s"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Lato-Light" family="Lato" pointSize="17"/>
+                                <color key="textColor" red="0.22352941179999999" green="0.22352941179999999" blue="0.22352941179999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="PFe-GK-0P8">
+                                <rect key="frame" x="15" y="78" width="345" height="2"/>
+                                <color key="backgroundColor" red="0.12549019607843137" green="0.12549019607843137" blue="0.12549019607843137" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="2" id="tF9-sp-2Q7"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Tqc-xm-wHy" secondAttribute="trailing" constant="15" id="4Pc-k7-6Hh"/>
+                            <constraint firstItem="2Mr-V4-y1D" firstAttribute="centerY" secondItem="RQM-Hw-2iv" secondAttribute="centerY" id="B3f-WZ-Ndj"/>
+                            <constraint firstItem="uSd-yL-RP2" firstAttribute="leading" secondItem="G20-WO-ANt" secondAttribute="leading" constant="15" id="HMl-Df-ATi"/>
+                            <constraint firstAttribute="bottom" secondItem="PFe-GK-0P8" secondAttribute="bottom" id="K5Q-Kg-fIS"/>
+                            <constraint firstAttribute="trailing" secondItem="PFe-GK-0P8" secondAttribute="trailing" constant="15" id="KE6-1B-OOr"/>
+                            <constraint firstItem="Tqc-xm-wHy" firstAttribute="top" secondItem="RQM-Hw-2iv" secondAttribute="bottom" constant="4" id="MaB-5d-ReA"/>
+                            <constraint firstItem="RQM-Hw-2iv" firstAttribute="leading" secondItem="uSd-yL-RP2" secondAttribute="trailing" constant="8" id="NAA-FC-Fde"/>
+                            <constraint firstItem="RQM-Hw-2iv" firstAttribute="top" secondItem="G20-WO-ANt" secondAttribute="top" constant="29" id="Nca-Xa-hcx"/>
+                            <constraint firstItem="PFe-GK-0P8" firstAttribute="top" secondItem="Tqc-xm-wHy" secondAttribute="bottom" constant="17.5" id="Qfb-lK-OIE"/>
+                            <constraint firstAttribute="trailing" secondItem="2Mr-V4-y1D" secondAttribute="trailing" constant="15" id="V26-qM-n6p"/>
+                            <constraint firstItem="PFe-GK-0P8" firstAttribute="leading" secondItem="G20-WO-ANt" secondAttribute="leading" constant="15" id="iWq-Vu-s6w"/>
+                            <constraint firstItem="RQM-Hw-2iv" firstAttribute="top" secondItem="uSd-yL-RP2" secondAttribute="top" id="jjT-l7-s52"/>
+                            <constraint firstItem="Tqc-xm-wHy" firstAttribute="leading" secondItem="RQM-Hw-2iv" secondAttribute="leading" id="lci-bP-LJ9"/>
+                            <constraint firstItem="uSd-yL-RP2" firstAttribute="centerY" secondItem="G20-WO-ANt" secondAttribute="centerY" id="mAH-GD-yi0"/>
+                            <constraint firstItem="2Mr-V4-y1D" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="RQM-Hw-2iv" secondAttribute="trailing" constant="5" id="s3g-lv-LBr"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstItem="G20-WO-ANt" firstAttribute="top" secondItem="nWn-fx-rbr" secondAttribute="top" id="32f-vA-yt1"/>
+                    <constraint firstAttribute="trailing" secondItem="G20-WO-ANt" secondAttribute="trailing" id="3Ct-ae-C3y"/>
+                    <constraint firstAttribute="bottom" secondItem="G20-WO-ANt" secondAttribute="bottom" id="b9r-AJ-NSo"/>
+                    <constraint firstItem="G20-WO-ANt" firstAttribute="leading" secondItem="nWn-fx-rbr" secondAttribute="leading" id="v9Q-Id-lvx"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="imgView_main" destination="uSd-yL-RP2" id="xqZ-Ub-PNx"/>
+                <outlet property="lbl_subtitle" destination="Tqc-xm-wHy" id="sOO-nD-3AC"/>
+                <outlet property="lbl_title" destination="RQM-Hw-2iv" id="bDQ-Rh-CKM"/>
+            </connections>
+            <point key="canvasLocation" x="31.5" y="36"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="QAQuestion" width="87" height="80"/>
+    </resources>
+</document>

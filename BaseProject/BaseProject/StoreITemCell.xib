@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Lato-Bold.ttf">
+            <string>Lato-Bold</string>
+        </array>
+        <array key="Lato-Light.ttf">
+            <string>Lato-Light</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="StoreITemCell" id="gTV-IL-0wX" customClass="StoreITemCell" customModule="BaseProject" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="152" height="215"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="152" height="215"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bjv-Vb-XGZ" customClass="RoundViewRewardItem" customModule="BaseProject" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="152" height="215"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="reward_cap" translatesAutoresizingMaskIntoConstraints="NO" id="xnA-oN-2kR">
+                                <rect key="frame" x="6" y="6" width="140" height="142"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="142" id="DF6-Mc-Geu"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="White Head Cap" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GhS-XX-XqY">
+                                <rect key="frame" x="6" y="150" width="140" height="14.5"/>
+                                <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="12"/>
+                                <color key="textColor" red="0.94501525163650513" green="0.94515103101730347" blue="0.94498568773269653" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rewards_star" translatesAutoresizingMaskIntoConstraints="NO" id="4df-BB-Z5l">
+                                <rect key="frame" x="8" y="167.5" width="10" height="10"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="10" id="2qh-Pm-Pga"/>
+                                    <constraint firstAttribute="height" constant="10" id="iJT-Tg-Si1"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="400 points" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uCP-Be-eFh">
+                                <rect key="frame" x="21" y="167" width="47" height="12"/>
+                                <fontDescription key="fontDescription" name="Lato-Light" family="Lato" pointSize="10"/>
+                                <color key="textColor" red="0.51134330034255981" green="0.73429322242736816" blue="0.17114251852035522" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ack-GB-Y3e">
+                                <rect key="frame" x="6" y="183" width="140" height="24"/>
+                                <color key="backgroundColor" red="0.50980392156862742" green="0.73725490196078436" blue="0.16862745098039217" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="y3C-lF-tDF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="11"/>
+                                <state key="normal" title="Redeem Reward">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="OnClickRedeemReward:" destination="gTV-IL-0wX" eventType="touchUpInside" id="8qv-h0-N41"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="GhS-XX-XqY" firstAttribute="top" secondItem="xnA-oN-2kR" secondAttribute="bottom" constant="2" id="9Cr-g1-mhE"/>
+                            <constraint firstItem="uCP-Be-eFh" firstAttribute="centerY" secondItem="4df-BB-Z5l" secondAttribute="centerY" id="HDH-cR-hUe"/>
+                            <constraint firstItem="xnA-oN-2kR" firstAttribute="leading" secondItem="bjv-Vb-XGZ" secondAttribute="leading" constant="6" id="NDc-vm-vEz"/>
+                            <constraint firstItem="ack-GB-Y3e" firstAttribute="leading" secondItem="xnA-oN-2kR" secondAttribute="leading" id="P7c-ZT-qqs"/>
+                            <constraint firstItem="xnA-oN-2kR" firstAttribute="top" secondItem="bjv-Vb-XGZ" secondAttribute="top" constant="6" id="Qbf-Tb-m4P"/>
+                            <constraint firstItem="4df-BB-Z5l" firstAttribute="top" secondItem="GhS-XX-XqY" secondAttribute="bottom" constant="3" id="bnZ-17-G7e"/>
+                            <constraint firstItem="ack-GB-Y3e" firstAttribute="top" secondItem="uCP-Be-eFh" secondAttribute="bottom" constant="4" id="dbl-g0-Uwv"/>
+                            <constraint firstItem="GhS-XX-XqY" firstAttribute="leading" secondItem="xnA-oN-2kR" secondAttribute="leading" id="fKo-yv-zpn"/>
+                            <constraint firstItem="ack-GB-Y3e" firstAttribute="trailing" secondItem="xnA-oN-2kR" secondAttribute="trailing" id="fv9-1K-USI"/>
+                            <constraint firstItem="GhS-XX-XqY" firstAttribute="trailing" secondItem="xnA-oN-2kR" secondAttribute="trailing" id="h25-UN-wEd"/>
+                            <constraint firstItem="uCP-Be-eFh" firstAttribute="leading" secondItem="4df-BB-Z5l" secondAttribute="trailing" constant="3" id="iRY-1X-Hv6"/>
+                            <constraint firstItem="4df-BB-Z5l" firstAttribute="leading" secondItem="GhS-XX-XqY" secondAttribute="leading" constant="2" id="qvP-Wu-Bga"/>
+                            <constraint firstAttribute="trailing" secondItem="xnA-oN-2kR" secondAttribute="trailing" constant="6" id="twR-Bu-RIy"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="bjv-Vb-XGZ" firstAttribute="leading" secondItem="ZTg-uK-7eu" secondAttribute="leading" id="L7g-EL-kbF"/>
+                <constraint firstItem="ZTg-uK-7eu" firstAttribute="bottom" secondItem="bjv-Vb-XGZ" secondAttribute="bottom" id="YLH-MQ-Vb8"/>
+                <constraint firstItem="bjv-Vb-XGZ" firstAttribute="top" secondItem="ZTg-uK-7eu" secondAttribute="top" id="aqJ-66-dtW"/>
+                <constraint firstItem="ZTg-uK-7eu" firstAttribute="trailing" secondItem="bjv-Vb-XGZ" secondAttribute="trailing" id="gdl-FI-PaN"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="190" height="256"/>
+            <connections>
+                <outlet property="Btn_Redeem_rewards" destination="ack-GB-Y3e" id="gSn-CJ-hIn"/>
+                <outlet property="IMG_product_img" destination="xnA-oN-2kR" id="f3L-zT-4A1"/>
+                <outlet property="Lbl_product_name" destination="GhS-XX-XqY" id="Vo7-RP-t3w"/>
+                <outlet property="Lbl_product_points" destination="uCP-Be-eFh" id="J8G-Ea-C55"/>
+            </connections>
+            <point key="canvasLocation" x="53" y="154"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="reward_cap" width="620" height="628"/>
+        <image name="rewards_star" width="64" height="64"/>
+    </resources>
+</document>

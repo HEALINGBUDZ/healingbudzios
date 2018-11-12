@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Lato-Bold.ttf">
+            <string>Lato-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="LanguageSelectCell" rowHeight="89" id="glp-Sb-GRm" customClass="LanguageSelectCell" customModule="BaseProject" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="89"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="glp-Sb-GRm" id="1LL-gF-T3i">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="88.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="myb-ap-Rvt">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="88.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Languages" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g51-Nn-bTm">
+                                <rect key="frame" x="15" y="5" width="345" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="6v9-Dv-7RS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="16"/>
+                                <color key="textColor" red="0.5068525076" green="0.16519176960000001" blue="0.4420689344" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QVO-rh-BcY" customClass="RoundView" customModule="BaseProject" customModuleProvider="target">
+                                <rect key="frame" x="15" y="36" width="345" height="37.5"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Select Languages" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BgX-Zx-pta" customClass="AAPickerView" customModule="AAPickerView">
+                                        <rect key="frame" x="5" y="2" width="335" height="33.5"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" red="0.83914172649999996" green="0.83926308159999996" blue="0.83911520240000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="BgX-Zx-pta" secondAttribute="trailing" constant="5" id="EwX-62-fs9"/>
+                                    <constraint firstItem="BgX-Zx-pta" firstAttribute="leading" secondItem="QVO-rh-BcY" secondAttribute="leading" constant="5" id="O0r-hz-Gh6"/>
+                                    <constraint firstAttribute="height" constant="37.5" id="anc-2O-qZj"/>
+                                    <constraint firstAttribute="bottom" secondItem="BgX-Zx-pta" secondAttribute="bottom" constant="2" id="bnY-Dg-GLp"/>
+                                    <constraint firstItem="BgX-Zx-pta" firstAttribute="top" secondItem="QVO-rh-BcY" secondAttribute="top" constant="2" id="u4f-2v-zNl"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="QVO-rh-BcY" firstAttribute="top" secondItem="g51-Nn-bTm" secondAttribute="bottom" constant="10" id="1s8-Cc-6Sk"/>
+                            <constraint firstItem="g51-Nn-bTm" firstAttribute="leading" secondItem="myb-ap-Rvt" secondAttribute="leading" constant="15" id="Bx5-Kd-cUI"/>
+                            <constraint firstItem="QVO-rh-BcY" firstAttribute="centerX" secondItem="g51-Nn-bTm" secondAttribute="centerX" id="Y9t-Kw-2I2"/>
+                            <constraint firstItem="g51-Nn-bTm" firstAttribute="top" secondItem="myb-ap-Rvt" secondAttribute="top" constant="5" id="YgL-m1-oEH"/>
+                            <constraint firstItem="QVO-rh-BcY" firstAttribute="width" secondItem="g51-Nn-bTm" secondAttribute="width" id="adj-uu-UrO"/>
+                            <constraint firstAttribute="bottom" secondItem="QVO-rh-BcY" secondAttribute="bottom" constant="15" id="pcJ-hr-3Bl"/>
+                            <constraint firstAttribute="trailing" secondItem="g51-Nn-bTm" secondAttribute="trailing" constant="15" id="xnN-Hf-eRY"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstItem="myb-ap-Rvt" firstAttribute="leading" secondItem="1LL-gF-T3i" secondAttribute="leading" id="DCu-FZ-MVm"/>
+                    <constraint firstAttribute="bottom" secondItem="myb-ap-Rvt" secondAttribute="bottom" id="JeG-ZR-xxS"/>
+                    <constraint firstAttribute="trailing" secondItem="myb-ap-Rvt" secondAttribute="trailing" id="MWg-pn-z1y"/>
+                    <constraint firstItem="myb-ap-Rvt" firstAttribute="top" secondItem="1LL-gF-T3i" secondAttribute="top" id="sBL-p4-TEj"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="txtLanguage" destination="BgX-Zx-pta" id="qua-My-MJH"/>
+            </connections>
+            <point key="canvasLocation" x="57.5" y="112.5"/>
+        </tableViewCell>
+    </objects>
+</document>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ImageCollectionCell" id="4i2-fq-Je2" customClass="ImageCollectionCell" customModule="BaseProject" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="259" height="114"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                <rect key="frame" x="0.0" y="0.0" width="259" height="114"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Pb8-84-sg2" customClass="FLAnimatedImageView">
+                        <rect key="frame" x="0.0" y="0.0" width="259" height="114"/>
+                        <color key="backgroundColor" red="0.13725490200000001" green="0.13725490200000001" blue="0.13725490200000001" alpha="1" colorSpace="calibratedRGB"/>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="V1O-xt-OJo">
+                        <rect key="frame" x="-0.5" y="0.0" width="259" height="114"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.38960830479452052" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </imageView>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="V1O-xt-OJo" firstAttribute="width" secondItem="Pb8-84-sg2" secondAttribute="width" id="4Dj-Qw-7qV"/>
+                <constraint firstItem="Pb8-84-sg2" firstAttribute="top" secondItem="4i2-fq-Je2" secondAttribute="top" id="Iuc-6c-pfa"/>
+                <constraint firstItem="V1O-xt-OJo" firstAttribute="centerY" secondItem="Pb8-84-sg2" secondAttribute="centerY" id="Mc4-9J-CFI"/>
+                <constraint firstItem="Pb8-84-sg2" firstAttribute="leading" secondItem="4i2-fq-Je2" secondAttribute="leading" id="Ovi-Mh-Hy6"/>
+                <constraint firstItem="V1O-xt-OJo" firstAttribute="height" secondItem="Pb8-84-sg2" secondAttribute="height" id="PND-H3-o4F"/>
+                <constraint firstAttribute="trailing" secondItem="Pb8-84-sg2" secondAttribute="trailing" id="YNy-fO-YEb"/>
+                <constraint firstAttribute="bottom" secondItem="Pb8-84-sg2" secondAttribute="bottom" id="dEy-5R-dyv"/>
+                <constraint firstItem="V1O-xt-OJo" firstAttribute="centerX" secondItem="Pb8-84-sg2" secondAttribute="centerX" id="ilm-20-Vzo"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="blq-UD-1tB"/>
+            <size key="customSize" width="259" height="114"/>
+            <connections>
+                <outlet property="imgViewMain" destination="Pb8-84-sg2" id="bRr-FA-9Ru"/>
+            </connections>
+            <point key="canvasLocation" x="-20" y="45"/>
+        </collectionViewCell>
+    </objects>
+</document>

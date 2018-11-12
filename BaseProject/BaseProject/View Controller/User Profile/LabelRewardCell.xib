@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Lato-Bold.ttf">
+            <string>Lato-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="LabelRewardCell" rowHeight="60" id="NBT-FC-4CA" customClass="LabelRewardCell" customModule="BaseProject" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="399" height="60"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="NBT-FC-4CA" id="Kxd-Hy-wsk">
+                <rect key="frame" x="0.0" y="0.0" width="399" height="59.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EW6-vm-E2C">
+                        <rect key="frame" x="10" y="0.0" width="379" height="50"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MMw-ho-rc4">
+                                <rect key="frame" x="0.0" y="0.0" width="379" height="48"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="YOUR REDEEM PRODUCTS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CkK-vN-5v7">
+                                        <rect key="frame" x="5" y="14" width="369" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="oS9-h3-0LZ"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.144918412" green="0.145224452" blue="0.14083436129999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="CkK-vN-5v7" firstAttribute="top" secondItem="MMw-ho-rc4" secondAttribute="top" constant="14" id="90j-ck-g1c"/>
+                                    <constraint firstItem="CkK-vN-5v7" firstAttribute="leading" secondItem="MMw-ho-rc4" secondAttribute="leading" constant="5" id="93C-qn-Inu"/>
+                                    <constraint firstAttribute="trailing" secondItem="CkK-vN-5v7" secondAttribute="trailing" constant="5" id="cwA-Eq-xgS"/>
+                                    <constraint firstAttribute="bottom" secondItem="CkK-vN-5v7" secondAttribute="bottom" constant="14" id="mgJ-Jc-ld3"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="MMw-ho-rc4" secondAttribute="bottom" constant="2" id="5Lg-GP-WBc"/>
+                            <constraint firstItem="MMw-ho-rc4" firstAttribute="top" secondItem="EW6-vm-E2C" secondAttribute="top" id="LuI-yn-Q0d"/>
+                            <constraint firstItem="MMw-ho-rc4" firstAttribute="leading" secondItem="EW6-vm-E2C" secondAttribute="leading" id="Wir-sM-0gb"/>
+                            <constraint firstAttribute="trailing" secondItem="MMw-ho-rc4" secondAttribute="trailing" id="njy-bw-RBt"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="EW6-vm-E2C" secondAttribute="bottom" constant="15.5" id="9H1-q3-bi3"/>
+                    <constraint firstAttribute="trailing" secondItem="EW6-vm-E2C" secondAttribute="trailing" constant="10" id="PgD-Cj-aip"/>
+                    <constraint firstItem="EW6-vm-E2C" firstAttribute="leading" secondItem="Kxd-Hy-wsk" secondAttribute="leading" constant="10" id="f2Z-wt-3eZ"/>
+                    <constraint firstItem="EW6-vm-E2C" firstAttribute="top" secondItem="Kxd-Hy-wsk" secondAttribute="top" id="hbw-dD-Apq"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <viewLayoutGuide key="safeArea" id="EBa-bX-gNM"/>
+            <point key="canvasLocation" x="44.5" y="54"/>
+        </tableViewCell>
+    </objects>
+</document>

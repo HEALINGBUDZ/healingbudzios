@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Lato-Regular.ttf">
+            <string>Lato-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="supportCell" rowHeight="222" id="gK5-yJ-aUm" customClass="supportCell" customModule="BaseProject" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="222"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="gK5-yJ-aUm" id="tpH-Qu-vvB">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="221.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Legal" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3IX-OI-mxI">
+                        <rect key="frame" x="15" y="101" width="38.5" height="20"/>
+                        <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="17"/>
+                        <color key="textColor" red="0.46274509803921571" green="0.76470588235294112" blue="0.32549019607843138" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="upArrow" translatesAutoresizingMaskIntoConstraints="NO" id="8GR-wP-BHu">
+                        <rect key="frame" x="340" y="101" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="20" id="Fm4-6b-MQ4"/>
+                            <constraint firstAttribute="height" constant="20" id="dUU-HQ-pQ6"/>
+                        </constraints>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T7U-PA-lrU">
+                        <rect key="frame" x="321" y="0.0" width="46" height="221.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="46" id="KKf-JG-GLx"/>
+                        </constraints>
+                    </button>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="KQP-gd-fLt">
+                        <rect key="frame" x="15" y="219.5" width="345" height="1"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="gG4-gg-2ba"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <color key="backgroundColor" red="0.14508149027824402" green="0.14510864019393921" blue="0.14507558941841125" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="KQP-gd-fLt" secondAttribute="bottom" constant="1" id="4i1-W1-mF6"/>
+                    <constraint firstAttribute="trailing" secondItem="T7U-PA-lrU" secondAttribute="trailing" constant="8" id="7Uo-8v-Uzx"/>
+                    <constraint firstItem="T7U-PA-lrU" firstAttribute="height" secondItem="tpH-Qu-vvB" secondAttribute="height" id="9fV-Oy-YCt"/>
+                    <constraint firstAttribute="trailing" secondItem="KQP-gd-fLt" secondAttribute="trailing" constant="15" id="FJm-9X-w1E"/>
+                    <constraint firstItem="3IX-OI-mxI" firstAttribute="centerY" secondItem="tpH-Qu-vvB" secondAttribute="centerY" id="IIH-Gj-UJB"/>
+                    <constraint firstAttribute="trailing" secondItem="8GR-wP-BHu" secondAttribute="trailing" constant="15" id="JfV-XM-242"/>
+                    <constraint firstItem="3IX-OI-mxI" firstAttribute="leading" secondItem="tpH-Qu-vvB" secondAttribute="leading" constant="15" id="LZr-bW-bQz"/>
+                    <constraint firstItem="T7U-PA-lrU" firstAttribute="centerY" secondItem="8GR-wP-BHu" secondAttribute="centerY" id="Z9U-Ub-bqx"/>
+                    <constraint firstItem="KQP-gd-fLt" firstAttribute="leading" secondItem="tpH-Qu-vvB" secondAttribute="leading" constant="15" id="i58-Ge-K6f"/>
+                    <constraint firstItem="8GR-wP-BHu" firstAttribute="centerY" secondItem="tpH-Qu-vvB" secondAttribute="centerY" id="nml-zE-q6p"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="btn_arrow" destination="T7U-PA-lrU" id="4MP-Sn-ITd"/>
+                <outlet property="imgView_arrow" destination="8GR-wP-BHu" id="mBV-L7-naX"/>
+                <outlet property="lbl_Title" destination="3IX-OI-mxI" id="x9K-Su-u6V"/>
+            </connections>
+            <point key="canvasLocation" x="15.5" y="54"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="upArrow" width="65" height="38"/>
+    </resources>
+</document>

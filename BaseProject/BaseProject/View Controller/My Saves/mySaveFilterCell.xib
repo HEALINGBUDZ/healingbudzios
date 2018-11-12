@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Lato-Regular.ttf">
+            <string>Lato-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="mySaveFilterCell" id="aeN-Yk-zKR" customClass="mySaveFilterCell" customModule="BaseProject" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="51"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="aeN-Yk-zKR" id="bzm-bK-Din">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="50.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="t8c-ks-zRk">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="50.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SPECIAL SAVE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OYt-tT-Byh">
+                                <rect key="frame" x="95" y="15.5" width="110.5" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="110.5" id="g4k-Ex-r0L"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Tab0" translatesAutoresizingMaskIntoConstraints="NO" id="ANg-wR-fji">
+                                <rect key="frame" x="54" y="12" width="26" height="26"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="26" id="Esa-H3-Ics"/>
+                                    <constraint firstAttribute="height" constant="26" id="eYz-w3-wtl"/>
+                                </constraints>
+                            </imageView>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="S2V-UY-vUM">
+                                <rect key="frame" x="220.5" y="10" width="51" height="31"/>
+                            </switch>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="OYt-tT-Byh" firstAttribute="leading" secondItem="ANg-wR-fji" secondAttribute="trailing" constant="15" id="9yb-LV-zV2"/>
+                            <constraint firstItem="S2V-UY-vUM" firstAttribute="leading" secondItem="OYt-tT-Byh" secondAttribute="trailing" constant="15" id="IQT-VV-Ow4"/>
+                            <constraint firstItem="OYt-tT-Byh" firstAttribute="centerY" secondItem="t8c-ks-zRk" secondAttribute="centerY" id="See-9G-eNg"/>
+                            <constraint firstItem="OYt-tT-Byh" firstAttribute="centerX" secondItem="t8c-ks-zRk" secondAttribute="centerX" multiplier="0.8" id="dGx-uX-JsS"/>
+                            <constraint firstItem="S2V-UY-vUM" firstAttribute="centerY" secondItem="OYt-tT-Byh" secondAttribute="centerY" id="fpR-3G-Xb5"/>
+                            <constraint firstItem="ANg-wR-fji" firstAttribute="centerY" secondItem="OYt-tT-Byh" secondAttribute="centerY" id="kNz-Np-wcs"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="t8c-ks-zRk" secondAttribute="bottom" id="5yn-vT-R9D"/>
+                    <constraint firstAttribute="trailing" secondItem="t8c-ks-zRk" secondAttribute="trailing" id="F0o-M0-WAf"/>
+                    <constraint firstItem="t8c-ks-zRk" firstAttribute="top" secondItem="bzm-bK-Din" secondAttribute="top" id="Qg8-TQ-c2l"/>
+                    <constraint firstItem="t8c-ks-zRk" firstAttribute="leading" secondItem="bzm-bK-Din" secondAttribute="leading" id="um5-ax-PUm"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="imageView_mainImgae" destination="ANg-wR-fji" id="aCA-fd-hwF"/>
+                <outlet property="label_title" destination="OYt-tT-Byh" id="qId-G1-ThC"/>
+                <outlet property="switchMain" destination="S2V-UY-vUM" id="YN4-J4-6P1"/>
+            </connections>
+            <point key="canvasLocation" x="-31.5" y="-23.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Tab0" width="60" height="57"/>
+    </resources>
+</document>

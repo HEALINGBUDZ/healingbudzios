@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Lato-Regular.ttf">
+            <string>Lato-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="messageCell" id="CTp-8l-sWX" customClass="messageCell" customModule="BaseProject" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="105"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="CTp-8l-sWX" id="S4R-AP-aaq">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="104.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="maz-Xn-5eJ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="104.5"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="khc-du-KhV" customClass="KMPlaceholderTextView" customModule="KMPlaceholderTextView">
+                                <rect key="frame" x="15" y="15" width="345" height="74.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="textColor" red="0.58039215690000001" green="0.58431372550000005" blue="0.58823529409999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Enter Message..."/>
+                                </userDefinedRuntimeAttributes>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="104.5" id="6oe-9s-BHs"/>
+                            <constraint firstAttribute="trailing" secondItem="khc-du-KhV" secondAttribute="trailing" constant="15" id="Uz3-iW-jIB"/>
+                            <constraint firstItem="khc-du-KhV" firstAttribute="leading" secondItem="maz-Xn-5eJ" secondAttribute="leading" constant="15" id="VZH-zj-h1g"/>
+                            <constraint firstItem="khc-du-KhV" firstAttribute="top" secondItem="maz-Xn-5eJ" secondAttribute="top" constant="15" id="n8N-Ut-UvO"/>
+                            <constraint firstAttribute="bottom" secondItem="khc-du-KhV" secondAttribute="bottom" constant="15" id="xou-Bd-Ig0"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="maz-Xn-5eJ" secondAttribute="bottom" id="3jQ-Jj-z8H"/>
+                    <constraint firstItem="maz-Xn-5eJ" firstAttribute="top" secondItem="S4R-AP-aaq" secondAttribute="top" id="HOZ-ao-zUs"/>
+                    <constraint firstAttribute="trailing" secondItem="maz-Xn-5eJ" secondAttribute="trailing" id="SUl-ne-0AR"/>
+                    <constraint firstItem="maz-Xn-5eJ" firstAttribute="leading" secondItem="S4R-AP-aaq" secondAttribute="leading" id="baG-0z-nhF"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="textView_message" destination="khc-du-KhV" id="dDS-zf-p2b"/>
+            </connections>
+            <point key="canvasLocation" x="21" y="-86"/>
+        </tableViewCell>
+    </objects>
+</document>

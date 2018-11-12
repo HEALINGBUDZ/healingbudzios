@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="pWt-b2-mbH" customClass="MoreMenuViewComment" customModule="BaseProject" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="186" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rWF-6c-IBK">
+                    <rect key="frame" x="0.0" y="0.0" width="186" height="100"/>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="voE-ah-3MC">
+                    <rect key="frame" x="0.0" y="5" width="186" height="91"/>
+                    <subviews>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="none" rowHeight="30" estimatedRowHeight="-1" sectionHeaderHeight="1" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="bRE-CM-GXM">
+                            <rect key="frame" x="0.0" y="0.0" width="186" height="90"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <outlet property="dataSource" destination="pWt-b2-mbH" id="xAq-4P-Ss0"/>
+                                <outlet property="delegate" destination="pWt-b2-mbH" id="kDo-kT-K3M"/>
+                            </connections>
+                        </tableView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="bRE-CM-GXM" firstAttribute="top" secondItem="voE-ah-3MC" secondAttribute="top" id="40M-f3-MKB"/>
+                        <constraint firstAttribute="bottom" secondItem="bRE-CM-GXM" secondAttribute="bottom" constant="1" id="FCe-6i-31j"/>
+                        <constraint firstItem="bRE-CM-GXM" firstAttribute="leading" secondItem="voE-ah-3MC" secondAttribute="leading" id="PYM-Ou-1U5"/>
+                        <constraint firstAttribute="trailing" secondItem="bRE-CM-GXM" secondAttribute="trailing" id="yCh-On-6xe"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="pzx-ME-gsM" firstAttribute="trailing" secondItem="voE-ah-3MC" secondAttribute="trailing" id="2kJ-xe-JgY"/>
+                <constraint firstItem="voE-ah-3MC" firstAttribute="top" secondItem="pzx-ME-gsM" secondAttribute="top" constant="5" id="MK4-eA-EbF"/>
+                <constraint firstItem="rWF-6c-IBK" firstAttribute="leading" secondItem="pWt-b2-mbH" secondAttribute="leading" id="eXT-a8-7eE"/>
+                <constraint firstAttribute="trailing" secondItem="rWF-6c-IBK" secondAttribute="trailing" id="fBH-Pg-9gA"/>
+                <constraint firstItem="voE-ah-3MC" firstAttribute="leading" secondItem="pzx-ME-gsM" secondAttribute="leading" id="gwZ-5W-lre"/>
+                <constraint firstItem="pzx-ME-gsM" firstAttribute="bottom" secondItem="voE-ah-3MC" secondAttribute="bottom" constant="4" id="oBy-Qa-d6x"/>
+                <constraint firstItem="rWF-6c-IBK" firstAttribute="bottom" secondItem="pzx-ME-gsM" secondAttribute="bottom" id="vPX-Fa-YNz"/>
+                <constraint firstItem="rWF-6c-IBK" firstAttribute="top" secondItem="pzx-ME-gsM" secondAttribute="top" id="w2a-hz-AxI"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="pzx-ME-gsM"/>
+            <connections>
+                <outlet property="bubbleImageView" destination="rWF-6c-IBK" id="F0T-m6-f3G"/>
+                <outlet property="tableView" destination="bRE-CM-GXM" id="unQ-Ss-Ul1"/>
+            </connections>
+            <point key="canvasLocation" x="-69" y="-6.5"/>
+        </view>
+    </objects>
+</document>
