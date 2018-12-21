@@ -16,6 +16,7 @@ class ReceiverMediaMsgTVCell: UITableViewCell {
     @IBOutlet weak var lbl_scrapping_source: UILabel!
     @IBOutlet weak var lbl_scrapping_discription: UILabel!
     @IBOutlet weak var lbl_scrapping: UILabel!
+    @IBOutlet weak var lbl_date: UILabel!
     @IBOutlet weak var Img_scrapping: UIImageView!
     @IBOutlet weak var indicator: UIActivityIndicatorView!
     @IBOutlet var MSG_TEXT: ActiveLabel!

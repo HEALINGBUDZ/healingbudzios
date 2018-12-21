@@ -466,10 +466,44 @@ extension SupportVC:UITableViewDelegate,UITableViewDataSource{
         let cell = tableView.dequeueReusableCell(withIdentifier: "likeCell") as? likeCell
         
         cell?.askSupportButton.addTarget(self, action: #selector(self.openFreshChat(sender:)), for: .touchUpInside)
+        cell?.appStore.addTarget(self, action: #selector(self.openAppStore(sender:)), for: .touchUpInside)
+        //
+        cell?.fbBtn.addTarget(self, action: #selector(self.openFb(sender:)), for: .touchUpInside)
+        cell?.twiBtn.addTarget(self, action: #selector(self.openTwi(sender:)), for: .touchUpInside)
+        cell?.ytBtn.addTarget(self, action: #selector(self.openYt(sender:)), for: .touchUpInside)
+        cell?.instaBtn.addTarget(self, action: #selector(self.openInsta(sender:)), for: .touchUpInside)
+        //
         cell?.selectionStyle = .none
         return cell!
     }
-    
+    @objc func openAppStore(sender: UIButton!){
+        self.OpenLink(webUrl: "https://itunes.apple.com/us/app/healing-budz/id1438614769?mt=8")
+    }
+    //
+    //Youtube https://www.youtube.com/channel/UCcQUb_JBOCzPItwVA56DNuA?view_as=subscriber
+    //Insta https://www.instagram.com/healingbudz/?hl=en
+    //FB https://www.facebook.com/healingbudz/
+    // Twit https://twitter.com/healingbudz?lang=en
+    @objc func openFb(sender: UIButton!){
+        self.OpenLink(webUrl: "https://www.facebook.com/healingbudz/")
+    }
+    @objc func openInsta(sender: UIButton!){
+        self.OpenLink(webUrl: "https://www.instagram.com/healingbudz/?hl=en")
+    }
+    @objc func openTwi(sender: UIButton!){
+        self.OpenLink(webUrl: "https://twitter.com/healingbudz?lang=en")
+    }
+    @objc func openYt(sender: UIButton!){
+//        self.OpenLink(webUrl: "https://www.youtube.com/channel/UCcQUb_JBOCzPItwVA56DNuA?view_as=subscriber")
+        var url = "https://www.youtube.com/channel/UCcQUb_JBOCzPItwVA56DNuA?view_as=subscriber"
+        if self.verifyUrl(urlString: url) {
+            let url = URL(string: url)
+               UIApplication.shared.open(url!, options: [:], completionHandler: nil)
+        }else{
+            self.ShowErrorAlert(message: "Invalid URL!", AlertTitle: "Error!")
+        }
+    }
+    //
     @objc func openFreshChat(sender: UIButton!){
         var fUser = FreshchatUser()
         fUser.firstName = DataManager.sharedInstance.user?.userFirstName
@@ -601,6 +635,12 @@ class messageCell:UITableViewCell{
 class likeCell:UITableViewCell{
   
     @IBOutlet weak var askSupportButton: UIButton!
+    @IBOutlet weak var appStore: UIButton!
+    
+    @IBOutlet weak var fbBtn: UIButton!
+    @IBOutlet weak var instaBtn: UIButton!
+    @IBOutlet weak var twiBtn: UIButton!
+    @IBOutlet weak var ytBtn: UIButton!
     
 }
 class inviteCell:UITableViewCell{

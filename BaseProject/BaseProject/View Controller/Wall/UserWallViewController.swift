@@ -2,7 +2,7 @@
 //  UserWallViewController.swift
 //  BaseProject
 //
-//  Created by waseem on 16/03/2018.
+
 //  Copyright © 2018 Wave. All rights reserved.
 //
 
@@ -753,7 +753,12 @@ extension UserWallViewController: UITableViewDataSource {
             cell?.isDetailScreen = false
             cell?.urlBtnAtion = { [unowned self] in
                 if let url = post.scrapind_data!["url"] as? String{
-                    self.OpenUrl(webUrl: URL.init(string: url)!)
+                    if (post.discription?.html2String.contains(post.scrapind_data!["extracted_url"] as! String))! {
+                        self.OpenUrl(webUrl: URL.init(string: post.scrapind_data!["extracted_url"] as! String)!)
+                    }else {
+                        self.OpenUrl(webUrl: URL.init(string: url)!)
+                    }
+                    
                 }
                 
             }

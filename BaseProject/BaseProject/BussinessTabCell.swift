@@ -2,7 +2,7 @@
 //  BussinessTabCell.swift
 //  BaseProject
 //
-//  Created by Jawad on 9/1/18.
+
 //  Copyright © 2018 Wave. All rights reserved.
 //
 

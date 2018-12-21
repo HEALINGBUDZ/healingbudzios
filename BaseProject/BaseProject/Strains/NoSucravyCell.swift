@@ -2,7 +2,6 @@
 //  NoSucravyCell.swift
 //  BaseProject
 //
-//  Created by Jawad on 6/22/18.
 //  Copyright © 2018 Wave. All rights reserved.
 //
 

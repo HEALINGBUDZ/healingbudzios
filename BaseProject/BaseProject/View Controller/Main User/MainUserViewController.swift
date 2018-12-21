@@ -2,7 +2,7 @@
 //  MainUserViewController.swift
 //  BaseProject
 //
-//  Created by waseem on 11/12/2017.
+
 //  Copyright © 2017 Wave. All rights reserved.
 //
 

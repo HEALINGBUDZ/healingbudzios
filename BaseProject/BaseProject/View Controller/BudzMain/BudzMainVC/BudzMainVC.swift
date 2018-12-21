@@ -133,15 +133,19 @@ class BudzMainVC: BaseViewController,UITableViewDelegate,UITableViewDataSource {
                 value = true
             }
         }
+        //34.114274,-84.637390
         if value{
            urlMain =  WebServiceName.get_budz_map.rawValue + "lat=" + "\(DataManager.sharedInstance.user_locaiton?.latitude ?? 0.0)"
             urlMain = urlMain + "&lng=" + "\(DataManager.sharedInstance.user_locaiton?.longitude ?? 0.0)" + "&skip=" + String(page) + self.filterValue
         }else{
-            urlMain  =     WebServiceName.get_budz_map.rawValue + "lat=" + "\(String(describing: (DataManager.sharedInstance.getPermanentlySavedUser()!.userlat)))"
-            urlMain = urlMain + "&lng=" + "\(String(describing: (DataManager.sharedInstance.getPermanentlySavedUser()!.userlng)))" + "&skip=" + String(page) + self.filterValue
+//            urlMain  =     WebServiceName.get_budz_map.rawValue + "lat=" + "\(String(describing: (DataManager.sharedInstance.getPermanentlySavedUser()!.userlat)))"
+//            urlMain = urlMain + "&lng=" + "\(String(describing: (DataManager.sharedInstance.getPermanentlySavedUser()!.userlng)))" + "&skip=" + String(page) + self.filterValue
+            urlMain =  WebServiceName.get_budz_map.rawValue + "lat=" + "\(DataManager.sharedInstance.user_locaiton?.latitude ?? 0.0)"
+            urlMain = urlMain + "&lng=" + "\(DataManager.sharedInstance.user_locaiton?.longitude ?? 0.0)" + "&skip=" + String(page) + self.filterValue
         }
-        
-        print(urlMain)
+//        urlMain =  WebServiceName.get_budz_map.rawValue + "lat=" + "34.114274"
+//        urlMain = urlMain + "&lng=" + "-84.637390" + "&skip=" + String(page) + self.filterValue
+//        print(urlMain)
         if self.tagSearch.count > 0 {
             isKeyWordSearch = true
             searchedValue = tagSearch
@@ -630,7 +634,23 @@ extension BudzMainVC: MKMapViewDelegate {
         for indexObj in allMapPins{
             self.mapView_Budz.removeAnnotation(indexObj)
         }
-        for indexValue in self.array_Budz {
+        
+//        for indexValue in self.array_Budz {
+//            let newPin1 = budzAnnotation()
+//            let newlat = Double(indexValue.lat)!
+//            let newlng = Double(indexValue.lng)!
+//            newPin1.BudzMapData = indexValue
+//            let location = CLLocation(latitude: newlat, longitude: newlng)
+//            newPin1.type = indexValue.business_type_id
+//            let center = CLLocationCoordinate2D(latitude: location.coordinate.latitude, longitude: location.coordinate.longitude)
+//            let region = MKCoordinateRegion(center: center, span: MKCoordinateSpan(latitudeDelta: 0.01, longitudeDelta: 0.01))
+//            newPin1.title = indexValue.title
+//            mapView_Budz.setRegion(region, animated: true)
+//
+//            newPin1.coordinate = location.coordinate
+//            mapView_Budz.addAnnotation(newPin1)
+//        }
+        for (index, indexValue) in self.array_Budz.reversed().enumerated() {
             let newPin1 = budzAnnotation()
             let newlat = Double(indexValue.lat)!
             let newlng = Double(indexValue.lng)!
@@ -641,9 +661,14 @@ extension BudzMainVC: MKMapViewDelegate {
             let region = MKCoordinateRegion(center: center, span: MKCoordinateSpan(latitudeDelta: 0.01, longitudeDelta: 0.01))
             newPin1.title = indexValue.title
             mapView_Budz.setRegion(region, animated: true)
+
             newPin1.coordinate = location.coordinate
             mapView_Budz.addAnnotation(newPin1)
         }
+//        let center = CLLocationCoordinate2D(latitude: (DataManager.sharedInstance.user_locaiton?.latitude)!, longitude: (DataManager.sharedInstance.user_locaiton?.longitude)!)
+//        let region = MKCoordinateRegion(center: center, span: MKCoordinateSpan(latitudeDelta: 0.01, longitudeDelta: 0.01))
+//        mapView_Budz.setRegion(region, animated: true)
+        mapView_Budz.showsUserLocation = true
     }
 
     func mapView(_ mapView: MKMapView,didSelect view: MKAnnotationView)

@@ -45,8 +45,8 @@ class NetworkEngine: Host {
                  print(completedRequest.responseAsJSON ?? "Hello")
                     
                     if (completedRequest.error == nil) {
-                        print(isReponseinArray)
-                        print(completedRequest.responseAsJSON!)
+//                        print(isReponseinArray)
+//                        print(completedRequest.responseAsJSON!)
                         
                         if isReponseinArray {
                             completion(true, "", completedRequest.responseAsJSON as? [[String : AnyObject]])
@@ -93,12 +93,12 @@ class NetworkEngine: Host {
             print(headers)
             self.request(.POST, withAbsoluteURLString: postURLString, parameters: json!, headers: headers, bodyData: nil)?.completion { completedRequest in
                 DispatchQueue.main.async {
-                    print(completedRequest.responseAsJSON ?? "Hello")
+//                    print(completedRequest.responseAsJSON ?? "Hello")
                     
                     
                     if (completedRequest.error == nil) {
-                        print(isReponseinArray)
-                        print(completedRequest.responseAsJSON!)
+//                        print(isReponseinArray)
+//                        print(completedRequest.responseAsJSON!)
                         
                         if isReponseinArray {
                             completion(true, "", completedRequest.responseAsJSON as? [[String : AnyObject]])
@@ -151,8 +151,8 @@ class NetworkEngine: Host {
                     print(completedRequest.responseAsJSON ?? "Hello")
                     
                     if (completedRequest.error == nil) {
-                        print(isReponseinArray)
-                        print(completedRequest.responseAsJSON!)
+//                        print(isReponseinArray)
+//                        print(completedRequest.responseAsJSON!)
                         
                         if isReponseinArray {
                             completion(true, "", completedRequest.responseAsJSON as? [[String : AnyObject]])
@@ -200,7 +200,7 @@ class NetworkEngine: Host {
             print(headers)
             self.request(.GET, withAbsoluteURLString: postURLString, parameters: json!, headers: headers, bodyData: nil)?.completion { completedRequest in
                 DispatchQueue.main.async {
-                    print(completedRequest.responseAsImage() ?? "Hello")
+//                    print(completedRequest.responseAsImage() ?? "Hello")
                     
                     if (completedRequest.error == nil) {
                         

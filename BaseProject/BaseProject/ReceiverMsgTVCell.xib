@@ -56,16 +56,25 @@
                                                 <color key="textColor" red="0.50196078430000002" green="0.50196078430000002" blue="0.50196078430000002" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wYR-T4-2ef">
+                                                <rect key="frame" x="5" y="120" width="82" height="12"/>
+                                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="10"/>
+                                                <color key="textColor" red="0.50196078430000002" green="0.50196078430000002" blue="0.50196078430000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                         </subviews>
                                         <color key="backgroundColor" red="0.1058823529" green="0.1058823529" blue="0.1058823529" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
+                                            <constraint firstItem="wYR-T4-2ef" firstAttribute="top" secondItem="2HF-ej-mn9" secondAttribute="bottom" constant="5" id="Cix-d9-9k4"/>
+                                            <constraint firstItem="wYR-T4-2ef" firstAttribute="trailing" secondItem="2HF-ej-mn9" secondAttribute="trailing" id="DIq-ao-6h7"/>
                                             <constraint firstItem="2HF-ej-mn9" firstAttribute="top" secondItem="aje-JS-NGc" secondAttribute="bottom" constant="8" id="F2r-qP-ka6"/>
                                             <constraint firstAttribute="trailing" secondItem="2HF-ej-mn9" secondAttribute="trailing" constant="5" id="Jac-oK-9NA"/>
                                             <constraint firstItem="2HF-ej-mn9" firstAttribute="leading" secondItem="3J1-Ci-WyH" secondAttribute="leading" constant="5" id="WgM-p3-Iqm"/>
-                                            <constraint firstAttribute="bottom" secondItem="2HF-ej-mn9" secondAttribute="bottom" constant="5" id="gUE-23-WYk"/>
                                             <constraint firstItem="aje-JS-NGc" firstAttribute="top" secondItem="3J1-Ci-WyH" secondAttribute="top" constant="9" id="h5c-DX-zRE"/>
+                                            <constraint firstItem="wYR-T4-2ef" firstAttribute="leading" secondItem="2HF-ej-mn9" secondAttribute="leading" id="kLD-sU-4ck"/>
                                             <constraint firstAttribute="trailing" secondItem="aje-JS-NGc" secondAttribute="trailing" constant="13" id="nO7-00-C9O"/>
                                             <constraint firstItem="aje-JS-NGc" firstAttribute="leading" secondItem="3J1-Ci-WyH" secondAttribute="leading" constant="12" id="osr-z2-NQ1"/>
+                                            <constraint firstAttribute="bottom" secondItem="wYR-T4-2ef" secondAttribute="bottom" constant="5" id="wpK-wq-oaQ"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -102,6 +111,7 @@
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
                 <outlet property="MSG_Text" destination="aje-JS-NGc" id="6Ko-Ni-ucf"/>
+                <outlet property="lbl_date" destination="wYR-T4-2ef" id="SMf-f1-7xI"/>
                 <outlet property="rece_name" destination="2HF-ej-mn9" id="H2P-J1-9EU"/>
             </connections>
             <point key="canvasLocation" x="49" y="157.5"/>

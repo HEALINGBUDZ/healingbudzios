@@ -2,7 +2,7 @@
 //  StartNewMsgVC.swift
 //  BaseProject
 //
-//  Created by Jawad on 6/7/18.
+
 //  Copyright © 2018 Wave. All rights reserved.
 //
 

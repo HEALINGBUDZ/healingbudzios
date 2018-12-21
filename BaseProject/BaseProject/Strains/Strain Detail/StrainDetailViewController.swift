@@ -480,7 +480,7 @@ class StrainDetailViewController: BaseViewController ,UIPopoverPresentationContr
                             
                         }
                     }
-                    if(has == -1){
+                    if(has == 1){
                         self.hideLoading()
                         self.textToSet = "Sorry we don't offer strains in illegal state"
                         self.productArray.removeAll()
@@ -637,10 +637,12 @@ extension StrainDetailViewController  : UITableViewDelegate , UITableViewDataSou
                     self.array_tble.append(["type" : StrainDataType.DetailSurvey.rawValue , "data" : StrainSurveyType.Negative.rawValue])
                     self.array_tble.append(["type" : StrainDataType.DetailSurvey.rawValue , "data" : StrainSurveyType.Flavor.rawValue])
                 }else{
-                    self.array_tble.append(["type" : StrainDataType.nosurvay.rawValue])
+                    self.array_tble.append(["type" : StrainDataType.nosurvay.rawValue])//noFullSurvay
+                    self.array_tble.append(["type" : StrainDataType.noFullSurvay.rawValue])//noFullSurvay
                 }
             }else{
                 self.array_tble.append(["type" : StrainDataType.nosurvay.rawValue])
+                self.array_tble.append(["type" : StrainDataType.noFullSurvay.rawValue])//noFullSurvay
             }
             
             print(self.chooseStrain.get_strain_survey_user_count?.intValue)
@@ -764,7 +766,8 @@ extension StrainDetailViewController  : UITableViewDelegate , UITableViewDataSou
         
         
          self.tbleView_Strain.register(UINib(nibName: "NoSucravyCell", bundle: nil), forCellReuseIdentifier: "NoSucravyCell")
-        
+        //HowToSurvayCell
+        self.tbleView_Strain.register(UINib(nibName: "HowToSurvayCell", bundle: nil), forCellReuseIdentifier: "HowToSurvayCell")
         self.tbleView_Strain.register(UINib(nibName: "AddPlacmentCell", bundle: nil), forCellReuseIdentifier: "AddPlacmentCell")
         
         self.tbleView_Strain.register(UINib(nibName: "StrainDetailHeadingCell", bundle: nil), forCellReuseIdentifier: "StrainDetailHeadingCell")
@@ -892,7 +895,10 @@ extension StrainDetailViewController  : UITableViewDelegate , UITableViewDataSou
                 let cellHeading = tableView.dequeueReusableCell(withIdentifier: "NoSucravyCell") as! NoSucravyCell
                 cellHeading.selectionStyle = .none
                 return cellHeading
-                
+            case StrainDataType.noFullSurvay.rawValue:
+                let cellHeading = tableView.dequeueReusableCell(withIdentifier: "HowToSurvayCell") as! HowToSurvayCell//HowToSurvayCell
+                cellHeading.selectionStyle = .none
+                return cellHeading
            case StrainDataType.addplace.rawValue:
                 let cellHeading = tableView.dequeueReusableCell(withIdentifier: "AddPlacmentCell") as! AddPlacmentCell
                 cellHeading.selectionStyle = .none

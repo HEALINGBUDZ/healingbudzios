@@ -96,9 +96,9 @@ class DispensaryDetailVC: BaseViewController , CameraDelegate , UITextViewDelega
     }
     func checkState() -> Bool{
         if states.contains(self.state){
-            return true
-        }else{
             return false
+        }else{
+            return true
         }
     }
     override func viewWillAppear(_ animated: Bool) {
@@ -351,7 +351,7 @@ class DispensaryDetailVC: BaseViewController , CameraDelegate , UITextViewDelega
             }
             if self.chooseBudzMap.budzMapType.idType == 2 || self.chooseBudzMap.budzMapType.idType == 6 || self.chooseBudzMap.budzMapType.idType == 7{
                 if !self.checkState(){
-                    self.ShowSuccessAlert(message: "You can't view this type of business in your area.")
+//                    self.ShowSuccessAlert(message: "You can't view this type of business in your area.")
                 }else{
                     self.RefreshTableView()
                 }

@@ -653,7 +653,10 @@ class BaseViewController: UIViewController, UIImagePickerControllerDelegate, UIN
                             appDelegate.keywords.append("."+obj)
                             appDelegate.keywords.append(","+obj)
                             appDelegate.keywords.append(obj+",")
-                        } 
+                            appDelegate.keywords.append(obj+" ")
+                            appDelegate.keywords.append(" "+obj)
+//                            appDelegate.keywords.append(" " + obj + " ")
+                        }
                     }
                     HBUserDafalts.sharedInstance.saveKeywords(array: appDelegate.keywords)
                     print(appDelegate.keywords)
@@ -835,7 +838,10 @@ extension BaseViewController {
         let datetoday = Date()
         return datetoday.GetString(dateFormate: "YYYY-MM-dd")
     }
-
+    func GetTodaydateWithFullFormat() -> String{
+        let datetoday = Date()
+        return datetoday.GetStringDefaultUtc(dateFormate: "yyyy-MM-dd HH:mm:ss")
+    }
     func verifyUrl (urlString: String?) -> Bool {
         //Check for nil
         if let urlString = urlString {
@@ -1024,6 +1030,30 @@ extension BaseViewController {
         let date_frmt = DateFormatter()
          date_frmt.dateFormat = "MM-dd-yyyy"
         return date_frmt.string(from: dt!)
+    }
+    func  GetDateValidBudz(date : String) -> String {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "MM/yy"
+        let dt = dateFormatter.date(from: date)
+        if dt != nil {
+            let dateToday = Date()
+            let order = Calendar.current.compare(dateToday, to: dt!, toGranularity: .day)
+            
+            switch order {
+            case .orderedAscending:
+                let date_frmt = DateFormatter()
+                date_frmt.dateFormat = "MM/yyyy"
+                return date_frmt.string(from: dt!)
+            case .orderedDescending:
+                return "Wrong Date"
+            default:
+                return "Wrong Date"
+            }
+            
+        }else {
+            return "Wrong Date"
+        }
+        
     }
     func  GetDateBudz(date : String) -> String {
         let dateFormatter = DateFormatter()

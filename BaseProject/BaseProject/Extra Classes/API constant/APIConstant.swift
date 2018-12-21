@@ -234,7 +234,7 @@ enum WebServiceName: String {
 var kBaseURLString: String {
 
     return "https://healingbudz.com/api/v1/"
-//    return "https://healingbudz.cannablazeed.com/api/v1/"
+//    return "https://healingbudz.com/api/v1/"
 
 //       return "http://139.162.37.73/healingbudz/api/v1/"
 //       return "http://139.162.37.73/healingbudz_live/api/v1/"

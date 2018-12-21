@@ -17,7 +17,7 @@
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleShortVersionString</key>
-	<string>1.0</string>
+	<string>1.1</string>
 	<key>CFBundleURLTypes</key>
 	<array>
 		<dict>
@@ -50,7 +50,7 @@
 		</dict>
 	</array>
 	<key>CFBundleVersion</key>
-	<string>1.0.14</string>
+	<string>1.0.23</string>
 	<key>Fabric</key>
 	<dict>
 		<key>APIKey</key>
@@ -88,13 +88,13 @@
 	<key>NSCameraUsageDescription</key>
 	<string>This is required to set your profile picture.</string>
 	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
-	<string>Need Location servics for get user latitude and longitude</string>
+	<string>Need Location servics for placing the correct distance between user and budz adz shop location.</string>
 	<key>NSLocationAlwaysUsageDescription</key>
-	<string>Need Location</string>
+	<string>Need Location servics for placing the correct distance between user and budz adz shop location.</string>
 	<key>NSLocationUsageDescription</key>
-	<string>Need Location</string>
+	<string>Need Location servics for placing the correct distance between user and budz adz shop location.</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>Need Location servics for get user latitude and longitude</string>
+	<string>Need Location servics for placing the correct distance between user and budz adz shop location.</string>
 	<key>NSMicrophoneUsageDescription</key>
 	<string>This app use microphone for recording audio with picture. </string>
 	<key>NSMicrophoneUsageDescription </key>

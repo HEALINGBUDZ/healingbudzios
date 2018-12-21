@@ -114,7 +114,7 @@ extension businessListingSettingsVC:UITableViewDelegate,UITableViewDataSource{
         
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.mainArray.count
+        return self.mainArray.count + 1
         
     }
     
@@ -123,12 +123,13 @@ extension businessListingSettingsVC:UITableViewDelegate,UITableViewDataSource{
         
         print(indexPath.row)
         print(self.mainArray.count)
-        let DataElement = self.mainArray[indexPath.row]
+        
         if indexPath.row == 0 {
             let cell = tableView.dequeueReusableCell(withIdentifier: "BussinessTabCell") as? BussinessTabCell
             cell?.selectionStyle = .none
             return cell!
         }else{
+            let DataElement = self.mainArray[indexPath.row - 1]
             let dataType = DataElement["type"] as! String
             switch dataType {
             case businessListingSettings.titleCell.rawValue:
@@ -147,9 +148,9 @@ extension businessListingSettingsVC:UITableViewDelegate,UITableViewDataSource{
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         print(indexPath)
         
-        if indexPath.row > 4 {
+        if indexPath.row != 0 {
             let viewPush = self.storyboard?.instantiateViewController(withIdentifier: "DispensaryDetailVC") as! DispensaryDetailVC
-            viewPush.chooseBudzMap = self.bud_map_list[indexPath.row - 5]
+            viewPush.chooseBudzMap = self.bud_map_list[indexPath.row - 1]
             self.navigationController?.pushViewController(viewPush, animated: true)
         }
     }
@@ -196,7 +197,7 @@ extension businessListingSettingsVC:UITableViewDelegate,UITableViewDataSource{
             businessCell)!
         
         
-        let indexMain = (self.mainArray[indexPath.row])["index"] as! Int
+        let indexMain = (self.mainArray[indexPath.row - 1])["index"] as! Int
         
         
         cell.lblName.text = self.bud_map_list[indexMain].title
@@ -306,7 +307,7 @@ extension businessListingSettingsVC:UITableViewDelegate,UITableViewDataSource{
             
         }else {
             
-            self.deleteCustomeAlert(title: "Cancel Membership", discription: "Are you sure you want to cancel this membership?", btnTitle1: "Ok", btnTitle2: "Cancel") { (isCom, btn) in
+            self.deleteCustomeAlert(title: "Cancel Membership", discription: "Are you sure you want to cancel this membership?", btnTitle1: "Cancel", btnTitle2: "Ok") { (isCom, btn) in
                 if isCom {
                     self.showLoading()
                     var UrlLink = WebServiceName.delete_subscription.rawValue + String(self.bud_map_list[sender.tag].id)

@@ -59,7 +59,7 @@ class MessageChatVC: BaseViewController, UITableViewDelegate , UITableViewDataSo
             if data.first!["user_id"] != nil {
                 if (data.first!["user_id"] as! Int) == Int(DataManager.sharedInstance.user!.ID) {
                     let newMeesage = MessageChat()
-                    
+                    newMeesage.created_at = self.GetTodaydateWithFullFormat()
                     newMeesage.receiver_id = (data.first!["user_id"] as? Int ?? 0)
                     if let other_id  = data.first!["other_id"] as? Int{
                          newMeesage.sender_id = other_id
@@ -86,6 +86,9 @@ class MessageChatVC: BaseViewController, UITableViewDelegate , UITableViewDataSo
                     self.chat_msg_list.insert(newMeesage, at: 0)
                     self.chat_table_view.scrollToRow(at: IndexPath.init(row: 0, section: 0), at: .bottom, animated: true)
                     self.chat_table_view.reloadData()
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+                        self.chat_table_view.reloadData()
+                    }
 //                    self.scrollToLastRow()
                 }
             }
@@ -317,6 +320,7 @@ class MessageChatVC: BaseViewController, UITableViewDelegate , UITableViewDataSo
         self.isImageUploadedSuccess = false
         var newParam = [String : AnyObject]()
         let receiver_obj = MessageChat()
+        receiver_obj.created_at = self.GetTodaydateWithFullFormat()
         receiver_obj.message = self.msg_text_field.text!
         receiver_obj.sender_id = Int(DataManager.sharedInstance.user!.ID)!
         if let url = self.slp.extractURL(text: self.msg_text_field.text!){
@@ -467,6 +471,9 @@ class MessageChatVC: BaseViewController, UITableViewDelegate , UITableViewDataSo
         self.array_Attachment.removeAll()
         
         self.chat_table_view.reloadData()
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+            self.chat_table_view.reloadData()
+        }
 //        self.scrollToLastRow();
         
         self.msg_text_field.resignFirstResponder()
@@ -501,6 +508,7 @@ class MessageChatVC: BaseViewController, UITableViewDelegate , UITableViewDataSo
                 cell?.view_Scrapping.isHidden = true
                 cell?.indicator.isHidden = true
                 cell?.indicator.startAnimating()
+                cell?.lbl_date.text = self.GetTimeAgo(StringDate: chat_obj.created_at)
                 cell?.selectionStyle = .none
                 cell?.MSG_TEXT.applyTag(baseVC: self , mainText: chat_obj.message)
                  cell?.sender_name.text = OtherUserName
@@ -528,6 +536,7 @@ class MessageChatVC: BaseViewController, UITableViewDelegate , UITableViewDataSo
                 cell?.MSG_TEXT.applyTag(baseVC: self , mainText:  chat_obj.message)
                 cell?.MSG_TEXT.text = chat_obj.message
                 cell?.MSG_IMG.image = nil
+                cell?.lbl_date.text = self.GetTimeAgo(StringDate: chat_obj.created_at)
                 cell?.indicator.startAnimating()
                 cell?.rece_name.text = UserName
                 cell?.indicator.isHidden = true
@@ -576,7 +585,7 @@ class MessageChatVC: BaseViewController, UITableViewDelegate , UITableViewDataSo
                     cell?.selectionStyle = .none
                     cell?.MSG_TEXT.applyTag(baseVC: self , mainText: chat_obj.message)
                     cell?.MSG_TEXT.text = chat_obj.message
-                
+                    cell?.lbl_date.text = self.GetTimeAgo(StringDate: chat_obj.created_at)
                     cell?.sender_name.text = OtherUserName
                     cell?.transform = CGAffineTransform(scaleX: 1, y: -1)
                     
@@ -591,6 +600,7 @@ class MessageChatVC: BaseViewController, UITableViewDelegate , UITableViewDataSo
                     cell?.selectionStyle = .none
                     cell?.MSG_Text.text = chat_obj.message
                     cell?.rece_name.text = UserName
+                    cell?.lbl_date.text = self.GetTimeAgo(StringDate: chat_obj.created_at)
                     cell?.transform = CGAffineTransform(scaleX: 1, y: -1)
                     
                     return cell!
@@ -610,6 +620,7 @@ class MessageChatVC: BaseViewController, UITableViewDelegate , UITableViewDataSo
         cell?.MSG_TEXT.text = chat_obj.message
         cell?.Video_icon.isHidden  = true
         cell?.selectionStyle = .none
+        cell?.lbl_date.text = self.GetTimeAgo(StringDate: chat_obj.created_at)
         cell?.indicator.isHidden = false
         cell?.rece_name.text = UserName
         cell?.view_Scrapping.isHidden = false
@@ -667,6 +678,7 @@ class MessageChatVC: BaseViewController, UITableViewDelegate , UITableViewDataSo
          cell?.sender_name.text = OtherUserName
         cell?.Img_scrapping.image = #imageLiteral(resourceName: "noimage")
         cell?.Video_icon.isHidden  = true
+        cell?.lbl_date.text = self.GetTimeAgo(StringDate: chat_obj.created_at)
         cell?.indicator.isHidden = false
         cell?.indicator.startAnimating()
         cell?.MES_IMAGE.image = nil

@@ -2,7 +2,7 @@
 //  BudzMapallReviewViewController.swift
 //  BaseProject
 //
-//  Created by waseem on 14/04/2018.
+
 //  Copyright © 2018 Wave. All rights reserved.
 //
 

@@ -13,23 +13,39 @@ extension ActiveLabel{
         let appdelegate = UIApplication.shared.delegate as! AppDelegate
         var newArray = [Any]()
         var keywords_array = appdelegate.keywords
-        for obj in keywords_array{
-            keywords_array.append("#"+obj)
-            keywords_array.append("("+obj+")")
-            keywords_array.append("."+obj)
-            keywords_array.append(","+obj)
-            keywords_array.append(obj+",")
-        }
+//        for obj in keywords_array{
+//            keywords_array.append("#"+obj)
+//            keywords_array.append("("+obj+")")
+//            keywords_array.append("."+obj)
+//            keywords_array.append(","+obj)
+//            keywords_array.append(obj+",")
+//            keywords_array.append(obj+" ")
+//            keywords_array.append(" "+obj)
+//        }
         // aply tag set fisrt text is init
         for indexObj in keywords_array {
             if mainText.lowercased().contains(indexObj.lowercased()){
-                let customType = ActiveType.custom(pattern: String.init(format: "\\s%@\\b",indexObj))
+                let customType = ActiveType.custom(pattern: String.init(format: "^%@\\b",indexObj))//\\s
                 self.customColor[customType] = Constants.kTagColor
                 newArray.append(customType)
                 self.handleCustomTap(for: customType) {
                     baseVC.ShowKeywordPopUp(value: $0)
                 }
+                //|\\s%@\\b
+                let customTypeT = ActiveType.custom(pattern: String.init(format: "\\s%@\\b",indexObj))//\\s
+                self.customColor[customTypeT] = Constants.kTagColor
+                newArray.append(customTypeT)
+                self.handleCustomTap(for: customTypeT) {
+                    baseVC.ShowKeywordPopUp(value: $0)
+                }
+                let customTypeST = ActiveType.custom(pattern: String.init(format: "^%@",indexObj))//\\s
+                self.customColor[customTypeST] = Constants.kTagColor
+                newArray.append(customTypeST)
+                self.handleCustomTap(for: customTypeST) {
+                    baseVC.ShowKeywordPopUp(value: $0)
+                }
             }
+            
         }
         newArray.append(ActiveType.url)
         self.customColor[ActiveType.url] = UIColor.init(hex: "808080")

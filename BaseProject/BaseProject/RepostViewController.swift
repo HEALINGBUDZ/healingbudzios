@@ -81,14 +81,14 @@ class RepostViewController: BaseViewController , UITextViewDelegate{
     
 
     func textViewDidBeginEditing(_ textView: UITextView) {
-        if self.whats_on_your_mind.text == "What's on your mind?"{
+        if self.whats_on_your_mind.text == "Hey Bud, what's on your mind?"{
             self.whats_on_your_mind.text = ""
         }
     }
     
     func textViewDidEndEditing(_ textView: UITextView) {
         if self.whats_on_your_mind.text.isEmpty{
-            self.whats_on_your_mind.text = "What's on your mind?"
+            self.whats_on_your_mind.text = "Hey Bud, what's on your mind?"
         }
     }
     func displayUserProfile()    {
@@ -316,7 +316,7 @@ class RepostViewController: BaseViewController , UITextViewDelegate{
             self.showLoading()
             var mainParam: [String : AnyObject]
         mainParam = ["post_id": postID as AnyObject, "posting_user": postingUser as AnyObject, "tagged_users": tagged as AnyObject]
-        if self.whats_on_your_mind.text != "What's on your mind?" && self.whats_on_your_mind.text.isEmpty == false{
+        if self.whats_on_your_mind.text != "Hey Bud, what's on your mind?" && self.whats_on_your_mind.text.isEmpty == false{
              mainParam["post_added_comment"] = self.whats_on_your_mind.text as AnyObject
         }
        

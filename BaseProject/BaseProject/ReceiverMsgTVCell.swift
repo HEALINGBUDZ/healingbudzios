@@ -11,7 +11,7 @@ import ActiveLabel
 
 class ReceiverMsgTVCell: UITableViewCell {
     @IBOutlet  var MSG_Text: ActiveLabel!
-    
+    @IBOutlet weak var lbl_date: UILabel!
     @IBOutlet weak var rece_name: UILabel!
     
     override func awakeFromNib() {

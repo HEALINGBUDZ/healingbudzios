@@ -88,6 +88,40 @@ class ShareViewController: SLComposeServiceViewController {
         if (self.contentText.contains("https") || self.contentText.contains("http")) {
             txt = self.contentText
         }
+        var url = self.urlString
+        if (self.contentText.contains("https") || self.contentText.contains("http")) {
+            let desc = contentText
+            // extract url
+            do {
+                
+                let detector = try NSDataDetector(types: NSTextCheckingResult.CheckingType.link.rawValue)
+                let matches = detector.matches(in: desc!, options: [], range: NSRange(location: 0, length: (desc?.utf16.count)!))
+                
+                if !matches.isEmpty {
+                    let range = Range(matches.first!.range, in: desc!)!
+                    url = String((desc?[range])!)
+                    print(url)
+                    if (url?.contains("Https"))!{
+                        url = url?.stringByReplacingFirstOccurrenceOfString(target: "H", withString: "h")
+                    }
+                }
+            }
+            catch {
+                print(error)
+            }
+        }else {
+            url = self.urlString
+        }
+//        if (url != nil && (url?.count)! > 0 ){
+//            if ((url?.contains("https"))! || (url?.contains("http"))!){
+////              url = self.urlString
+//            }else {
+//              url = self.contentText
+//            }
+//        }else {
+//            url = self.contentText
+//        }
+        
         var mainParam: [String : AnyObject]
             mainParam = ["description": txt as AnyObject,
                          "images": "" as AnyObject,
@@ -99,7 +133,7 @@ class ShareViewController: SLComposeServiceViewController {
                          "json_data": "" as AnyObject,
                          "posting_user": "" as AnyObject,
                          "repost_to_wall": 1 as AnyObject,
-                         "url": txt as AnyObject]
+                         "url": url as AnyObject]
         ShareViewController.PostCall(ssKey: ssKey,UrlAPI:"save_post", params: mainParam) { [unowned self] (apiSucceed, message, responseData) in
                     //                    print(responseData)
             
@@ -199,5 +233,16 @@ extension NSItemProvider {
         return hasItemConformingToTypeIdentifier(kUTTypeText as String)
     }
     
+}
+extension String
+{
+    func stringByReplacingFirstOccurrenceOfString(
+        target: String, withString replaceString: String) -> String
+    {
+        if let range = self.range(of: target) {
+            return self.replacingCharacters(in: range, with: replaceString)
+        }
+        return self
+    }
 }
 

@@ -2,7 +2,7 @@
 //  AvatorCollectionViewCell.swift
 //  BaseProject
 //
-//  Created by Jawad ali on 1/3/18.
+
 //  Copyright © 2018 Wave. All rights reserved.
 //
 

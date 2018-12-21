@@ -2,7 +2,7 @@
 //  MedicalCell.swift
 //  BaseProject
 //
-//  Created by Jawad on 6/14/18.
+
 //  Copyright © 2018 Wave. All rights reserved.
 //
 

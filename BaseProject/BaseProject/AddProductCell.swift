@@ -2,7 +2,7 @@
 //  AddProductCell.swift
 //  BaseProject
 //
-//  Created by Adnan Ahmad on 02/05/2018.
+
 //  Copyright © 2018 Wave. All rights reserved.
 //
 

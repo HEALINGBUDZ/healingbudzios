@@ -167,7 +167,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qlf-eh-jpQ">
-                                <rect key="frame" x="62" y="346" width="84" height="30"/>
+                                <rect key="frame" x="77" y="346" width="84" height="30"/>
                                 <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="14"/>
                                 <state key="normal" title=" Comments" image="comments-icon">
                                     <color key="titleColor" red="0.69411764710000001" green="0.69411764710000001" blue="0.69411764710000001" alpha="1" colorSpace="calibratedRGB"/>
@@ -177,7 +177,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yzt-0Q-KYm">
-                                <rect key="frame" x="154" y="345.5" width="96" height="30"/>
+                                <rect key="frame" x="169" y="345.5" width="96" height="30"/>
                                 <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="14"/>
                                 <state key="normal" title=" 999 Reposts" image="re-post-icon">
                                     <color key="titleColor" red="0.69411764710000001" green="0.69411764710000001" blue="0.69411764710000001" alpha="1" colorSpace="calibratedRGB"/>
@@ -452,14 +452,6 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <view hidden="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="60p-xP-gmC">
-                                <rect key="frame" x="1" y="150" width="371" height="151"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="100" id="ZrG-eK-oFX"/>
-                                    <constraint firstAttribute="width" constant="240" id="gsL-yy-Ipb"/>
-                                </constraints>
-                            </view>
                             <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="20p-vq-dk8">
                                 <rect key="frame" x="8" y="285" width="357" height="40"/>
                                 <subviews>
@@ -551,7 +543,7 @@
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qyd-BZ-wGu">
-                                <rect key="frame" x="23" y="210" width="31" height="30"/>
+                                <rect key="frame" x="23" y="210" width="46" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="46" id="uTZ-h4-XoC"/>
                                 </constraints>
@@ -582,6 +574,14 @@
                                     <action selector="likesButtonTapped" destination="pIH-9b-MuZ" eventType="touchUpInside" id="Q1S-V4-8Fq"/>
                                 </connections>
                             </button>
+                            <view hidden="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="60p-xP-gmC">
+                                <rect key="frame" x="1" y="150" width="371" height="151"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="100" id="ZrG-eK-oFX"/>
+                                    <constraint firstAttribute="width" constant="240" id="gsL-yy-Ipb"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>

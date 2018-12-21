@@ -2,7 +2,7 @@
 //  GoogleAddCell.swift
 //  BaseProject
 //
-//  Created by Jawad on 6/6/18.
+
 //  Copyright © 2018 Wave. All rights reserved.
 //
 

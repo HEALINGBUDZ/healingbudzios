@@ -75,6 +75,10 @@
 		04EB473E2053C52B00259CCA /* UserInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EB473D2053C52B00259CCA /* UserInfoViewController.swift */; };
 		0507CFAE219993AC003C80E4 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3580D49E1EF11F34000782F7 /* Constant.swift */; };
 		0507CFB621999405003C80E4 /* APIConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3580D4961EF11F34000782F7 /* APIConstant.swift */; };
+		051F608A21AD63CA00E3C669 /* BudzPaymentPopVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 051F608921AD63CA00E3C669 /* BudzPaymentPopVC.swift */; };
+		051F608C21AD6B0C00E3C669 /* PayBudzModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 051F608B21AD6B0C00E3C669 /* PayBudzModel.swift */; };
+		053DCCCF21A6D67300C7FC12 /* HowToSurvayCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053DCCCD21A6D67300C7FC12 /* HowToSurvayCell.swift */; };
+		053DCCD021A6D67300C7FC12 /* HowToSurvayCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 053DCCCE21A6D67300C7FC12 /* HowToSurvayCell.xib */; };
 		053EA644216B756200E80553 /* ImageDisplayCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053EA642216B756200E80553 /* ImageDisplayCell.swift */; };
 		053EA645216B756200E80553 /* ImageDisplayCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 053EA643216B756200E80553 /* ImageDisplayCell.xib */; };
 		053EA64E216B8C4100E80553 /* GifPostModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053EA64D216B8C4100E80553 /* GifPostModel.swift */; };
@@ -777,6 +781,10 @@
 		04E0F0BB2081F15C00E4251F /* ImageCollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ImageCollectionCell.xib; path = "View Controller/BudzMain/Detail Vc/Dispensary Detail Vc/Cell/ImageCollectionCell.xib"; sourceTree = "<group>"; };
 		04E5576D206241AD00952427 /* StrainReviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = StrainReviewViewController.swift; path = "Strain Review/StrainReviewViewController.swift"; sourceTree = "<group>"; };
 		04EB473D2053C52B00259CCA /* UserInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UserInfoViewController.swift; path = "View Controller/USer Info/UserInfoViewController.swift"; sourceTree = "<group>"; };
+		051F608921AD63CA00E3C669 /* BudzPaymentPopVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudzPaymentPopVC.swift; sourceTree = "<group>"; };
+		051F608B21AD6B0C00E3C669 /* PayBudzModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayBudzModel.swift; sourceTree = "<group>"; };
+		053DCCCD21A6D67300C7FC12 /* HowToSurvayCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HowToSurvayCell.swift; sourceTree = "<group>"; };
+		053DCCCE21A6D67300C7FC12 /* HowToSurvayCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HowToSurvayCell.xib; sourceTree = "<group>"; };
 		053EA642216B756200E80553 /* ImageDisplayCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDisplayCell.swift; sourceTree = "<group>"; };
 		053EA643216B756200E80553 /* ImageDisplayCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageDisplayCell.xib; sourceTree = "<group>"; };
 		053EA64D216B8C4100E80553 /* GifPostModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GifPostModel.swift; sourceTree = "<group>"; };
@@ -2409,6 +2417,7 @@
 				04B4FC94206285B5002B1460 /* BudzMapServices.swift */,
 				04B4FC962062865B002B1460 /* BudzMapSpecial.swift */,
 				ADAD1E3C208DEEA8000E8527 /* Reply.swift */,
+				051F608B21AD6B0C00E3C669 /* PayBudzModel.swift */,
 			);
 			path = BudzMap;
 			sourceTree = "<group>";
@@ -2610,7 +2619,6 @@
 				FA07A6471FCD6ADE000DA845 /* Main Budz */,
 				FA70A1571F94D938000EB03E /* New Budz Map */,
 				FA6B7FA91F949FCE0099E880 /* Gallery View */,
-				FA90DE731F8508A90048892F /* Dispensary Listing */,
 				9ABF8A7C1F8255B8004C395E /* Main Listing */,
 			);
 			name = "Budz Map";
@@ -2619,6 +2627,7 @@
 		9ABF8A7C1F8255B8004C395E /* Main Listing */ = {
 			isa = PBXGroup;
 			children = (
+				FA90DE731F8508A90048892F /* Dispensary Listing */,
 				FA6D632B1F83940A003C5662 /* Cell */,
 				9ABF8A7D1F8255EF004C395E /* BudzMainVC.swift */,
 				9ABF8A7F1F825794004C395E /* BudzMapCell.swift */,
@@ -2627,6 +2636,7 @@
 				9AF526291F836B1B00230329 /* CustomCalloutView.swift */,
 				9AF5262B1F838A0C00230329 /* BudzFilterCell.swift */,
 				AD059F5820CE5B2400451CE9 /* PaymentPopupViewController.swift */,
+				051F608921AD63CA00E3C669 /* BudzPaymentPopVC.swift */,
 			);
 			name = "Main Listing";
 			sourceTree = "<group>";
@@ -3297,6 +3307,8 @@
 				61BB8E7B20DD2E5C008FD4B2 /* NoSucravyCell.xib */,
 				61BB8E8520DD328C008FD4B2 /* AddPlacmentCell.swift */,
 				61BB8E8620DD328C008FD4B2 /* AddPlacmentCell.xib */,
+				053DCCCD21A6D67300C7FC12 /* HowToSurvayCell.swift */,
+				053DCCCE21A6D67300C7FC12 /* HowToSurvayCell.xib */,
 			);
 			name = "Strain OverView";
 			sourceTree = "<group>";
@@ -3937,6 +3949,7 @@
 				053EA645216B756200E80553 /* ImageDisplayCell.xib in Resources */,
 				614FBE95216620490050FE83 /* AddNewServicesVC.xib in Resources */,
 				FAEB6C071F399B4700799D59 /* Lato-Italic.ttf in Resources */,
+				053DCCD021A6D67300C7FC12 /* HowToSurvayCell.xib in Resources */,
 				FAEB6C041F399B4700799D59 /* Lato-HairlineItalic.ttf in Resources */,
 				FAEB6C091F399B4700799D59 /* Lato-LightItalic.ttf in Resources */,
 				FABC70F81FC43EAF008C9715 /* BudzGroupChatCell.xib in Resources */,
@@ -4318,6 +4331,7 @@
 				9ACD9F5E2004D9AF008A9DEA /* DateItemTVCell.swift in Sources */,
 				FAD013031F3C39A1009C00F1 /* QAMainVC.swift in Sources */,
 				613F3F9A20C7B9B700DD45F2 /* EmptyCell.swift in Sources */,
+				053DCCCF21A6D67300C7FC12 /* HowToSurvayCell.swift in Sources */,
 				9AC89FA72077E1B70088090A /* UserProfilShortInfo.swift in Sources */,
 				9A360EE220626BF40002AA41 /* RedeemCompleteAlertVC.swift in Sources */,
 				04AB5930204F2115006228F9 /* AttachmentMapper.swift in Sources */,
@@ -4521,6 +4535,7 @@
 				9A7023AE1FA9D2BA0005AD32 /* MyMessageVC.swift in Sources */,
 				FA266F051F1BCF85004B359B /* MainTabbar.swift in Sources */,
 				FA9AA9401FBB1BF400677602 /* NewJournalVC.swift in Sources */,
+				051F608C21AD6B0C00E3C669 /* PayBudzModel.swift in Sources */,
 				042059C420690B9900D66047 /* BuzzFeedModel.swift in Sources */,
 				9A30A045202076A900D3F80E /* Timing.swift in Sources */,
 				04EB473E2053C52B00259CCA /* UserInfoViewController.swift in Sources */,
@@ -4528,6 +4543,7 @@
 				9AF5262A1F836B1B00230329 /* CustomCalloutView.swift in Sources */,
 				61BB8E8720DD328C008FD4B2 /* AddPlacmentCell.swift in Sources */,
 				9A62538C20614004006E1C04 /* CompletedRewardsCell.swift in Sources */,
+				051F608A21AD63CA00E3C669 /* BudzPaymentPopVC.swift in Sources */,
 				05AD046E21898ED0009A1F14 /* AllBudzVC.swift in Sources */,
 				FABA2B791F42CD4F00CA0EE8 /* RoundImageView.swift in Sources */,
 				AD90D66B20875EC200986849 /* TagsCollectionViewCell.swift in Sources */,

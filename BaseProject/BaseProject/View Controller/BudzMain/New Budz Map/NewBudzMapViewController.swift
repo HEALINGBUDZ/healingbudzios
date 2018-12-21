@@ -776,17 +776,17 @@ class NewBudzMapViewController: BaseViewController , CameraDelegate  , makePremi
             if(success){
                 if( ((response!["results"] as! [[String : Any]]).count) > 0){
                     let location =  (response!["results"] as! [[String : Any]])[0]["address_components"] as! [[String: AnyObject]]
-                    var isMatched = false
+                    var isMatched = true
                     for lct in location{
                         let st  = lct["long_name"] as! String
                         if self.states.contains(st){
-                            isMatched = true
-                            complition(true)
+                            isMatched = false
+                            complition(false)
                             return
                         }
                     }
                     if !isMatched {
-                        complition(false)
+                        complition(true)
                     }
                     
                 }else{
@@ -801,18 +801,18 @@ class NewBudzMapViewController: BaseViewController , CameraDelegate  , makePremi
     
     func checkState() -> Bool{
         if states.contains(self.state){
-            return true
-        }else{
             return false
+        }else{
+            return true
         }
     }
     func checkStateInitisl() -> Bool{
         for testt in stateInitial {
            if  self.completeAddress.contains(testt) {
-                return true
+                return false
             }
         }
-        return false
+        return true
         
     }
     
@@ -1057,7 +1057,9 @@ class NewBudzMapViewController: BaseViewController , CameraDelegate  , makePremi
 extension NewBudzMapViewController : UITableViewDataSource, UITableViewDelegate{
     
     func RegisterXibNewBudz(){
+        //AddNewProductServices
         self.tbleView_NewBudz.register(UINib(nibName: "NewBudzHeaderCell", bundle: nil), forCellReuseIdentifier: "NewBudzHeaderCell")
+        self.tbleView_NewBudz.register(UINib(nibName: "AddNewProductServices", bundle: nil), forCellReuseIdentifier: "AddNewProductServices")
          self.tbleView_NewBudz.register(UINib(nibName: "MedicalCell", bundle: nil), forCellReuseIdentifier: "MedicalCell")
         self.tbleView_NewBudz.register(UINib(nibName: "HeaderButtonCell", bundle: nil), forCellReuseIdentifier: "HeaderButtonCell")
         self.tbleView_NewBudz.register(UINib(nibName: "BudzProductCell", bundle: nil), forCellReuseIdentifier: "BudzProductCell")

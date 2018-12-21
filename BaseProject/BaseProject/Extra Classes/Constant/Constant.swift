@@ -2,8 +2,7 @@
 //  Constant.swift
 //  Shir
 //
-//  Created by waseem shah on 2/27/17.
-//  Copyright © 2017 waseem shah. All rights reserved.
+
 //
 
 import Foundation
@@ -200,10 +199,11 @@ enum StrainDataType: String {
     case StrainShowCare         = "23"
     case StrainShowEditHeading  = "24"
     case StrainShowUserEdit     = "25"
-     case EmptyBlankCell     = "29"
+    case EmptyBlankCell     = "29"
     case googleAdd     =          "26"
-     case nosurvay     =          "27"
-     case addplace     =          "28"
+    case nosurvay     =          "27"
+    case addplace     =          "28"
+    case noFullSurvay =          "30"
 }
 
 

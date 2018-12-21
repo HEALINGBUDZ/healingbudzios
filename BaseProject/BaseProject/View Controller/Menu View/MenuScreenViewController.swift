@@ -36,7 +36,7 @@ class MenuScreenViewController: BaseViewController {
         if(DeviceType.IS_IPHONE_5_OR_LESS){
             self.tbleViewMain.isScrollEnabled = true
         }else{
-              self.tbleViewMain.isScrollEnabled = true
+            self.tbleViewMain.isScrollEnabled = true
         }
     }
     
@@ -51,6 +51,7 @@ class MenuScreenViewController: BaseViewController {
             self.tbleViewMain.reloadData()
         }
         self.tbleViewMain.reloadData()
+        self.tbleViewMain.flashScrollIndicators()
     }
     
 }

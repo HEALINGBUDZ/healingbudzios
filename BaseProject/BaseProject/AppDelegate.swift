@@ -551,10 +551,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate ,OSPerm
             application.applicationIconBadgeNumber = (user.notifications_count.intValue)
         }//TextSharedHas
     
-        let userDefaults = UserDefaults(suiteName: "group.com.healingbudz.ios")
-        var ssKey = userDefaults?.object(forKey: "sskey") as! String
+    
         print("TextSharedHas")
-        print(ssKey)
         
 	}
 
@@ -568,10 +566,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate ,OSPerm
         let application = UIApplication.shared
         application.registerForRemoteNotifications()
         application.applicationIconBadgeNumber = self.badgeCount
-        let userDefaults = UserDefaults(suiteName: "group.com.healingbudz.ios")
-        var ssKey = userDefaults?.object(forKey: "sskey") as! String
         print("TextSharedHas")
-        print(ssKey)
 		// Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
 	}
 

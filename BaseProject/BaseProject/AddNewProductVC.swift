@@ -2,7 +2,7 @@
 //  AddNewProductVC.swift
 //  BaseProject
 //
-//  Created by Jawad on 10/3/18.
+
 //  Copyright © 2018 Wave. All rights reserved.
 //
 

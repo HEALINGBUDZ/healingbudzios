@@ -2,7 +2,7 @@
 //  EvnetPaymentMethodsCell.swift
 //  BaseProject
 //
-//  Created by Jawad on 8/16/18.
+
 //  Copyright © 2018 Wave. All rights reserved.
 //
 

@@ -7,11 +7,12 @@
 //
 
 import UIKit
-
+import MBProgressHUD
 class QAMainSearchViewController: BaseViewController , UITableViewDelegate , UITableViewDataSource {
     @IBOutlet weak var tblViewSearch: UITableView!
     @IBOutlet weak var filterViewHeight_constraint: NSLayoutConstraint!
     @IBOutlet weak var txtFldSearch: UITextField!
+    var hud =   MBProgressHUD()
     @IBOutlet weak var uiImage_cross: UIImageView!
     var gloablArray = [[String: Any]]()
     @IBOutlet weak var viewFilter: UIView! 
@@ -35,7 +36,6 @@ class QAMainSearchViewController: BaseViewController , UITableViewDelegate , UIT
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
         txtFldSearch.addTarget(self, action: #selector(textFieldDidChange(_:)), for: .editingChanged)
         self.tblViewSearch.register(UINib(nibName: "GlobalSearchCell", bundle: nil), forCellReuseIdentifier: "GlobalSearchCell")
@@ -165,6 +165,20 @@ class QAMainSearchViewController: BaseViewController , UITableViewDelegate , UIT
         }
         return true
     }
+    
+    func Loading() {
+        hud = MBProgressHUD.showAdded(to: self.view, animated: true)
+        hud.contentColor = UIColor.init(hex: "FFFFFF")
+        hud.bezelView.color = UIColor.clear
+        hud.backgroundColor = UIColor.black.withAlphaComponent(0.0)
+        hud.bezelView.style = .solidColor
+        hud.label.text = "Loading.."
+        hud.mode = .indeterminate
+    }
+    func hide_Loading()  {
+        MBProgressHUD.hide(for: self.view, animated: true)
+    }
+    
     func search(querry : String , page : Int) {
         var filterString = ""
         if self.qaSwitch.isOn{
@@ -185,7 +199,7 @@ class QAMainSearchViewController: BaseViewController , UITableViewDelegate , UIT
         let url = WebServiceName.globle_search.rawValue + "?query=\(querry)&zip_code=\(String(describing: DataManager.sharedInstance.getPermanentlySavedUser()!.zipcode))&state=\(String(describing: DataManager.sharedInstance.getPermanentlySavedUser()!.address))&skip=\(page)&filter=\(filterString)"
         print(url)
         if !self.isAutoSearch{
-            self.showLoading()
+            self.Loading()
         }
         NetworkManager.GetCall(UrlAPI: url.RemoveSpace(), completion: { (success, messageResponse, dataResponse) in
              self.hideLoading()
@@ -229,7 +243,7 @@ class QAMainSearchViewController: BaseViewController , UITableViewDelegate , UIT
                     self.tblViewSearch.reloadData()
                 }
             }
-            self.hideLoading()
+            self.hide_Loading()
             
         })
     }

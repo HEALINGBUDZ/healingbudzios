@@ -18,6 +18,7 @@ class SenderMediaMsgTVCell: UITableViewCell {
     @IBOutlet weak var Img_scrapping: UIImageView!
     @IBOutlet weak var indicator: UIActivityIndicatorView!
     @IBOutlet var MSG_TEXT: ActiveLabel!
+    @IBOutlet weak var lbl_date: UILabel!
     @IBOutlet weak var MES_IMAGE: FLAnimatedImageView!
     @IBOutlet weak var Video_icon: UIImageView!
     override func awakeFromNib() {

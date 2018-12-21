@@ -2,7 +2,7 @@
 //  FollowKeyword.swift
 //  BaseProject
 //
-//  Created by Jawad on 8/11/18.
+
 //  Copyright © 2018 Wave. All rights reserved.
 //
 

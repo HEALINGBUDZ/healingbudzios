@@ -10,7 +10,7 @@ import UIKit
 import Foundation
 import ActiveLabel
 class SenderMsgTVCell: UITableViewCell {
-
+    @IBOutlet weak var lbl_date: UILabel!
     @IBOutlet weak var sender_name: UILabel!
     @IBOutlet var MSG_TEXT: ActiveLabel!
     override func awakeFromNib() {

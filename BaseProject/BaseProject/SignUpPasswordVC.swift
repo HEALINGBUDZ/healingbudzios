@@ -2,7 +2,7 @@
 //  SignUpPasswordVC.swift
 //  BaseProject
 //
-//  Created by Jawad ali on 1/2/18.
+
 //  Copyright © 2018 Wave. All rights reserved.
 //
 import UIKit

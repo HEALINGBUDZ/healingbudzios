@@ -2,7 +2,7 @@
 //  UserProfileViewController.swift
 //  BaseProject
 //
-//  Created by waseem on 12/03/2018.
+
 //  Copyright © 2018 Wave. All rights reserved.
 //
 
@@ -1200,7 +1200,7 @@ extension UserProfileViewController:UITableViewDelegate,UITableViewDataSource{
             let indexMain = self.mainArray[indexPath.row]
             let indexpath = indexMain["index"] as! Int
             let DetailQuestionVc = self.GetView(nameViewController: "DetailQAViewController", nameStoryBoard: StoryBoardConstant.QA) as! DetailQAViewController
-            DetailQuestionVc.QuestionID = String(self.userQuestion[indexpath].id)
+//            DetailQuestionVc.QuestionID = String(self.userQuestion[indexpath].id)
             if cell is QuestionProfileCell {
                 DetailQuestionVc.QuestionID = String(self.userQuestion[indexpath].id)
 //                DetailQuestionVc.chooseQuestion = self.userQuestion[indexpath]

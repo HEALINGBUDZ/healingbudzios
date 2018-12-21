@@ -468,16 +468,16 @@ class TextPostTableViewCell: UITableViewCell, CameraDelegate, UITextViewDelegate
             }
             print(self.post.json_data ?? "te")
             if self.post.json_data == nil{
-                //                for main_keyword in AppDelegate.appDelegate().keywords{
-                //                    if main_keyword.lowercased() == clicked_word.lowercased(){
-                //                        if self.baseVC != nil {
-                //                            self.baseVC?.ShowKeywordPopUp(value: clicked_word)
-                //                            return
-                //                        }
-                //
-                //                        return
-                //                    }
-                //                }
+                for main_keyword in AppDelegate.appDelegate().keywords{
+                    if main_keyword.lowercased() == clicked_word.lowercased(){
+                        if self.baseVC != nil {
+                            self.baseVC?.ShowKeywordPopUp(value: clicked_word)
+                            return
+                        }
+                        
+                        return
+                    }
+                }
                 return
             }
             let jsonObj = JSON.init(parseJSON: self.post.json_data!)
@@ -510,16 +510,16 @@ class TextPostTableViewCell: UITableViewCell, CameraDelegate, UITextViewDelegate
                     }
                 }
             }
-            //            for main_keyword in AppDelegate.appDelegate().keywords{
-            //                if main_keyword.lowercased() == clicked_word.lowercased(){
-            //                    if self.baseVC != nil {
-            //                        self.baseVC?.ShowKeywordPopUp(value: clicked_word)
-            //                        return
-            //                    }
-            //
-            //                    return
-            //                }
-            //            }
+            for main_keyword in AppDelegate.appDelegate().keywords{
+                if main_keyword.lowercased() == clicked_word.lowercased(){
+                    if self.baseVC != nil {
+                        self.baseVC?.ShowKeywordPopUp(value: clicked_word)
+                        return
+                    }
+                    
+                    return
+                }
+            }
         }
         
         if (desc?.count)! > 200 {

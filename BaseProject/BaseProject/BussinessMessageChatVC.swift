@@ -111,18 +111,28 @@ class BussinessMessageChatVC: BaseViewController, UITableViewDelegate , UITableV
             print(data)
             print(DataManager.sharedInstance.user!.ID)
             if data.first!["user_id"] != nil {
-                if (data.first!["user_id"] as! Int) == Int(DataManager.sharedInstance.user!.ID)
+                var Id = 0
+                if let vlv = data.first!["user_id"] as? Int {
+                    Id = vlv
+                }else if let vlv = data.first!["user_id"] as? String  {
+                    Id = Int(vlv)!
+                }
+                if Id == Int(DataManager.sharedInstance.user!.ID)
                     &&  (data.first!["budz_id"] as! String) == self.bud_map_id {
                     
                     let newMeesage = MessageChat()
-                    
-                    newMeesage.receiver_id = (data.first!["user_id"] as? Int ?? 0)
+                    newMeesage.created_at = self.GetTodaydateWithFullFormat()
+//                    newMeesage.receiver_id = (data.first!["user_id"] as? Int ?? 0)
                     if let other_id  = data.first!["other_id"] as? Int{
                          newMeesage.sender_id = other_id
                     }else if let other_id  = data.first!["other_id"] as? String{
                         newMeesage.sender_id = Int(other_id)!
                     }
-                   
+                    if let other_id  = data.first!["user_id"] as? Int{
+                        newMeesage.receiver_id = other_id
+                    }else if let other_id  = data.first!["user_id"] as? String{
+                        newMeesage.receiver_id = Int(other_id)!
+                    }
                     if let text  = data.first!["text"] as? String{
                          newMeesage.message = text
                     }
@@ -142,6 +152,9 @@ class BussinessMessageChatVC: BaseViewController, UITableViewDelegate , UITableV
                     self.chat_msg_list.insert(newMeesage, at: 0)
                     self.chat_table_view.scrollToRow(at: IndexPath.init(row: 0, section: 0), at: .bottom, animated: true)
                     self.chat_table_view.reloadData()
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+                        self.chat_table_view.reloadData()
+                    }
                 }
             }
         }
@@ -361,6 +374,7 @@ class BussinessMessageChatVC: BaseViewController, UITableViewDelegate , UITableV
         var newParam = [String : AnyObject]()
         newParam["budz_id"] = self.bud_map_id as AnyObject
         let receiver_obj = MessageChat()
+        receiver_obj.created_at = self.GetTodaydateWithFullFormat()
         receiver_obj.message = self.msg_text_field.text!
         receiver_obj.sender_id = Int(DataManager.sharedInstance.user!.ID)!
         if let url = self.slp.extractURL(text: self.msg_text_field.text!){
@@ -527,7 +541,9 @@ class BussinessMessageChatVC: BaseViewController, UITableViewDelegate , UITableV
         
         self.chat_table_view.reloadData()
 //        self.scrollToLastRow();
-        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+            self.chat_table_view.reloadData()
+        }
         self.msg_text_field.resignFirstResponder()
         self.msg_text_field.text = ""
         self.attachment_view.isHidden = true
@@ -561,6 +577,7 @@ class BussinessMessageChatVC: BaseViewController, UITableViewDelegate , UITableV
                 cell?.indicator.isHidden = true
                 cell?.indicator.startAnimating()
                   cell?.sender_name.text = OtherUserName
+                cell?.lbl_date.text = self.GetTimeAgo(StringDate: chat_obj.created_at)
                 cell?.selectionStyle = .none
                 cell?.MSG_TEXT.applyTag(baseVC: self , mainText: chat_obj.message)
                 cell?.MSG_TEXT.text = chat_obj.message
@@ -590,6 +607,7 @@ class BussinessMessageChatVC: BaseViewController, UITableViewDelegate , UITableV
                 cell?.rece_name.text = UserName
                 cell?.indicator.startAnimating()
                 cell?.indicator.isHidden = true
+                cell?.lbl_date.text = self.GetTimeAgo(StringDate: chat_obj.created_at)
                 if(chat_obj.file_type == "image"){
                     cell?.Video_icon.isHidden  = true
                     if chat_obj.file_path.count > 0 {
@@ -636,6 +654,7 @@ class BussinessMessageChatVC: BaseViewController, UITableViewDelegate , UITableV
                     cell?.selectionStyle = .none
                     cell?.MSG_TEXT.applyTag(baseVC: self , mainText:chat_obj.message )
                     cell?.MSG_TEXT.text = chat_obj.message
+                    cell?.lbl_date.text = self.GetTimeAgo(StringDate: chat_obj.created_at)
                      cell?.sender_name.text = OtherUserName
                     cell?.transform = CGAffineTransform(scaleX: 1, y: -1)
                     
@@ -649,6 +668,7 @@ class BussinessMessageChatVC: BaseViewController, UITableViewDelegate , UITableV
                     cell?.MSG_Text.applyTag(baseVC: self , mainText: chat_obj.message)
                     cell?.selectionStyle = .none
                     cell?.MSG_Text.text = chat_obj.message
+                    cell?.lbl_date.text = self.GetTimeAgo(StringDate: chat_obj.created_at)
                      cell?.rece_name.text = UserName
                     cell?.transform = CGAffineTransform(scaleX: 1, y: -1)
                     
@@ -669,6 +689,7 @@ class BussinessMessageChatVC: BaseViewController, UITableViewDelegate , UITableV
         cell?.MSG_TEXT.text = chat_obj.message
         cell?.Video_icon.isHidden  = true
         cell?.selectionStyle = .none
+        cell?.lbl_date.text = self.GetTimeAgo(StringDate: chat_obj.created_at)
         cell?.indicator.isHidden = false
          cell?.rece_name.text = UserName
         cell?.view_Scrapping.isHidden = false
@@ -727,6 +748,7 @@ class BussinessMessageChatVC: BaseViewController, UITableViewDelegate , UITableV
         cell?.selectionStyle = .none
         cell?.Img_scrapping.image = #imageLiteral(resourceName: "noimage")
         cell?.Video_icon.isHidden  = true
+        cell?.lbl_date.text = self.GetTimeAgo(StringDate: chat_obj.created_at)
         cell?.indicator.isHidden = false
         cell?.indicator.startAnimating()
         cell?.MES_IMAGE.image = nil

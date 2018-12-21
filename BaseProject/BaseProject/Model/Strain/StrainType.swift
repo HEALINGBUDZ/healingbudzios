@@ -2,7 +2,7 @@
 //  StrainType.swift
 //  BaseProject
 //
-//  Created by Adnan Ahmad on 03/03/2018.
+
 //  Copyright © 2018 Wave. All rights reserved.
 //
 

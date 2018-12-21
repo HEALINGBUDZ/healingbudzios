@@ -369,9 +369,8 @@ extension QAMainVC : UITableViewDelegate ,  UITableViewDataSource {
     
     
     func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
-        print(indexPath.row)
-        print("Row === >")
-        print(self.qa_list.count)
+        
+        
         
         
         if self.pageNumber > -1 {
@@ -441,7 +440,7 @@ extension QAMainVC : UITableViewDelegate ,  UITableViewDataSource {
                 }
                 self.HideFilterView(sender: UIButton.init())
             }else {
-                print(indexPath)
+                
                 if indexPath.row == 0 || indexPath.row == self.array_filter.count - 1 {
                     
                 }else {
@@ -476,7 +475,7 @@ extension QAMainVC : UITableViewDelegate ,  UITableViewDataSource {
     
     func ChooseSortOption(value : Int){
         
-        print("value \(value)")
+        
         switch value {
         case 1:
             self.sortValue = QASort.Favorites.rawValue
@@ -500,7 +499,7 @@ extension QAMainVC : UITableViewDelegate ,  UITableViewDataSource {
     
     func ChooseReportOption(value : Int){
         
-        print("value \(value)")
+        
         switch value {
         case 1:
             self.reportValue = QAReport.Nudity.rawValue
@@ -538,16 +537,18 @@ extension QAMainVC : UITableViewDelegate ,  UITableViewDataSource {
         let decreased_index = (Int(indexPath.row/10))
         let index = indexPath.row - decreased_index
         let qa: QA = qa_list[index]
-        var mention_array = [String]()
-        for obj in appdelegate.keywords{
-            if qa.Question.lowercased().contains(obj.lowercased()){
-                mention_array.append(obj)
-            }
-        }
-        cellHeader.lbl_Question.createMentionsApplyTag(array: mention_array, color: Constants.kTagColor, complition: { (text) in
-            self.ShowKeywordPopUp(value: text)
-        })
-        print("user_image_path of \(index)  "+qa.user_photo)
+//        var mention_array = [String]()
+//        for obj in appdelegate.keywords{
+//            if qa.Question.lowercased().contains(obj.lowercased()){
+//                mention_array.append(obj)
+//            }
+//        }
+//        cellHeader.lbl_Question.createMentionsApplyTag(array: mention_array, color: Constants.kTagColor, complition: { (text) in
+//            self.ShowKeywordPopUp(value: text)
+//        })
+        cellHeader.lbl_Question.applyTag(baseVC: self, mainText: qa.Question.trimmingCharacters(in: .whitespaces))//.trimmingCharacters(in: .whitespaces) + " \n"
+        cellHeader.lbl_Question.text = qa.Question.trimmingCharacters(in: .whitespaces) + " \n"//.trimmingCharacters(in: .whitespaces)
+        
         cellHeader.ImgView_User.image = #imageLiteral(resourceName: "ic_profile_blue")
         cellHeader.ImgView_User.sd_setImage(with: URL.init(string: qa.user_photo.RemoveSpace()), placeholderImage: #imageLiteral(resourceName: "ic_profile_blue")) { (Iamge, Error, Chache, url) in
             if Error != nil{
@@ -635,7 +636,7 @@ extension QAMainVC : UITableViewDelegate ,  UITableViewDataSource {
         }
         cellHeader.ImgView_User.RoundView()
         
-        cellHeader.lbl_Question.text = qa.Question.trimmingCharacters(in: .whitespaces) + " \n"
+//        cellHeader.lbl_Question.text = qa.Question.trimmingCharacters(in: .whitespaces) + " \n"
         cellHeader.btn_Answer.tag = index
         if String(qa.user_id) == DataManager.sharedInstance.user?.ID {
          cellHeader.btn_Answer.isHidden = true
@@ -781,16 +782,17 @@ extension QAMainVC : UITableViewDelegate ,  UITableViewDataSource {
         
         let qa: QA = qa_list[index]
         let cellHeader = tableView.dequeueReusableCell(withIdentifier: "QuestionwithAnswerCell") as! QuestionwithAnswerCell
-        var mention_array = [String]()
-        for obj in appdelegate.keywords{
-            if qa.Question.lowercased().contains(obj.lowercased()){
-                mention_array.append(obj)
-            }
-        }
-        cellHeader.lbl_Question.createMentionsApplyTag(array: mention_array, color: Constants.kTagColor, complition: { (text) in
-            self.ShowKeywordPopUp(value: text)
-        })
-        cellHeader.lbl_Question.text = qa.Question.trimmingCharacters(in: .whitespaces) + " \n"
+//        var mention_array = [String]()
+//        for obj in appdelegate.keywords{
+//            if qa.Question.lowercased().contains(obj.lowercased()){
+//                mention_array.append(obj)
+//            }
+//        }
+//        cellHeader.lbl_Question.createMentionsApplyTag(array: mention_array, color: Constants.kTagColor, complition: { (text) in
+//            self.ShowKeywordPopUp(value: text)
+//        })
+        cellHeader.lbl_Question.applyTag(baseVC: self, mainText: qa.Question.trimmingCharacters(in: .whitespaces))//.trimmingCharacters(in: .whitespaces) + " \n"
+        cellHeader.lbl_Question.text = qa.Question.trimmingCharacters(in: .whitespaces) + " \n"//
         if qa.attachments.count > 0{
             cellHeader.attachmentView.isHidden = false
             cellHeader.attachmentViewHeight.constant = 50
@@ -1046,9 +1048,9 @@ extension QAMainVC {
             self.qa_list.removeAll()
         }
         let mainUrl = WebServiceName.get_questions.rawValue + sortValue + "&skip=" + String(pageNumber)
-        print(mainUrl)
+        
         NetworkManager.GetCall(UrlAPI: mainUrl) { (successRespons, messageResponse, dataResponse) in
-//             print(dataResponse)
+
             if !self.refreshControl.isRefreshing{
                 self.view.hideLoading()
             }
@@ -1080,8 +1082,6 @@ extension QAMainVC {
                 self.tbleViewMain.restore()
             }
             
-            print("self.qa_list    ====>")
-            print(self.qa_list.count)
             
             if self.qa_list.count % 15 != 0 {
                 self.pageNumber = -1
@@ -1108,7 +1108,7 @@ extension QAMainVC {
 
         let mainUrl = WebServiceName.add_question_flag.rawValue
         NetworkManager.PostCall(UrlAPI: mainUrl , params: param) { (successRespons, messageResponse, dataResponse) in
-//            print(dataResponse)
+
             self.view.hideLoading()
             if successRespons {
                 if let successMessage = dataResponse["successMessage"] as? String {
@@ -1134,7 +1134,7 @@ extension QAMainVC {
     }
     
     func APICAllForLike(){
-         print(choose_QA.id)
+        
         
         
         var isPopUpShown :Bool = false
@@ -1156,7 +1156,7 @@ extension QAMainVC {
         let mainUrl = WebServiceName.add_question_like.rawValue
         self.view.showLoading()
         NetworkManager.PostCall(UrlAPI: mainUrl , params: param) { (successRespons, messageResponse, dataResponse) in
-//            print(dataResponse)
+
              self.view.hideLoading()
             if successRespons {
                     if let errorMessage = dataResponse["errorMessage"] as? String {
@@ -1211,7 +1211,7 @@ extension QAMainVC {
         }
         let mainUrl = WebServiceName.search_question.rawValue + newText
         NetworkManager.GetCall(UrlAPI: mainUrl) { (successRespons, messageResponse, dataResponse) in
-//            print(dataResponse)
+
             self.hideLoading()
             self.tagSearch = ""
              self.qa_list.removeAll()

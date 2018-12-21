@@ -18,28 +18,28 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SenderMsgTVCell" rowHeight="57" id="KGk-i7-Jjw" customClass="SenderMsgTVCell" customModule="BaseProject" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="396" height="57"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SenderMsgTVCell" rowHeight="179" id="KGk-i7-Jjw" customClass="SenderMsgTVCell" customModule="BaseProject" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="396" height="179"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="396" height="56.5"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="396" height="178.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Gsk-T5-d8w">
-                        <rect key="frame" x="0.0" y="1" width="336" height="54.5"/>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gsk-T5-d8w">
+                        <rect key="frame" x="0.0" y="1" width="336" height="176.5"/>
                         <subviews>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ayd-Ut-qwl">
-                                <rect key="frame" x="4" y="8" width="76" height="38.5"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ayd-Ut-qwl">
+                                <rect key="frame" x="4" y="8" width="76" height="160.5"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="chat_right_indicator" translatesAutoresizingMaskIntoConstraints="NO" id="s9m-Mj-yU0">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chat_right_indicator" translatesAutoresizingMaskIntoConstraints="NO" id="s9m-Mj-yU0">
                                         <rect key="frame" x="0.0" y="0.0" width="8" height="4"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="8" id="Huv-nA-p4I"/>
                                             <constraint firstAttribute="height" constant="4" id="rTV-MF-R5x"/>
                                         </constraints>
                                     </imageView>
-                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bTb-VA-qeq">
-                                        <rect key="frame" x="8" y="0.0" width="60" height="38.5"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bTb-VA-qeq">
+                                        <rect key="frame" x="8" y="0.0" width="60" height="160.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Hello" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N2d-8b-eyY" customClass="ActiveLabel" customModule="ActiveLabel">
                                                 <rect key="frame" x="10" y="8" width="40" height="20.5"/>
@@ -57,6 +57,12 @@
                                                 <color key="textColor" red="0.50196078430000002" green="0.50196078430000002" blue="0.50196078430000002" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MPJ-OD-B71">
+                                                <rect key="frame" x="9" y="69" width="42" height="21"/>
+                                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="10"/>
+                                                <color key="textColor" red="0.50196078430000002" green="0.50196078430000002" blue="0.50196078430000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                         </subviews>
                                         <color key="backgroundColor" red="0.10588235294117647" green="0.10588235294117647" blue="0.10588235294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
@@ -64,9 +70,12 @@
                                             <constraint firstItem="N2d-8b-eyY" firstAttribute="top" secondItem="bTb-VA-qeq" secondAttribute="top" constant="8" id="7dM-IH-Qty"/>
                                             <constraint firstAttribute="trailing" secondItem="N2d-8b-eyY" secondAttribute="trailing" constant="10" id="IGW-oA-hUb"/>
                                             <constraint firstAttribute="trailing" secondItem="MPN-5P-5lU" secondAttribute="trailing" constant="5" id="Y8Y-4d-8BN"/>
+                                            <constraint firstItem="MPJ-OD-B71" firstAttribute="leading" secondItem="MPN-5P-5lU" secondAttribute="leading" id="gvN-Oa-V6o"/>
+                                            <constraint firstItem="MPJ-OD-B71" firstAttribute="top" secondItem="MPN-5P-5lU" secondAttribute="bottom" constant="5" id="izx-e7-8GH"/>
                                             <constraint firstItem="N2d-8b-eyY" firstAttribute="leading" secondItem="bTb-VA-qeq" secondAttribute="leading" constant="10" id="s61-8C-lXO"/>
-                                            <constraint firstAttribute="bottom" secondItem="MPN-5P-5lU" secondAttribute="bottom" constant="5" id="ufb-pF-tms"/>
                                             <constraint firstItem="MPN-5P-5lU" firstAttribute="leading" secondItem="bTb-VA-qeq" secondAttribute="leading" constant="5" id="uiu-g7-hkx"/>
+                                            <constraint firstAttribute="bottom" secondItem="MPJ-OD-B71" secondAttribute="bottom" constant="5" id="yl1-Mp-K5K"/>
+                                            <constraint firstItem="MPJ-OD-B71" firstAttribute="trailing" secondItem="MPN-5P-5lU" secondAttribute="trailing" id="yq3-s7-2im"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -103,9 +112,10 @@
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
                 <outlet property="MSG_TEXT" destination="N2d-8b-eyY" id="7Ft-1v-HCC"/>
+                <outlet property="lbl_date" destination="MPJ-OD-B71" id="MqZ-lU-MAs"/>
                 <outlet property="sender_name" destination="MPN-5P-5lU" id="kMh-af-iKE"/>
             </connections>
-            <point key="canvasLocation" x="-20" y="19.5"/>
+            <point key="canvasLocation" x="-20" y="80.5"/>
         </tableViewCell>
     </objects>
     <resources>

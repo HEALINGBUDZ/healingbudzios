@@ -233,6 +233,13 @@ extension Date {
         
         return dateFormatterGet.string(from: self)
     }
+    func GetStringDefaultUtc(dateFormate : String) -> String{
+        
+        let dateFormatterGet = DateFormatter()
+        dateFormatterGet.dateFormat = dateFormate
+        dateFormatterGet.timeZone = TimeZone.init(abbreviation: "UTC")
+        return dateFormatterGet.string(from: self)
+    }
     
     func GetTimezone() -> String{
         
@@ -635,9 +642,15 @@ extension UIViewController
               self.dismiss(animated: true, completion: nil)
         }
     }
+    func ShowAlertWithDim(message : String , AlertTitle : String = kErrorTitle,complition : @escaping(Bool) -> Void) {
+        self.oneBtnCustomeAlert(title: AlertTitle, discription: message) { (isBtnClik, btnNmbr) in
+            complition(true)
+        }
+    }
     func ShowErrorAlert(message : String , AlertTitle : String = kErrorTitle) {
        self.simpleCustomeAlert(title: AlertTitle, discription: message)
     }
+    //,complition : @escaping(Bool,Int) -> Void
     func ShowLogoutAlert() {
         self.oneBtnCustomeAlert(title: "", discription: "Your session is expired. Please login again!") { (isComp, btn) in
             NotificationCenter.default.post(name: NSNotification.Name(rawValue: "PushLoginView"), object: nil)

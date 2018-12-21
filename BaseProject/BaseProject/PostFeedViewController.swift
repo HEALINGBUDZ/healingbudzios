@@ -338,7 +338,7 @@ class PostFeedViewController: BaseViewController, CameraDelegate {
         self.navigationController?.isNavigationBarHidden = true;
 //        configureTagTextView()
         self.whatsOnYourMindTextView.delegate = self
-        whatsOnYourMindTextView.text = "What's on your mind?"
+        whatsOnYourMindTextView.text = "Hey Bud, what's on your mind?"
         self.tagView.isHidden = true
         self.displayUserProfile()
         NotificationCenter.default.addObserver(self, selector: #selector(self.showKeyboard(sender:)), name:NSNotification.Name.UIKeyboardWillShow, object: nil)
@@ -575,7 +575,7 @@ class PostFeedViewController: BaseViewController, CameraDelegate {
         self.whatsOnYourMindTextView.endEditing(true)
         print(withTagsArray)
         var whatsOnYourMind = whatsOnYourMindTextView.text
-        if whatsOnYourMindTextView.text == "What's on your mind?" || whatsOnYourMindTextView.text == "" {
+        if whatsOnYourMindTextView.text == "Hey Bud, what's on your mind?" || whatsOnYourMindTextView.text == "" {
             whatsOnYourMind = ""
         }
         
@@ -1280,8 +1280,9 @@ extension PostFeedViewController: UITextViewDelegate    {
     func textViewDidChange(_ textView: UITextView) {
         acManager.processString(textView.text)
     }
+    
     func textViewShouldBeginEditing(_ textView: UITextView) -> Bool {
-        if textView.text == "What's on your mind?"   {
+        if textView.text == "Hey Bud, what's on your mind?"   {
             textView.text = ""
         }
         if array_Attachment.count != 0{
@@ -1299,7 +1300,7 @@ extension PostFeedViewController: UITextViewDelegate    {
     }
     func textViewDidEndEditing(_ textView: UITextView) {
         if textView.text == ""   {
-            textView.text = "What's on your mind?"
+            textView.text = "Hey Bud, what's on your mind?"
         }
         self.acContainerView.isHidden = true
         if array_Attachment.count != 0{
@@ -1310,8 +1311,53 @@ extension PostFeedViewController: UITextViewDelegate    {
     func textView(_ textView: UITextView, shouldChangeTextIn range: NSRange, replacementText text: String) -> Bool {
         if text.count == 0 {
              self.updateTriggerData(newText: self.whatsOnYourMindTextView.text)
+            
 //            self.SetAttributedText(mainString: self.whatsOnYourMindTextView.text.replacingOccurrences(of: "_", with: " "), attributedStringsArray: self.mention_Array, view: self.whatsOnYourMindTextView, color: UIColor.init(hex: "7CC244"))
         }
+        if text == " " {
+            self.acContainerView.isHidden = true
+            self.acContainerView.backgroundColor = UIColor.init(hex: "2F2F2F")
+            self.acContainerView.isHidden = true
+            self.updateTriggerData(newText: self.whatsOnYourMindTextView.text)
+            let mentions = self.matches(regex: "([@#][\\w_-]+)", text: text)
+            print("mentions are: \(mentions)")
+            if mentions.count > 0 {
+                let menstion_str = mentions.last?.replacingOccurrences(of: "_", with: " ")
+                self.mention_Array.append(menstion_str!)
+            }
+            self.SetAttributedText(mainString: self.whatsOnYourMindTextView.text, attributedStringsArray: self.mention_Array, view: self.whatsOnYourMindTextView, color: UIColor.init(hex: "7CC244"))
+        }
+        if text == "\n"{
+            self.acContainerView.isHidden = true
+            self.acContainerView.backgroundColor = UIColor.init(hex: "2F2F2F")
+            self.updateTriggerData(newText: self.whatsOnYourMindTextView.text)
+            let mentions = self.matches(regex: "([@#][\\w_-]+)", text: text)
+            print("mentions are: \(mentions)")
+            if mentions.count > 0 {
+                let menstion_str = mentions.last?.replacingOccurrences(of: "_", with: " ")
+                self.mention_Array.append(menstion_str!)
+            }
+            self.SetAttributedText(mainString: self.whatsOnYourMindTextView.text, attributedStringsArray: self.mention_Array, view: self.whatsOnYourMindTextView, color: UIColor.init(hex: "7CC244"))
+        }
+//        let characterset = CharacterSet(charactersIn: "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789")
+//        
+//        if text.rangeOfCharacter(from: characterset.inverted) != nil {
+//            if text == "#" || text == "@" {
+//                
+//            }else {
+//                self.acContainerView.isHidden = true
+//                self.acContainerView.backgroundColor = UIColor.init(hex: "2F2F2F")
+//                self.updateTriggerData(newText: self.whatsOnYourMindTextView.text)
+//                let mentions = self.matches(regex: "([@#][\\w_-]+)", text: text)
+//                print("mentions are: \(mentions)")
+//                if mentions.count > 0 {
+//                    let menstion_str = mentions.last?.replacingOccurrences(of: "_", with: " ")
+//                    self.mention_Array.append(menstion_str!)
+//                }
+//                self.SetAttributedText(mainString: self.whatsOnYourMindTextView.text, attributedStringsArray: self.mention_Array, view: self.whatsOnYourMindTextView, color: UIColor.init(hex: "7CC244"))
+//            }
+//        }
+        
         return true
     }
 }
@@ -1337,7 +1383,7 @@ extension PostFeedViewController    {
         SubUserLabel.text = user?.userFirstName
         pointsLabel.text = user?.Points
         budLabel.text = user?.budType
-        whatsOnYourMindTextView.text = "What's on your mind?"
+        whatsOnYourMindTextView.text = "Hey Bud, what's on your mind?"
         
         
         let pointsColor = user?.pointsColor

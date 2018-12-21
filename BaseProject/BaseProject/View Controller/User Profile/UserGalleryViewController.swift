@@ -2,7 +2,7 @@
 //  UserGalleryViewController.swift
 //  BaseProject
 //
-//  Created by waseem on 20/03/2018.
+
 //  Copyright © 2018 Wave. All rights reserved.
 //
 
@@ -169,7 +169,7 @@ extension UserGalleryViewController : UICollectionViewDataSource, UICollectionVi
                 cell.indicator.tintColor = UIColor.white
                 cell.indicator.isHidden = false
                 cell.indicator.startAnimating()
-                // Code written by jawad 16th Aug , 2018
+                
                 if self.array_Attachment[indexPath.row].is_Video {
                     cell.imgViewMainZoom.isHidden = true
                     cell.video_icon.isHidden = false
